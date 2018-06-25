@@ -1,0 +1,8 @@
+{
+    "name": "com.uap.unity-volumetric-light",
+    "displayName": "Unity-Volumetric-Light",
+    "version": "0.0.1",
+    "unity": "2018.1",
+    "description": "A powerful volumetric light plugin based on post-processing in Unity3D",
+    "dependencies": { }
+}

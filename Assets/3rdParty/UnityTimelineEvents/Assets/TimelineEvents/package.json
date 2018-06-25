@@ -1,0 +1,8 @@
+{
+    "name": "com.uap.unitytimelineevents",
+    "displayName": "Unity Timeline Events",
+    "version": "0.0.1",
+    "unity": "2018.1",
+    "description": "Adds ability to execute arbitrary code, with int, bool, float, string and enum values, at both runtime and edit time, from Unity timelines.",
+    "dependencies": { }
+}
