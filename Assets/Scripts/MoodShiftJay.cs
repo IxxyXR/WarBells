@@ -13,11 +13,13 @@ public class MoodShiftJay : MonoBehaviour {
 // Add FirewatchFog to the main camera
 
 public Camera camera;
+public Texture2D colorRamp;
 private FirewatchFog gradientScript;
 
 	// Use this for initialization
 	void Start () {
 		gradientScript = this.camera.GetComponent<FirewatchFog>();
+		colorRamp = gradientScript.colorRamp;
 	}
 	
 	// Update is called once per frame
