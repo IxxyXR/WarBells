@@ -9,7 +9,7 @@ public class FogMixerBehaviour : PlayableBehaviour
     public override void ProcessFrame(Playable playable, FrameData info, object playerData)
     {
         int inputCount = playable.GetInputCount();
-        Color fogColor = Color.black;;
+        Color fogColor = Color.black;
         for (int i = 0; i < inputCount; i++)
         {
             float inputWeight = playable.GetInputWeight(i);
