@@ -261,7 +261,7 @@ MonoBehaviour:
     Camera: {fileID: 0}
     LightColor: {r: 0, g: 0.09729433, b: 1, a: 0}
     GradientFog: {fileID: 2800000, guid: 7d97a45cce9e27c4c802283097343f38, type: 3}
-    DistanceFogColor: {r: 0.009433985, g: 0.009433985, b: 0.009433985, a: 0}
+    DistanceFogColor: {r: 1, g: 0.0141509175, b: 0.7773228, a: 0}
   Light:
     exposedName: 6fa91a40a1d344f37b0380734b915e96
     defaultValue: {fileID: 0}
@@ -284,7 +284,7 @@ MonoBehaviour:
     Camera: {fileID: 0}
     LightColor: {r: 0, g: 1, b: 0.18643212, a: 0}
     GradientFog: {fileID: 2800000, guid: c82d2e0b0dd3edd49a663a09d75eb3ad, type: 3}
-    DistanceFogColor: {r: 0, g: 0, b: 0, a: 0}
+    DistanceFogColor: {r: 0.049928807, g: 0.90702295, b: 0.9622642, a: 0}
   Light:
     exposedName: c1bc085bd875a43148f619fd748272f3
     defaultValue: {fileID: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
     Camera: {fileID: 0}
     LightColor: {r: 1, g: 0.06575368, b: 0, a: 0}
     GradientFog: {fileID: 2800000, guid: 7d97a45cce9e27c4c802283097343f38, type: 3}
-    DistanceFogColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0}
+    DistanceFogColor: {r: 1, g: 0.90713394, b: 0, a: 0}
   Light:
     exposedName: c1fb37da3130948baae508076050ea8a
     defaultValue: {fileID: 0}
