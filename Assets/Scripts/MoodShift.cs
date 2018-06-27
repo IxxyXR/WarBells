@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.ImageEffects;
 
 public class MoodShift : MonoBehaviour {
 
@@ -11,11 +12,12 @@ public class MoodShift : MonoBehaviour {
 // Add MoodShift script to an Empty game object in your scene
 // Add FirewatchFog to the main camera
 
-public script FirewatchFog;
+public Camera camera;
+private FirewatchFog gradientScript;
 
 	// Use this for initialization
 	void Start () {
-		
+		gradientScript = this.camera.GetComponent<FirewatchFog>();
 	}
 	
 	// Update is called once per frame
