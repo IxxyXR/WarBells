@@ -11,8 +11,6 @@ public class MoodShift : MonoBehaviour {
 // Add MoodShift script to an Empty game object in your scene
 // Add FirewatchFog to the main camera
 
-public script FirewatchFog;
-
 	// Use this for initialization
 	void Start () {
 		
