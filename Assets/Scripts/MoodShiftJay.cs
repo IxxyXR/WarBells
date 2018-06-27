@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.ImageEffects;
 
-public class MoodShift : MonoBehaviour {
+public class MoodShiftJay : MonoBehaviour {
 
 
 // MoodShift allows you to change the inside and outside lighting. 
