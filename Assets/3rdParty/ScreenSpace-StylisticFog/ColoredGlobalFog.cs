@@ -5,7 +5,7 @@ namespace UnityStandardAssets.ImageEffects
 {
 	[ExecuteInEditMode]
 	[RequireComponent (typeof(Camera))]
-	[AddComponentMenu ("Image Effects/Rendering/Global Fog")]
+	[AddComponentMenu ("Image Effects/Rendering/Colored Global Fog")]
 	class GlobalFog : PostEffectsBase
 	{
 		[Tooltip("Apply distance-based fog?")]
