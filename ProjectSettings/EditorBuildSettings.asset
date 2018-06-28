@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/3rdParty/VolumetricLighting/Scenes/Transparency and point lights.unity
     guid: 915ed33d3a042174eb51699251f87c5b
   m_configObjects: {}
