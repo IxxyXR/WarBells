@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Main.unity
+    guid: a5f8150d06d35ce4b9d6f2c569f6b886
+  - enabled: 1
+    path: Assets/Scenes/Moodchange Test.unity
+    guid: b5fe125e96e094999b09f51728309b1a
   m_configObjects: {}
