@@ -15,14 +15,20 @@ public class MoodChangeDrawer : PropertyDrawer
         SerializedProperty LightColorProp = property.FindPropertyRelative("LightColor");
         SerializedProperty GradientFogProp = property.FindPropertyRelative("GradientFog");
         SerializedProperty DistanceFogColorProp = property.FindPropertyRelative("DistanceFogColor");
+        SerializedProperty FogDensityProp = property.FindPropertyRelative("FogDensity");
 
         Rect singleFieldRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
+        Rect sliderRect = new Rect(position.x, position.y, position.width, position.height);
         EditorGUI.PropertyField(singleFieldRect, LightColorProp);
+        
 
         singleFieldRect.y += EditorGUIUtility.singleLineHeight;
         EditorGUI.PropertyField(singleFieldRect, GradientFogProp);
 
         singleFieldRect.y += EditorGUIUtility.singleLineHeight;
         EditorGUI.PropertyField(singleFieldRect, DistanceFogColorProp);
+
+        singleFieldRect.y += EditorGUIUtility.singleLineHeight;
+        EditorGUI.PropertyField(singleFieldRect, FogDensityProp);
     }
 }

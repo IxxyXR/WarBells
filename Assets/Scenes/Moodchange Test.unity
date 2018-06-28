@@ -14,12 +14,12 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 1, g: 0.21226418, b: 0.21226418, a: 0}
   m_FogMode: 1
   m_FogDensity: 0.5
-  m_LinearFogStart: -543.8
-  m_LinearFogEnd: 847.87
+  m_LinearFogStart: 10
+  m_LinearFogEnd: 500
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -123,7 +123,6 @@ GameObject:
   - component: {fileID: 550894693}
   - component: {fileID: 550894692}
   - component: {fileID: 550894691}
-  - component: {fileID: 550894690}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -131,29 +130,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &550894690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 550894689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60f3109d8790ccf4ea4cbd4fa33ebfa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Light: {fileID: 984415803}
-  Camera: {fileID: 1449377489}
-  moods:
-  - LightColor: {r: 1, g: 0.0141509175, b: 0.0141509175, a: 0}
-    GradientFog: {fileID: 2800000, guid: 78a76fd40f0bffe4cb8e64d54549df72, type: 3}
-    DistanceFogColor: {r: 1, g: 0.0047169924, b: 0.0047169924, a: 0}
-  - LightColor: {r: 0.47286123, g: 1, b: 0.015686274, a: 0}
-    GradientFog: {fileID: 2800000, guid: 7d97a45cce9e27c4c802283097343f38, type: 3}
-    DistanceFogColor: {r: 0.10064769, g: 1, b: 0.0039215684, a: 0}
-  - LightColor: {r: 0.015686274, g: 0.28640223, b: 1, a: 0}
-    GradientFog: {fileID: 2800000, guid: c82d2e0b0dd3edd49a663a09d75eb3ad, type: 3}
-    DistanceFogColor: {r: 0.0039215684, g: 0.17525981, b: 1, a: 0}
 --- !u!95 &550894691
 Animator:
   serializedVersion: 3
@@ -196,12 +172,14 @@ PlayableDirector:
     value: {fileID: 1449377491}
   - key: {fileID: 0}
     value: {fileID: 0}
-  - key: {fileID: 114187875561330286, guid: 3af191de25ef64b61babb9a915c19c75, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References:
+    - df42eee9d21bf5643bf57714ffcb34e0: {fileID: 984415803}
     - c1fb37da3130948baae508076050ea8a: {fileID: 984415803}
     - 6fa91a40a1d344f37b0380734b915e96: {fileID: 984415803}
+    - ee816010eb1e4c349af8c750b3dc2065: {fileID: 1449377489}
     - 0609c622f601c49e4866d04accbbe65c: {fileID: 1449377489}
     - 727650a8dd4d74f9eb4ab6a4f7ab08f4: {fileID: 1449377489}
     - b15e7fc79377b4b198ca7db77777c109: {fileID: 1449377489}
@@ -245,8 +223,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9953385, g: 1, b: 0.995283, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Intensity: 1.66
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -280,7 +258,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 984415802}
   m_LocalRotation: {x: -0.0024916795, y: -0.98187345, z: 0.18907902, w: -0.0129391095}
-  m_LocalPosition: {x: 0, y: 278, z: 490.3}
+  m_LocalPosition: {x: 0, y: 201, z: 611}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -421,9 +399,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainTex: {fileID: 2800000, guid: 854edb35bcc9f4b7cbf8efafd877d736, type: 3}
-  fogAmount: 1
-  colorRamp1: {fileID: 2800000, guid: 7d97a45cce9e27c4c802283097343f38, type: 3}
-  colorRamp2: {fileID: 2800000, guid: 7d97a45cce9e27c4c802283097343f38, type: 3}
+  fogAmount: 1.28
+  colorRamp1: {fileID: 2800000, guid: b8a606691f0c2c040bac78d578914108, type: 3}
+  colorRamp2: {fileID: 2800000, guid: b8a606691f0c2c040bac78d578914108, type: 3}
   blendAmount: 1
   fogIntensity: 1
 --- !u!1 &1482665412

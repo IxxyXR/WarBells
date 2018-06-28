@@ -26,7 +26,10 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
         
         Color LightColor1 = Color.black;
         Color LightColor2 = Color.black;
-        
+
+        float FogDensity1 = 1f;
+        float FogDensity2 = 1f;
+
         float blend = 1f;
                 
         for (int i = 0; i < inputCount; i++)
@@ -45,12 +48,17 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
                     DistanceFogColor2 = input.DistanceFogColor;
                     LightColor1 = input.LightColor;
                     LightColor2 = input.LightColor;
+                    FogDensity1 = input.FogDensity;
+                    FogDensity2 = input.FogDensity;
+
                 }
                 else
                 {
                     fogRamp2 = input.GradientFog;
                     DistanceFogColor2 = input.DistanceFogColor;
-                    LightColor2 = input.LightColor;
+                    FogDensity1 = input.FogDensity;
+                    FogDensity2 = input.FogDensity;
+
                     blend = inputWeight;
                 }
             }
@@ -66,6 +74,8 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
         firewatchFog.colorRamp1 = fogRamp1;
         firewatchFog.colorRamp2 = fogRamp2;
         firewatchFog.blendAmount = blend;
+
+        firewatchFog.fogIntensity = Mathf.Lerp(FogDensity1, FogDensity2, blend);
 
     }
 }
