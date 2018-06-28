@@ -38,3 +38,6 @@ sysinfo.txt
 .idea/
 Assets/Plugins/Editor/JetBrains*
 .DS_Store
+Assets/3rdParty/Minimalist Free/Demo/Scenes/Demo.unity.meta
+Assets/3rdParty/gvr-unity-sdk/GoogleVR/Prefabs/InstantPreview/InstantPreview.apk.meta
+Assets/3rdParty/Minimalist Free.meta
