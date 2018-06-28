@@ -1180,6 +1180,8 @@ GameObject:
   - component: {fileID: 2107956892}
   - component: {fileID: 2107956891}
   - component: {fileID: 2107956890}
+  - component: {fileID: 2107956895}
+  - component: {fileID: 2107956894}
   m_Layer: 0
   m_Name: Aufruf_Patiotische_Kriegsmetallsammlung
   m_TagString: Untagged
@@ -1256,3 +1258,25 @@ Transform:
   m_Father: {fileID: 992468505}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2107956894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107956889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f942ae6c8100f4514a60c18f17aabe9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2107956895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107956889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9710a02e763a4e33b3ba28046d94782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
