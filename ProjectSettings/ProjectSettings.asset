@@ -361,8 +361,8 @@ PlayerSettings:
     - daydream
     - cardboard
   m_BuildTargetEnableVuforiaSettings: []
-  openGLRequireES31: 0
-  openGLRequireES31AEP: 0
+  openGLRequireES31: 1
+  openGLRequireES31AEP: 1
   m_TemplateCustomTags: {}
   mobileMTRendering:
     Android: 1
