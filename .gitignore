@@ -37,3 +37,4 @@ sysinfo.txt
 
 .idea/
 Assets/Plugins/Editor/JetBrains*
+.DS_Store

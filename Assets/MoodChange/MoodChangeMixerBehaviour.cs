@@ -38,9 +38,9 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
             ScriptPlayable<MoodChangeBehaviour> inputPlayable = (ScriptPlayable<MoodChangeBehaviour>)playable.GetInput(i);
             MoodChangeBehaviour input = inputPlayable.GetBehaviour();
             
-            if (inputWeight > 0)
+            if (inputWeight > 0) // Assumes we'll only have 1 or 2 inputs with a weight above 0
             {
-                if (fogRamp1 == null)
+                if (fogRamp1 == null)  // Set start and end values to be the same
                 {
                     fogRamp1 = input.GradientFog;
                     fogRamp2 = input.GradientFog;
@@ -52,7 +52,7 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
                     FogDensity2 = input.FogDensity;
 
                 }
-                else
+                else  // Set the final value and the blend amount
                 {
                     fogRamp2 = input.GradientFog;
                     DistanceFogColor2 = input.DistanceFogColor;
