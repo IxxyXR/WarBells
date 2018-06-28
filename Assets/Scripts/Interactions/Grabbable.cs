@@ -68,6 +68,7 @@ public class Grabbable : MonoBehaviour {
 	}
 	
 	private void CheckForEvents(float previousAnimationTime) {
+		
 		// When the animation time crosses this threshold, it will be considered pushed
 		const float pushThreshold = 0.9f;
 

@@ -1,26 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
-public class Selectable : MonoBehaviour {
-	
-	private Material _material;
-	
-	public Color highlightedColor = Color.green;
-	public Color touchedColor = Color.yellow;
-	
-	private Color _originalColor;
+public class UISelectable : MonoBehaviour
+{
+
+	private Button _button;
 	
 	private bool _isHighlighted;
 	private bool _isTouched;
 
 	void Start () {
 		
-		_material = GetComponent<Renderer>().material;
-		_originalColor = _material.color;
+		_button = GetComponent<Button>();
 		
 		gameObject.AddListener(EventTriggerType.PointerEnter, () => SetIsHighlighted(true));
 		gameObject.AddListener(EventTriggerType.PointerExit, () => SetIsHighlighted(false));
@@ -30,23 +27,13 @@ public class Selectable : MonoBehaviour {
 	
 	public void SetIsHighlighted(bool value) {
 		_isHighlighted = value;
-		UpdateColor();
 	}
 
 	public void SetIsTouched(bool value) {
 		_isTouched = value;
-		UpdateColor();
 	}
 	
-	private void UpdateColor() {
-		if (_isTouched) {
-			_material.color = touchedColor;
-		}
-		else if (_isHighlighted) {
-			_material.color = highlightedColor;
-		}
-		else {
-			_material.color = _originalColor;
-		}
-	}
+
 }
+
+
