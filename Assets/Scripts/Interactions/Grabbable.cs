@@ -18,8 +18,18 @@ public class Grabbable : MonoBehaviour {
 	
 	void Start () {
 		_originalPosition = transform.localPosition;
-		gameObject.AddListener(EventTriggerType.PointerDown, () => {_animationVelocity = 5.0f;});
-		gameObject.AddListener(EventTriggerType.PointerUp, () => {_animationVelocity = -5.0f;});	
+		gameObject.AddListener(EventTriggerType.PointerDown, onPointerDown);
+		gameObject.AddListener(EventTriggerType.PointerUp, onPointerUp);	
+	}
+
+	void onPointerDown()
+	{
+		_animationVelocity = 5.0f;
+	}
+
+	void onPointerUp()
+	{
+		_animationVelocity = -5.0f;
 	}
 	
 	void Update() {		
@@ -35,8 +45,8 @@ public class Grabbable : MonoBehaviour {
 	}
 
 	private void UpdateTransform() {
-		float pushDistance = 0.5f * transform.localScale.y;
-		Vector3 pushDirection = transform.localRotation * Vector3.up;
+		float pushDistance = 1f * transform.localScale.y;
+		Vector3 pushDirection = transform.localRotation * Vector3.forward;
 		Vector3 pushedPosition = _originalPosition - pushDirection * pushDistance;
 		transform.localPosition = Vector3.Lerp(_originalPosition, pushedPosition, _animationTime);
 	}
