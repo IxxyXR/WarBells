@@ -41,7 +41,7 @@ namespace Sabresaurus.SabreCSG
 
 				// If we've selected a brush base that isn't a prefab in the project 
 				if(matchedBrushBase != null
-					&& !(PrefabUtility.GetCorrespondingObjectFromSource(matchedBrushBase.gameObject) == null 
+					&& !(PrefabUtility.GetPrefabParent(matchedBrushBase.gameObject) == null 
 						&& PrefabUtility.GetPrefabObject(matchedBrushBase.transform) != null))
 				{
 					brushBases.Add(matchedBrushBase);
@@ -57,7 +57,7 @@ namespace Sabresaurus.SabreCSG
 
             // Make sure it's not null and that it isn't a prefab in the project
             if(selectedGameObject != null
-                && !(PrefabUtility.GetCorrespondingObjectFromSource(selectedGameObject) == null
+                && !(PrefabUtility.GetPrefabParent(selectedGameObject) == null
                         && PrefabUtility.GetPrefabObject(selectedGameObject.transform) != null))
             {
                 newPrimaryBrushBase = selectedGameObject.GetComponent<BrushBase>();// brushBases.FirstOrDefault();

@@ -2,6 +2,11 @@
 
 Shader "SabreCSG/ShapeEditorLine"
 {
+	Properties
+	{
+		_CutoffY ("Cutoff Y", Float) = 0.0
+	}
+
 	SubShader
 	{
 		Pass
@@ -31,6 +36,9 @@ Shader "SabreCSG/ShapeEditorLine"
 					float4 pos : SV_POSITION;
 				};
 
+				float _CutoffY;
+                float _Height;
+
 				// vertex shader
 				v2f vert(appdata IN)
 				{
@@ -49,8 +57,14 @@ Shader "SabreCSG/ShapeEditorLine"
 				{
 					fixed4 col;
 					col = IN.color;
-					if (IN.pos.y < 35)
-					discard;
+#if UNITY_UV_STARTS_AT_TOP
+                    if (IN.pos.y < _CutoffY)
+                        discard;
+#else
+                    if (IN.pos.y > _Height)
+                        discard;
+#endif
+
 					return col;
 				}
 			ENDCG
