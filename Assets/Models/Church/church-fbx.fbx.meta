@@ -79,6 +79,7 @@ ModelImporter:
     100146: slats.071
     100148: slats.054
     100150: slats.055
+    100152: window-bool-remove
     400000: //RootNode
     400002: bell-tower-floor
     400004: bell-tower-roof
@@ -155,6 +156,7 @@ ModelImporter:
     400146: slats.071
     400148: slats.054
     400150: slats.055
+    400152: window-bool-remove
     2100000: No Name
     2300000: //RootNode
     2300002: bell-tower-floor
@@ -232,6 +234,7 @@ ModelImporter:
     2300146: slats.071
     2300148: slats.054
     2300150: slats.055
+    2300152: window-bool-remove
     3300000: //RootNode
     3300002: bell-tower-floor
     3300004: bell-tower-roof
@@ -308,6 +311,7 @@ ModelImporter:
     3300146: slats.071
     3300148: slats.054
     3300150: slats.055
+    3300152: window-bool-remove
     4300000: church
     4300002: church.001
     4300004: bell-tower-roof
@@ -384,6 +388,8 @@ ModelImporter:
     4300146: slats.001
     4300148: slats.055
     4300150: slats.054
+    4300152: window-bool-remove
+    4300154: church.006
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f980660ca4058bd4fb67f390ad21999c
 ModelImporter:
-  serializedVersion: 23
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: bell-tower-floor
     100002: bell-tower-roof
@@ -10,6 +10,82 @@ ModelImporter:
     100008: Mesh2
     100010: Mesh2_001
     100012: window-bool-remove
+    100014: slats
+    100016: slats_001
+    100018: slats_002
+    100020: slats_003
+    100022: slats_004
+    100024: slats_005
+    100026: slats_006
+    100028: slats_007
+    100030: slats_008
+    100032: slats_009
+    100034: slats_010
+    100036: slats_011
+    100038: slats_012
+    100040: slats_013
+    100042: slats_014
+    100044: slats_015
+    100046: slats_016
+    100048: slats_017
+    100050: slats_018
+    100052: slats_019
+    100054: slats_020
+    100056: slats_021
+    100058: slats_022
+    100060: slats_023
+    100062: slats_024
+    100064: slats_025
+    100066: slats_026
+    100068: slats_027
+    100070: slats_028
+    100072: slats_029
+    100074: slats_030
+    100076: slats_031
+    100078: slats_032
+    100080: slats_033
+    100082: slats_034
+    100084: slats_035
+    100086: slats_036
+    100088: slats_037
+    100090: slats_038
+    100092: slats_039
+    100094: slats_040
+    100096: slats_041
+    100098: slats_042
+    100100: slats_043
+    100102: slats_044
+    100104: slats_045
+    100106: slats_046
+    100108: slats_047
+    100110: slats_048
+    100112: slats_049
+    100114: slats_050
+    100116: slats_051
+    100118: slats_052
+    100120: slats_053
+    100122: slats_054
+    100124: slats_055
+    100126: slats_056
+    100128: slats_057
+    100130: slats_058
+    100132: slats_059
+    100134: slats_060
+    100136: slats_061
+    100138: slats_062
+    100140: slats_063
+    100142: slats_064
+    100144: slats_065
+    100146: slats_066
+    100148: slats_067
+    100150: slats_068
+    100152: slats_069
+    100154: slats_070
+    100156: slats_071
+    100158: window-slats
+    100160: window-slats_001
+    100162: window-slats_002
+    100164: window-slats_003
     400000: bell-tower-floor
     400002: bell-tower-roof
     400004: church
@@ -17,6 +93,82 @@ ModelImporter:
     400008: Mesh2
     400010: Mesh2_001
     400012: window-bool-remove
+    400014: slats
+    400016: slats_001
+    400018: slats_002
+    400020: slats_003
+    400022: slats_004
+    400024: slats_005
+    400026: slats_006
+    400028: slats_007
+    400030: slats_008
+    400032: slats_009
+    400034: slats_010
+    400036: slats_011
+    400038: slats_012
+    400040: slats_013
+    400042: slats_014
+    400044: slats_015
+    400046: slats_016
+    400048: slats_017
+    400050: slats_018
+    400052: slats_019
+    400054: slats_020
+    400056: slats_021
+    400058: slats_022
+    400060: slats_023
+    400062: slats_024
+    400064: slats_025
+    400066: slats_026
+    400068: slats_027
+    400070: slats_028
+    400072: slats_029
+    400074: slats_030
+    400076: slats_031
+    400078: slats_032
+    400080: slats_033
+    400082: slats_034
+    400084: slats_035
+    400086: slats_036
+    400088: slats_037
+    400090: slats_038
+    400092: slats_039
+    400094: slats_040
+    400096: slats_041
+    400098: slats_042
+    400100: slats_043
+    400102: slats_044
+    400104: slats_045
+    400106: slats_046
+    400108: slats_047
+    400110: slats_048
+    400112: slats_049
+    400114: slats_050
+    400116: slats_051
+    400118: slats_052
+    400120: slats_053
+    400122: slats_054
+    400124: slats_055
+    400126: slats_056
+    400128: slats_057
+    400130: slats_058
+    400132: slats_059
+    400134: slats_060
+    400136: slats_061
+    400138: slats_062
+    400140: slats_063
+    400142: slats_064
+    400144: slats_065
+    400146: slats_066
+    400148: slats_067
+    400150: slats_068
+    400152: slats_069
+    400154: slats_070
+    400156: slats_071
+    400158: window-slats
+    400160: window-slats_001
+    400162: window-slats_002
+    400164: window-slats_003
     2100000: unnamed
     2300000: bell-tower-floor
     2300002: bell-tower-roof
@@ -25,6 +177,78 @@ ModelImporter:
     2300008: Mesh2_001
     2300010: window-bool-remove
     2300012: //RootNode
+    2300014: slats
+    2300016: slats_001
+    2300018: slats_002
+    2300020: slats_003
+    2300022: slats_004
+    2300024: slats_005
+    2300026: slats_006
+    2300028: slats_007
+    2300030: slats_008
+    2300032: slats_009
+    2300034: slats_010
+    2300036: slats_011
+    2300038: slats_012
+    2300040: slats_013
+    2300042: slats_014
+    2300044: slats_015
+    2300046: slats_016
+    2300048: slats_017
+    2300050: slats_018
+    2300052: slats_019
+    2300054: slats_020
+    2300056: slats_021
+    2300058: slats_022
+    2300060: slats_023
+    2300062: slats_024
+    2300064: slats_025
+    2300066: slats_026
+    2300068: slats_027
+    2300070: slats_028
+    2300072: slats_029
+    2300074: slats_030
+    2300076: slats_031
+    2300078: slats_032
+    2300080: slats_033
+    2300082: slats_034
+    2300084: slats_035
+    2300086: slats_036
+    2300088: slats_037
+    2300090: slats_038
+    2300092: slats_039
+    2300094: slats_040
+    2300096: slats_041
+    2300098: slats_042
+    2300100: slats_043
+    2300102: slats_044
+    2300104: slats_045
+    2300106: slats_046
+    2300108: slats_047
+    2300110: slats_048
+    2300112: slats_049
+    2300114: slats_050
+    2300116: slats_051
+    2300118: slats_052
+    2300120: slats_053
+    2300122: slats_054
+    2300124: slats_055
+    2300126: slats_056
+    2300128: slats_057
+    2300130: slats_058
+    2300132: slats_059
+    2300134: slats_060
+    2300136: slats_061
+    2300138: slats_062
+    2300140: slats_063
+    2300142: slats_064
+    2300144: slats_065
+    2300146: slats_066
+    2300148: slats_067
+    2300150: slats_068
+    2300152: slats_069
+    2300154: slats_070
+    2300156: slats_071
     3300000: bell-tower-floor
     3300002: bell-tower-roof
     3300004: church
@@ -32,12 +256,156 @@ ModelImporter:
     3300008: Mesh2_001
     3300010: window-bool-remove
     3300012: //RootNode
+    3300014: slats
+    3300016: slats_001
+    3300018: slats_002
+    3300020: slats_003
+    3300022: slats_004
+    3300024: slats_005
+    3300026: slats_006
+    3300028: slats_007
+    3300030: slats_008
+    3300032: slats_009
+    3300034: slats_010
+    3300036: slats_011
+    3300038: slats_012
+    3300040: slats_013
+    3300042: slats_014
+    3300044: slats_015
+    3300046: slats_016
+    3300048: slats_017
+    3300050: slats_018
+    3300052: slats_019
+    3300054: slats_020
+    3300056: slats_021
+    3300058: slats_022
+    3300060: slats_023
+    3300062: slats_024
+    3300064: slats_025
+    3300066: slats_026
+    3300068: slats_027
+    3300070: slats_028
+    3300072: slats_029
+    3300074: slats_030
+    3300076: slats_031
+    3300078: slats_032
+    3300080: slats_033
+    3300082: slats_034
+    3300084: slats_035
+    3300086: slats_036
+    3300088: slats_037
+    3300090: slats_038
+    3300092: slats_039
+    3300094: slats_040
+    3300096: slats_041
+    3300098: slats_042
+    3300100: slats_043
+    3300102: slats_044
+    3300104: slats_045
+    3300106: slats_046
+    3300108: slats_047
+    3300110: slats_048
+    3300112: slats_049
+    3300114: slats_050
+    3300116: slats_051
+    3300118: slats_052
+    3300120: slats_053
+    3300122: slats_054
+    3300124: slats_055
+    3300126: slats_056
+    3300128: slats_057
+    3300130: slats_058
+    3300132: slats_059
+    3300134: slats_060
+    3300136: slats_061
+    3300138: slats_062
+    3300140: slats_063
+    3300142: slats_064
+    3300144: slats_065
+    3300146: slats_066
+    3300148: slats_067
+    3300150: slats_068
+    3300152: slats_069
+    3300154: slats_070
+    3300156: slats_071
     4300000: bell-tower-roof
     4300002: bell-tower-floor
     4300004: window-bool-remove
     4300006: Mesh2_001
     4300008: church
     4300010: Mesh2
+    4300012: slats_071
+    4300014: slats_070
+    4300016: slats_069
+    4300018: slats_068
+    4300020: slats_067
+    4300022: slats_066
+    4300024: slats_065
+    4300026: slats_064
+    4300028: slats_063
+    4300030: slats_062
+    4300032: slats_061
+    4300034: slats_060
+    4300036: slats_059
+    4300038: slats_058
+    4300040: slats_057
+    4300042: slats_056
+    4300044: slats_055
+    4300046: slats_054
+    4300048: slats_053
+    4300050: slats_052
+    4300052: slats_051
+    4300054: slats_050
+    4300056: slats_049
+    4300058: slats_048
+    4300060: slats_047
+    4300062: slats_046
+    4300064: slats_045
+    4300066: slats_044
+    4300068: slats_043
+    4300070: slats_042
+    4300072: slats_041
+    4300074: slats_040
+    4300076: slats_039
+    4300078: slats_038
+    4300080: slats_037
+    4300082: slats_036
+    4300084: slats_035
+    4300086: slats_034
+    4300088: slats_033
+    4300090: slats_032
+    4300092: slats_031
+    4300094: slats_030
+    4300096: slats_029
+    4300098: slats_028
+    4300100: slats_027
+    4300102: slats_026
+    4300104: slats_025
+    4300106: slats_024
+    4300108: slats_023
+    4300110: slats_022
+    4300112: slats_021
+    4300114: slats_020
+    4300116: slats_016
+    4300118: slats_001
+    4300120: slats_019
+    4300122: slats_018
+    4300124: slats_017
+    4300126: slats_015
+    4300128: slats_014
+    4300130: slats_013
+    4300132: slats_012
+    4300134: slats_011
+    4300136: slats_010
+    4300138: slats_009
+    4300140: slats_008
+    4300142: slats_007
+    4300144: slats_006
+    4300146: slats_005
+    4300148: slats_004
+    4300150: slats_003
+    4300152: slats_002
+    4300154: slats
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
@@ -91,8 +459,6 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
