@@ -1,23 +1,33 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+
 
 public class SceneCycler : MonoBehaviour
 {
+	
 	void Update ()
 	{
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") || GvrControllerInput.AppButtonDown)
         {
-	        int nextSceneIndex = 0;
-	        var scene = SceneManager.GetActiveScene();
-	        var scenes = SceneManager.GetAllScenes();
-	        for (int i = 0; i < scenes.Length; i++)
-	        {
-		        if (scenes[i].name == scene.name)
-		        {
-			        nextSceneIndex = (i + 1) % scenes.Length;
-		        }
-	        }
-	        SceneManager.LoadScene(nextSceneIndex);
+	        NextScene();
         }
-    }
+	}
+
+	public void NextScene()
+	{
+		int nextSceneIndex = 0;
+		int sceneCount = SceneManager.sceneCountInBuildSettings;
+		var scene = SceneManager.GetActiveScene();
+		for (int i = 0; i < sceneCount; i++)
+		{
+			if (SceneManager.GetSceneByBuildIndex(i).name == scene.name)
+			{
+				nextSceneIndex = (i + 1) % sceneCount;
+			}
+		}
+		SceneManager.LoadScene(nextSceneIndex);
+	}
+	
+
 }
