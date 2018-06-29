@@ -33,7 +33,7 @@ sysinfo.txt
 
 # Builds
 *.apk
-!Assets/3rdParty/gvr-unity-sdk/GoogleVR/Scripts/InstantPreview/InstantPreview.apk
+!Assets/3rdParty/GoogleVR/Scripts/InstantPreview/InstantPreview.apk
 *.unitypackage
 
 .idea/
