@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e21439716435437ab2152de61e8b45b, type: 3}
+  m_Name: ResonanceAudioMaterialMapper
+  m_EditorClassIdentifier: 
+  materialMap: {fileID: 11400000, guid: ceda9f6ef661c40b5a95c64b38aa2392, type: 2}
+  reverbLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  includeNonStaticGameObjects: 1

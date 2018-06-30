@@ -78,7 +78,7 @@ public class ResonanceAudioReverbBakingWindow : EditorWindow {
 
   // The path to the material mapper asset.
   private const string materialMapperAssetPath =
-      "Assets/ResonanceAudio/Resources/ResonanceAudioMaterialMapper.asset";
+    "Assets/3rdParty/ResonanceAudio/Resources/ResonanceAudioMaterialMapper.asset";
 
   [MenuItem("ResonanceAudio/Reverb Baking")]
   private static void Initialize() {
