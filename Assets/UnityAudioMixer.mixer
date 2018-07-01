@@ -10,6 +10,7 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
+  - {fileID: 245593143315186382}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -60,7 +61,7 @@ AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Snapshot
+  m_Name: UnityMixerStartAtriumSnapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 31623647e674f40a5ae386ac05628e2c
   m_FloatValues:
@@ -71,6 +72,7 @@ AudioMixerSnapshotController:
     0d22254aa79f04c81a4bce99f3940f94: 1
     977e79bb641694855b0195a47ac2f94e: 0.58972603
     dfe0323c07f28491f9381fc7eb122c46: 10
+    07ee71af9bd724655969a2e53526ba58: -80
   m_TransitionOverrides: {}
 --- !u!243 &243330565253556368
 AudioMixerGroupController:
@@ -150,3 +152,20 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!245 &245593143315186382
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: UnityMixerBellfryDaySnapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 6e128b7fa1df54bb984131fdacd26d89
+  m_FloatValues:
+    c85c693147a4f4af6ba2d5ee020f902c: 1
+    1e7a2d31f91154f47b6f25d94b5347ff: 6678
+    71e7608472cdd45c7bd2b5f76676f463: 1460
+    4e5d79a59ed3e475cba6de89f366cc36: -0.037667945
+    0d22254aa79f04c81a4bce99f3940f94: 1
+    977e79bb641694855b0195a47ac2f94e: 0.58972603
+    dfe0323c07f28491f9381fc7eb122c46: 10
+  m_TransitionOverrides: {}
