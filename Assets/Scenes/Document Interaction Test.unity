@@ -189,8 +189,9 @@ GameObject:
   - component: {fileID: 967080280}
   - component: {fileID: 967080279}
   - component: {fileID: 967080278}
-  - component: {fileID: 967080283}
   - component: {fileID: 967080282}
+  - component: {fileID: 967080283}
+  - component: {fileID: 967080284}
   m_Layer: 0
   m_Name: "XV21_Glockenliste_Feldkirch_R\xFCckseite"
   m_TagString: Untagged
@@ -291,21 +292,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9710a02e763a4e33b3ba28046d94782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onPressed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onReleased:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  target: {fileID: 1281229671}
+  offset: {x: 0, y: 0, z: 2}
+  isGrabbing: 0
+  isGrabbed: 0
+--- !u!114 &967080284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 967080277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 967080283}
+          m_MethodName: Grab
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &992468504
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +358,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1281229671 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4057422702233782, guid: c36d3252d857f264c8a4cfa1be542fe4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1682691973}
 --- !u!1 &1579277063
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,8 +374,9 @@ GameObject:
   - component: {fileID: 1579277066}
   - component: {fileID: 1579277065}
   - component: {fileID: 1579277064}
-  - component: {fileID: 1579277069}
   - component: {fileID: 1579277068}
+  - component: {fileID: 1579277069}
+  - component: {fileID: 1579277070}
   m_Layer: 0
   m_Name: patriotische-kriegs-metallsammlung-an-die-bevolkerung-wien-d4d450-1024
   m_TagString: Untagged
@@ -451,21 +477,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9710a02e763a4e33b3ba28046d94782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onPressed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onReleased:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  target: {fileID: 1281229671}
+  offset: {x: 0, y: 0, z: 2}
+  isGrabbing: 0
+  isGrabbed: 0
+--- !u!114 &1579277070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1579277063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1579277069}
+          m_MethodName: Grab
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1001 &1682691973
 Prefab:
   m_ObjectHideFlags: 0
@@ -603,8 +648,9 @@ GameObject:
   - component: {fileID: 1982479071}
   - component: {fileID: 1982479070}
   - component: {fileID: 1982479069}
-  - component: {fileID: 1982479074}
   - component: {fileID: 1982479073}
+  - component: {fileID: 1982479074}
+  - component: {fileID: 1982479075}
   m_Layer: 0
   m_Name: Decret1
   m_TagString: Untagged
@@ -705,21 +751,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9710a02e763a4e33b3ba28046d94782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onPressed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onReleased:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  target: {fileID: 1281229671}
+  offset: {x: 0, y: 0, z: 2}
+  isGrabbing: 0
+  isGrabbed: 0
+--- !u!114 &1982479075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1982479068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1982479074}
+          m_MethodName: Grab
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &2107956889
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,8 +796,9 @@ GameObject:
   - component: {fileID: 2107956892}
   - component: {fileID: 2107956891}
   - component: {fileID: 2107956890}
-  - component: {fileID: 2107956895}
   - component: {fileID: 2107956894}
+  - component: {fileID: 2107956895}
+  - component: {fileID: 2107956896}
   m_Layer: 0
   m_Name: Aufruf_Patiotische_Kriegsmetallsammlung
   m_TagString: Untagged
@@ -833,18 +899,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9710a02e763a4e33b3ba28046d94782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onPressed:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onReleased:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  target: {fileID: 1281229671}
+  offset: {x: 0, y: 0, z: 2}
+  isGrabbing: 0
+  isGrabbed: 0
+--- !u!114 &2107956896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107956889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2107956895}
+          m_MethodName: Grab
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []

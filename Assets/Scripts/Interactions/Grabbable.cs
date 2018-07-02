@@ -1,49 +1,66 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
 
 
-public class Grabbable : MonoBehaviour {
-	
-	private float _animationTime = 0;
-	private float _animationVelocity;
+public class Grabbable : MonoBehaviour
+{
+	private Vector3 originalPosition;
+	public Transform Target;
+	public Vector3 Offset;
+	[HideInInspector]
+	public bool IsGrabbing;
+	[HideInInspector]
+	public bool IsGrabbed;
 
-	private Vector3 _originalPosition;
-
-	private bool Selected;
-	
-	void Start () {
-		_originalPosition = transform.localPosition;
-		gameObject.AddListener(EventTriggerType.PointerDown, onPointerDown);
-		gameObject.AddListener(EventTriggerType.PointerUp, onPointerUp);	
-	}
-
-	void onPointerDown()
+	void Start()
 	{
+		originalPosition = gameObject.transform.position;
 	}
-
-	void onPointerUp()
+	
+	public void Grab()
 	{
-		Selected = !Selected;
-	}
-	
-	void Update() {
-		UpdateAnimationTime();
-		UpdateTransform();
-	}
-	
-	private void UpdateAnimationTime() {		
-		float timestep = _animationVelocity * Time.deltaTime;
-		_animationTime = Mathf.Clamp(_animationTime + timestep, 0, 1.0f);
+		if (IsGrabbed)
+		{
+			UnGrab();
+		}
+		else
+		{
+			IsGrabbing = true;	
+			Tween(Target.position + Offset, FinishGrab);
+			foreach (var sibling in GetSiblings())
+			{	
+				if (sibling.IsGrabbed) {sibling.UnGrab();}
+			}			
+		}
 	}
 
-	private void UpdateTransform() {
-		float pushDistance = 1f * transform.localScale.y;
-		Vector3 pushDirection = transform.localRotation * Vector3.forward;
-		Vector3 pushedPosition = _originalPosition - pushDirection * pushDistance;
-		transform.localPosition = Vector3.Lerp(_originalPosition, pushedPosition, _animationTime);
+	public void UnGrab()
+	{
+		Tween(originalPosition, FinishUnGrab);
+	}
+
+	private void Tween(Vector3 position, Action callback)
+	{
+		int id = LeanTween.move(gameObject, position, 1f).id;
+		LTDescr d = LeanTween.descr(id);
+		d?.setOnComplete(callback).setEase(LeanTweenType.easeInOutBack);
+	}
+
+	private void FinishGrab()
+	{
+		IsGrabbing = false;
+		IsGrabbed = true;
+	}
+	
+	private void FinishUnGrab()
+	{
+		IsGrabbing = false;
+		IsGrabbed = false;
+	}
+
+	private Grabbable[] GetSiblings()
+	{
+		return gameObject.transform.parent.GetComponentsInChildren<Grabbable>();
 	}
 
 }
