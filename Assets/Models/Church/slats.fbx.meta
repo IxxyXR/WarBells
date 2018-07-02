@@ -9,6 +9,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: window-slats
+    4300002: slats
   externalObjects: {}
   materials:
     importMaterials: 1
