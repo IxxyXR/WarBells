@@ -29,6 +29,7 @@ public class Selectable : MonoBehaviour {
 	}
 	
 	public void SetIsHighlighted(bool value) {
+		Debug.Log("OVER");
 		_isHighlighted = value;
 		UpdateColor();
 	}
