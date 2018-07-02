@@ -15595,10 +15595,10 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 9.633333333333333
+  - m_Start: 10
     m_ClipIn: 0
     m_Asset: {fileID: 114896613749823496}
-    m_Duration: 1.666666666666666
+    m_Duration: 1.9000000000000004
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114764125737825376}
     m_EaseInDuration: 0
@@ -15646,10 +15646,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: BellfryDay
     m_Version: 1
-  - m_Start: 2.433333333333333
+  - m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 114687403090325068}
-    m_Duration: 5
+    m_Duration: 2.566666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114764125737825376}
     m_EaseInDuration: 0
