@@ -86,6 +86,7 @@ ModelImporter:
     100160: window-slats_001
     100162: window-slats_002
     100164: window-slats_003
+    100166: church_006
     400000: bell-tower-floor
     400002: bell-tower-roof
     400004: church
@@ -169,6 +170,7 @@ ModelImporter:
     400160: window-slats_001
     400162: window-slats_002
     400164: window-slats_003
+    400166: church_006
     2100000: unnamed
     2300000: bell-tower-floor
     2300002: bell-tower-roof
@@ -249,6 +251,7 @@ ModelImporter:
     2300152: slats_069
     2300154: slats_070
     2300156: slats_071
+    2300158: church_006
     3300000: bell-tower-floor
     3300002: bell-tower-roof
     3300004: church
@@ -328,6 +331,7 @@ ModelImporter:
     3300152: slats_069
     3300154: slats_070
     3300156: slats_071
+    3300158: church_006
     4300000: bell-tower-roof
     4300002: bell-tower-floor
     4300004: window-bool-remove
@@ -406,6 +410,7 @@ ModelImporter:
     4300150: slats_003
     4300152: slats_002
     4300154: slats
+    4300156: church_006
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
