@@ -19,6 +19,7 @@ Shader "Custom/Airwave"
 		GrabPass { "_BackgroundTexture"}
 
 		Blend SrcAlpha OneMinusSrcAlpha
+		ZTest Always
 		Zwrite Off
 
 		// Render the object with the texture generated above, and invert the colors
