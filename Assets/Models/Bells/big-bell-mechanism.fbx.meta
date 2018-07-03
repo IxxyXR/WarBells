@@ -1,17 +1,54 @@
 fileFormatVersion: 2
-guid: ce1d624da0de4d34f866eed8f8839edb
+guid: b7448ed9c2786aa4495a9d2e074b11c9
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: bell-whole
+    100002: //RootNode
+    100004: clapper
+    100006: contraints
+    100008: cudgeon
+    100010: cudgeon-bracket
+    100012: cudgeon-bracket.001
+    100014: swing-beam
+    100016: wheels
+    400000: bell-whole
+    400002: //RootNode
+    400004: clapper
+    400006: contraints
+    400008: cudgeon
+    400010: cudgeon-bracket
+    400012: cudgeon-bracket.001
+    400014: swing-beam
+    400016: wheels
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Big_bell_whole
+    2300000: bell-whole
+    2300002: clapper
+    2300004: contraints
+    2300006: cudgeon
+    2300008: cudgeon-bracket
+    2300010: cudgeon-bracket.001
+    2300012: swing-beam
+    2300014: wheels
+    3300000: bell-whole
+    3300002: clapper
+    3300004: contraints
+    3300006: cudgeon
+    3300008: cudgeon-bracket
+    3300010: cudgeon-bracket.001
+    3300012: swing-beam
+    3300014: wheels
+    4300000: cudgeon-bracket.001
+    4300002: swing-beam
+    4300004: contraints
+    4300006: cudgeon
+    4300008: bell-whole
+    4300010: cudgeon-bracket
+    4300012: wheels
+    4300014: clapper
   externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -48,12 +85,12 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
+    preserveHierarchy: 1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -65,7 +102,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
