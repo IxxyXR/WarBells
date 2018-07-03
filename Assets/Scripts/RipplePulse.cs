@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class RipplePulse : MonoBehaviour
 {
-	private ParticleSystem ps;
+	private ParticleSystem ps1, ps2;
 	private ParticleSystem.EmissionModule emission;
+	private SimpleAnimation bellAnimator;
+	private Vector3 shakeRot;
 
 	void Start()
 	{
-		ps = GetComponent<ParticleSystem>();
-		emission = ps.emission;
+		ps1 = GetComponent<ParticleSystem>();
+		ps2 = GetComponentInChildren<ParticleSystem>();
+		emission = ps1.emission;
+		bellAnimator = gameObject.transform.parent.GetComponent<SimpleAnimation>();
 	}
 
-	public void SinglePulse() {
-		ps.Emit(1);	
+	public void SinglePulse()
+	{
+		ps1.Emit(1);
+		ps2.Emit(1);
+		bellAnimator.Play();
 	}
 }
