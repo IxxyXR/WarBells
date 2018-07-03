@@ -23,6 +23,7 @@ AudioMixerController:
     - 860fd84548a5340f09cd0f70d0926d7d
     - 86ceb6acc740e4ff984f55f520525f83
     - 86c6c317b40ee42a78cb62c984da8c08
+    - da7c9e3356a9c4e10b01a63c867e0861
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -35,6 +36,7 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: c799ec8bc7f394c3faaa686b0c2f3f40
   m_Children:
+  - {fileID: 243090353030223356}
   - {fileID: 243042254327137814}
   - {fileID: 243268876760053788}
   m_Volume: 76dd6ada92654467da2044ca5eb97484
@@ -110,6 +112,23 @@ AudioMixerGroupController:
   m_Pitch: faa45c21d2b844297bd270e1694a5f68
   m_Effects:
   - {fileID: 244339845778282688}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243090353030223356
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ATRIUMspots
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: da7c9e3356a9c4e10b01a63c867e0861
+  m_Children: []
+  m_Volume: 305df87339ea94e05baa56722ca10cff
+  m_Pitch: d1c00be8d0dcf41d8a93d41afb31fe7a
+  m_Effects:
+  - {fileID: 244706447282691344}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -242,6 +261,19 @@ AudioMixerEffectController:
   m_EffectID: eff1a3ec111de40369e032fe4f76394b
   m_EffectName: Attenuation
   m_MixLevel: 1cc88e81e9f3f4a78bc73e4ad558cda6
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244706447282691344
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 15678285fac6241cead0f4a222191f3b
+  m_EffectName: Attenuation
+  m_MixLevel: 2af297fd9752f4f1db3f00ed4767bf8d
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
