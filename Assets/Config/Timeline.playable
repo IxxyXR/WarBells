@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: 114161304871363154}
   - {fileID: 114607877246981788}
   - {fileID: 114997813244408150}
+  - {fileID: 114214626222617064}
   - {fileID: 114771494646015670}
   - {fileID: 114686264618960114}
   - {fileID: 114323143300356730}
@@ -3316,6 +3317,57 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 1
+  m_Events: []
+--- !u!74 &74505545869434592
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Parameters (1)
+  serializedVersion: 6
+  m_Legacy: 1
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
   m_Events: []
 --- !u!74 &74538414551112408
 AnimationClip:
@@ -7602,6 +7654,30 @@ MonoBehaviour:
     color: {r: 0.009433985, g: 0.009122485, b: 0.009122485, a: 1}
     fontSize: 14
     text: controls and instructions
+--- !u!114 &114126626108225040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4c578c8ca44468cb88688e3d13d23e, type: 3}
+  m_Name: MoodChangeClip
+  m_EditorClassIdentifier: 
+  template:
+    Light: {fileID: 0}
+    Camera: {fileID: 0}
+    LightColor: {r: 0.9245283, g: 0.9201673, b: 0.9201673, a: 0}
+    GradientFog: {fileID: 2800000, guid: 78a76fd40f0bffe4cb8e64d54549df72, type: 3}
+    DistanceFogColor: {r: 0, g: 0, b: 0, a: 0}
+    FogDensity: 0.5
+  Light:
+    exposedName: c2cc0532a6206ed4cb476a2846c50dad
+    defaultValue: {fileID: 0}
+  Camera:
+    exposedName: 74caf4f737ce5ca499a979dad1088d93
+    defaultValue: {fileID: 0}
 --- !u!114 &114128664464782532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10806,6 +10882,196 @@ MonoBehaviour:
     color: {r: 0.009433985, g: 0.009122485, b: 0.009122485, a: 1}
     fontSize: 14
     text: Safety warning
+--- !u!114 &114214626222617064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4d5cf75dfbf44969ac2e1c6fae952d, type: 3}
+  m_Name: Mood Change Track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 1
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 179.8166666666666
+    m_ClipIn: 0
+    m_Asset: {fileID: 114446986543652810}
+    m_Duration: 14.600000000000051
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114214626222617064}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: 5.366666666666646
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 74505545869434592}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: MoodChangeClip
+    m_Version: 1
+  - m_Start: 189.05
+    m_ClipIn: 0
+    m_Asset: {fileID: 114228812050022862}
+    m_Duration: 20.766666666666538
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114214626222617064}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 5.366666666666646
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: MoodChangeClip
+    m_Version: 1
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 114126626108225040}
+    m_Duration: 79.45
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114214626222617064}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: MoodChangeClip
+    m_Version: 1
+  m_Version: 1
 --- !u!114 &114215605813467754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10851,6 +11117,30 @@ MonoBehaviour:
     color: {r: 1, g: 0.995283, b: 0.995283, a: 1}
     fontSize: 40
     text: Sons killed ????number
+--- !u!114 &114228812050022862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4c578c8ca44468cb88688e3d13d23e, type: 3}
+  m_Name: MoodChangeClip
+  m_EditorClassIdentifier: 
+  template:
+    Light: {fileID: 0}
+    Camera: {fileID: 0}
+    LightColor: {r: 0.8018868, g: 0.7905393, b: 0.7905393, a: 0}
+    GradientFog: {fileID: 2800000, guid: b8a606691f0c2c040bac78d578914108, type: 3}
+    DistanceFogColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0}
+    FogDensity: 0
+  Light:
+    exposedName: ac4d3810d6a34b54296cb0df2ea763e8
+    defaultValue: {fileID: 0}
+  Camera:
+    exposedName: 0c731d5ff9769cd4fb7707360359bd95
+    defaultValue: {fileID: 0}
 --- !u!114 &114229595349070460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13564,6 +13854,30 @@ MonoBehaviour:
     m_DisplayName: empty
     m_Version: 1
   m_Version: 1
+--- !u!114 &114446986543652810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4c578c8ca44468cb88688e3d13d23e, type: 3}
+  m_Name: MoodChangeClip
+  m_EditorClassIdentifier: 
+  template:
+    Light: {fileID: 0}
+    Camera: {fileID: 0}
+    LightColor: {r: 0.7735849, g: 0.08392668, b: 0.46086484, a: 0}
+    GradientFog: {fileID: 2800000, guid: b8a606691f0c2c040bac78d578914108, type: 3}
+    DistanceFogColor: {r: 0.9339623, g: 0.15419187, b: 0.15419187, a: 0}
+    FogDensity: 0
+  Light:
+    exposedName: bca43e28b77696f46ad399117483191e
+    defaultValue: {fileID: 0}
+  Camera:
+    exposedName: 073ff4180b8fbc34ebe99e00feb06023
+    defaultValue: {fileID: 0}
 --- !u!114 &114448212545035990
 MonoBehaviour:
   m_ObjectHideFlags: 1
