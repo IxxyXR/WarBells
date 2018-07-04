@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 98a701f92671f45e88cd88bbb4aaea2c
+  - enabled: 1
+    path: Assets/Scenes/Waveform Viz Test.unity
+    guid: 1832ce055d5cd244dac15e230ac8beb9
   m_configObjects: {}
