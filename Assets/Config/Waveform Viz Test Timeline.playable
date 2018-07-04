@@ -13929,7 +13929,76 @@ MonoBehaviour:
   - m_Start: 6.083333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114460681417022756}
-    m_Duration: 13.916666666666668
+    m_Duration: 3.533333333333334
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114492471937022350}
+    m_EaseInDuration: 0.5
+    m_EaseOutDuration: 0.5
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: FXBlendClip
+    m_Version: 1
+  - m_Start: 12.55
+    m_ClipIn: 0
+    m_Asset: {fileID: 114645228025088630}
+    m_Duration: 3.533333333333334
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114492471937022350}
     m_EaseInDuration: 0.5
@@ -15662,6 +15731,19 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 16
     text: Industrial production meant more powerful technology
+--- !u!114 &114645228025088630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aac4db864aa5324984d073d6dedcc87, type: 3}
+  m_Name: FXBlendClip
+  m_EditorClassIdentifier: 
+  template:
+    weight: 1
 --- !u!114 &114653478274093176
 MonoBehaviour:
   m_ObjectHideFlags: 1
