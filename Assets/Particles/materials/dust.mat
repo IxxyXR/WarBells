@@ -7,9 +7,9 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: dust
-  m_Shader: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: EFFECT_BUMP _ALPHAMODULATE_ON _COLORADDSUBDIFF_ON _EMISSION _FADING_ON
-    _METALLICGLOSSMAP _REQUIRE_UV2 _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  m_Shader: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: EFFECT_BUMP UNITY_UI_ALPHACLIP _ALPHAMODULATE_ON _COLORADDSUBDIFF_ON
+    _EMISSION _FADING_ON _METALLICGLOSSMAP _REQUIRE_UV2 _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -108,11 +108,11 @@ Material:
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
     - _UVSec: 0
-    - _UseUIAlphaClip: 0
+    - _UseUIAlphaClip: 1
     - _ZWrite: 0
     m_Colors:
     - _CameraFadeParams: {r: 1, g: 1, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.6603774, g: 0.6420937, b: 0.6136525, a: 0.9019608}
     - _ColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
     - _EmisColor: {r: 0.6568174, g: 0.6608914, b: 0.6792453, a: 0.5019608}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
