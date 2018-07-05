@@ -56,6 +56,7 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
                 {
                     fogRamp2 = input.GradientFog;
                     DistanceFogColor2 = input.DistanceFogColor;
+                    LightColor2 = input.LightColor;
                     FogDensity1 = input.FogDensity;
                     FogDensity2 = input.FogDensity;
 
