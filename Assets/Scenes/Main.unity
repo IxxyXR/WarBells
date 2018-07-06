@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.16834284, g: 0.9150943, b: 0.6072948, a: 0}
+  m_FogColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0}
   m_FogMode: 2
   m_FogDensity: 0.025
   m_LinearFogStart: 10
@@ -22254,12 +22254,14 @@ PlayableDirector:
     - 24e0847ea6c6363458f8d53b9ae6b357: {fileID: 1006869923}
     - 0c731d5ff9769cd4fb7707360359bd95: {fileID: 1060433877}
     - 7504f7c9bb739ee4dbee488b7131228d: {fileID: 1184970734}
+    - c1328802a4d8f2b4ab4ec75671f55072: {fileID: 700777939}
     - 116bb11573282a94fa9a47aee366e54c: {fileID: 0}
     - c2cc0532a6206ed4cb476a2846c50dad: {fileID: 1006869923}
     - 698eeaf1b6b8b264fa19db69f73c71c3: {fileID: 700777939}
     - 4cf0ef33b6c03524682c18e3b0a729b9: {fileID: 700777939}
     - 74caf4f737ce5ca499a979dad1088d93: {fileID: 1060433877}
     - d342675b1a858a9498fb64d9a63c1201: {fileID: 1006869923}
+    - db8dc0160ab91d040b6ced5494036fde: {fileID: 700777939}
     - b5b1b0525c95ead4f9ffd2d68a95d7c3: {fileID: 897458247}
     - f6b026672ea9a6945a3dac2df11201e1: {fileID: 1060433877}
     - 64f022a6d1370a54d95f942409d1cf2e: {fileID: 1006869923}
@@ -56635,7 +56637,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.8392157, g: 0.83363634, b: 0.36078432, a: 0}
+  m_Color: {r: 0.8018868, g: 0.7905393, b: 0.7905393, a: 0}
   m_Intensity: 0.96
   m_Range: 10.01
   m_SpotAngle: 30
