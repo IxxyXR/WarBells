@@ -18,7 +18,6 @@ public class MoodChangeDrawer : PropertyDrawer
         SerializedProperty FogDensityProp = property.FindPropertyRelative("FogDensity");
 
         Rect singleFieldRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
-        Rect sliderRect = new Rect(position.x, position.y, position.width, position.height);
         EditorGUI.PropertyField(singleFieldRect, LightColorProp);
         
 

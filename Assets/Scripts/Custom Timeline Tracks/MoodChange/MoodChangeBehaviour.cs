@@ -7,16 +7,17 @@ using UnityEngine.UI;
 [Serializable]
 public class MoodChangeBehaviour : PlayableBehaviour
 {
-    public Light Light;
-    public Camera Camera;
+    public Camera ControlledCamera;
+    public Light ControlledLight;
+    
     public Color LightColor;
     public Texture2D GradientFog;
     public Color DistanceFogColor;
     public float FogDensity;
 
-    public override void OnPlayableCreate (Playable playable)
+    public override void OnPlayableCreate(Playable playable)
     {
-        
     }
+
 
 }

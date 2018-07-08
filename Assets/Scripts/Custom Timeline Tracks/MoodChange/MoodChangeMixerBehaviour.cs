@@ -1,82 +1,91 @@
-using System;
-using TMPro;
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.Playables;
-using UnityEngine.Timeline;
-using UnityEngine.UI;
 using UnityStandardAssets.ImageEffects;
+// ReSharper disable CheckNamespace
+
 
 public class MoodChangeMixerBehaviour : PlayableBehaviour
 {
+    
     // NOTE: This function is called at runtime and edit time.  Keep that in mind when setting the values of properties.
     public override void ProcessFrame(Playable playable, FrameData info, object playerData)
     {
         int inputCount = playable.GetInputCount ();
-        Color distanceFogColor = Color.black;
-        Color lightColor = Color.black;
-        
+
         MoodChangeBehaviour lastInput = null;
         
         Texture2D fogRamp1 = null;
         Texture2D fogRamp2 = null;
         
-        Color DistanceFogColor1 = Color.black;
-        Color DistanceFogColor2 = Color.black;
+        Color distanceFogColor1 = Color.black;
+        Color distanceFogColor2 = Color.black;
         
-        Color LightColor1 = Color.black;
-        Color LightColor2 = Color.black;
+        Color lightColor1 = Color.black;
+        Color lightColor2 = Color.black;
 
-        float FogDensity1 = 1f;
-        float FogDensity2 = 1f;
+        float fogDensity1 = 1f;
+        float fogDensity2 = 1f;
 
         float blend = 1f;
                 
         for (int i = 0; i < inputCount; i++)
         {
-            float inputWeight = playable.GetInputWeight(i);
-            ScriptPlayable<MoodChangeBehaviour> inputPlayable = (ScriptPlayable<MoodChangeBehaviour>)playable.GetInput(i);
-            MoodChangeBehaviour input = inputPlayable.GetBehaviour();
             
-            if (inputWeight > 0) // Assumes we'll only have 1 or 2 inputs with a weight above 0
+            float inputWeight = playable.GetInputWeight(i);
+            
+            if (inputWeight > 0)  // Assumes we'll only have 1 or 2 inputs with a weight above 0
             {
+                ScriptPlayable<MoodChangeBehaviour> inputPlayable = (ScriptPlayable<MoodChangeBehaviour>)playable.GetInput(i);
+                MoodChangeBehaviour input = inputPlayable.GetBehaviour();
+                
                 if (fogRamp1 == null)  // Set start and end values to be the same
                 {
                     fogRamp1 = input.GradientFog;
                     fogRamp2 = input.GradientFog;
-                    DistanceFogColor1 = input.DistanceFogColor;
-                    DistanceFogColor2 = input.DistanceFogColor;
-                    LightColor1 = input.LightColor;
-                    LightColor2 = input.LightColor;
-                    FogDensity1 = input.FogDensity;
-                    FogDensity2 = input.FogDensity;
+                    distanceFogColor1 = input.DistanceFogColor;
+                    distanceFogColor2 = input.DistanceFogColor;
+                    lightColor1 = input.LightColor;
+                    lightColor2 = input.LightColor;
+                    fogDensity1 = input.FogDensity;
+                    fogDensity2 = input.FogDensity;
 
                 }
                 else  // Set the final value and the blend amount
                 {
                     fogRamp2 = input.GradientFog;
-                    DistanceFogColor2 = input.DistanceFogColor;
-                    LightColor2 = input.LightColor;
-                    FogDensity1 = input.FogDensity;
-                    FogDensity2 = input.FogDensity;
+                    distanceFogColor2 = input.DistanceFogColor;
+                    lightColor2 = input.LightColor;
+                    fogDensity1 = input.FogDensity;
+                    fogDensity2 = input.FogDensity;
 
                     blend = inputWeight;
                 }
+                lastInput = input;
             }
-            lastInput = input;
+            
         }
         
-        RenderSettings.fogColor = Color.Lerp(DistanceFogColor1, DistanceFogColor2, blend);
+        if (lastInput != null)
+        {
+            RenderSettings.fogColor = Color.Lerp(distanceFogColor1, distanceFogColor2, blend);
+            if (lastInput.ControlledLight != null)
+            {
+                lastInput.ControlledLight.color = Color.Lerp(lightColor1, lightColor2, blend);                
+            }
+            else
+            {
+                //Debug.LogError("Please tag at least one light as FX Light");
+            }
+
+            var firewatchFog = lastInput.ControlledCamera?.GetComponent<FirewatchBlendFog>();
+            if (firewatchFog != null)
+            {
+                firewatchFog.colorRamp1 = fogRamp1;
+                firewatchFog.colorRamp2 = fogRamp2;
+                firewatchFog.blendAmount = blend;
+                firewatchFog.fogIntensity = Mathf.Lerp(fogDensity1, fogDensity2, blend);
+            }            
+        }
         
-        var light = lastInput.Light.GetComponent<Light>();
-        light.color = Color.Lerp(LightColor1, LightColor2, blend);
-
-        var firewatchFog = lastInput.Camera.GetComponent<FirewatchBlendFog>();
-        firewatchFog.colorRamp1 = fogRamp1;
-        firewatchFog.colorRamp2 = fogRamp2;
-        firewatchFog.blendAmount = blend;
-
-        firewatchFog.fogIntensity = Mathf.Lerp(FogDensity1, FogDensity2, blend);
-
     }
 }
