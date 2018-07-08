@@ -77,7 +77,7 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
                 //Debug.LogError("Please tag at least one light as FX Light");
             }
 
-            var firewatchFog = lastInput.ControlledCamera?.GetComponent<FirewatchBlendFog>();
+            var firewatchFog = lastInput?.ControlledCamera?.GetComponent<FirewatchBlendFog>();
             if (firewatchFog != null)
             {
                 firewatchFog.colorRamp1 = fogRamp1;
