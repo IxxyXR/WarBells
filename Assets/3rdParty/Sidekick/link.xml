@@ -36,4 +36,8 @@
     <type fullname="UnityEngine.AudioClip" preserve="all" />
     <type fullname="UnityEngine.AudioSource" preserve="all" />
   </assembly>
+  <assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
+    <type fullname="TMPro.TMP_Text" preserve="all" />
+    <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
+  </assembly>
 </linker>
