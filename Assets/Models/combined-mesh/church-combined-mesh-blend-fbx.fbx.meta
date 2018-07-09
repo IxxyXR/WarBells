@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: 620fbbc2dc5c5244da46c16a12277005
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: church-combined
+    100002: //RootNode
+    100004: mountain-with-church-platforms
+    400000: church-combined
+    400002: //RootNode
+    400004: mountain-with-church-platforms
+    2100000: wooden-beams
+    2100002: Default-Material
+    2100004: cherry
+    2100006: stone
+    2100008: Pine
+    2100010: flat-grass-min
+    2100012: stone-min
+    2100014: rocks_a
+    2100016: fir-tree-min
+    2100018: flat-brown
+    2100020: flat-white
+    2100022: flat-mustard
+    2100024: flat-salmon
+    2100026: flat-moss
+    2300000: church-combined
+    2300002: mountain-with-church-platforms
+    3300000: church-combined
+    3300002: mountain-with-church-platforms
+    4300000: church-combined
+    4300002: mountain-with-church-platforms
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default-Material
+    second: {fileID: 2100000, guid: e87ddb5028b6cec428166b7be2b67150, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pine
+    second: {fileID: 2100000, guid: 6c59668817e80bf479950440d2bc5404, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cherry
+    second: {fileID: 2100000, guid: 1c3ca3bd5659b404086f019874fa918f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fir-tree-min
+    second: {fileID: 2100000, guid: d0dc3a0e847e5e740a8039ea8e774553, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat-brown
+    second: {fileID: 2100000, guid: fac5b7f9b45dd4bff8ffe7a970f478ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat-grass-min
+    second: {fileID: 2100000, guid: d3e2fd9aece6846b085748314a6b39a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat-moss
+    second: {fileID: 2100000, guid: bfb6c22d93d2a42a588690f7660f9051, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat-mustard
+    second: {fileID: 2100000, guid: 4b0ecf71a705d4df4b271633e8b3a5b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat-salmon
+    second: {fileID: 2100000, guid: 84e4abfa8845b4e0da0d6a520508e4f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat-white
+    second: {fileID: 2100000, guid: f408cf8fdb3fdf04ebda7902b23bdf0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rocks_a
+    second: {fileID: 2100000, guid: 76a6016f10bc74842bb69b1a1a32753e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone
+    second: {fileID: 2100000, guid: cc8d7d7ee7268c747aeed1f88f2474b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone-min
+    second: {fileID: 2100000, guid: cc8d7d7ee7268c747aeed1f88f2474b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wooden-beams
+    second: {fileID: 2100000, guid: c0bc111a1a23a1247bfe0d35a9d0b19d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
