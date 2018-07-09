@@ -7985,18 +7985,12 @@ MonoBehaviour:
   m_Name: MoodChangeClip
   m_EditorClassIdentifier: 
   template:
-    Light: {fileID: 0}
-    Camera: {fileID: 0}
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
     LightColor: {r: 0, g: 0, b: 1, a: 0}
     GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
     DistanceFogColor: {r: 0.9339623, g: 0.9339623, b: 0.876691, a: 0.5803922}
     FogDensity: 0.8
-  Light:
-    exposedName: 64f022a6d1370a54d95f942409d1cf2e
-    defaultValue: {fileID: 0}
-  Camera:
-    exposedName: 07d6454dfad337544a21c3f9ec9009e8
-    defaultValue: {fileID: 0}
 --- !u!114 &114091126695586372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8181,18 +8175,12 @@ MonoBehaviour:
   m_Name: MoodChangeClip
   m_EditorClassIdentifier: 
   template:
-    Light: {fileID: 0}
-    Camera: {fileID: 0}
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
     LightColor: {r: 0.8392157, g: 0.83363634, b: 0.36078432, a: 0}
     GradientFog: {fileID: 2800000, guid: 39a5c20aa7080cc42b15ede413f7376b, type: 3}
     DistanceFogColor: {r: 0.16834284, g: 0.9150943, b: 0.6072948, a: 0}
     FogDensity: 0.5
-  Light:
-    exposedName: c2cc0532a6206ed4cb476a2846c50dad
-    defaultValue: {fileID: 0}
-  Camera:
-    exposedName: 74caf4f737ce5ca499a979dad1088d93
-    defaultValue: {fileID: 0}
 --- !u!114 &114128664464782532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8800,18 +8788,12 @@ MonoBehaviour:
   m_Name: MoodChangeClip
   m_EditorClassIdentifier: 
   template:
-    Light: {fileID: 0}
-    Camera: {fileID: 0}
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
     LightColor: {r: 0.5, g: 0.19833325, b: 0.1721698, a: 0}
     GradientFog: {fileID: 2800000, guid: a2e0905800eb9884ba79a97f19fda4f7, type: 3}
     DistanceFogColor: {r: 0.8773585, g: 0.30988148, b: 0.12829298, a: 0}
     FogDensity: 0.5
-  Light:
-    exposedName: 4c591b4becbffe946a334359460b87ec
-    defaultValue: {fileID: 0}
-  Camera:
-    exposedName: 7181144abed2f794292ea6d3cf7aa1f5
-    defaultValue: {fileID: 0}
 --- !u!114 &114161304871363154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12383,18 +12365,12 @@ MonoBehaviour:
   m_Name: MoodChangeClip
   m_EditorClassIdentifier: 
   template:
-    Light: {fileID: 0}
-    Camera: {fileID: 0}
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
     LightColor: {r: 0.8018868, g: 0.7905393, b: 0.7905393, a: 0}
     GradientFog: {fileID: 2800000, guid: b8a606691f0c2c040bac78d578914108, type: 3}
     DistanceFogColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0}
     FogDensity: 0
-  Light:
-    exposedName: ac4d3810d6a34b54296cb0df2ea763e8
-    defaultValue: {fileID: 0}
-  Camera:
-    exposedName: 0c731d5ff9769cd4fb7707360359bd95
-    defaultValue: {fileID: 0}
 --- !u!114 &114229595349070460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12441,18 +12417,12 @@ MonoBehaviour:
   m_Name: MoodChangeClip
   m_EditorClassIdentifier: 
   template:
-    Light: {fileID: 0}
-    Camera: {fileID: 0}
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
     LightColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 0}
     GradientFog: {fileID: 2800000, guid: 656b8af2ba49db64fa627a4a107e858d, type: 3}
     DistanceFogColor: {r: 0.4056604, g: 0.380785, b: 0.380785, a: 0.5803922}
     FogDensity: 0.8
-  Light:
-    exposedName: 24e0847ea6c6363458f8d53b9ae6b357
-    defaultValue: {fileID: 0}
-  Camera:
-    exposedName: 56364fb99bc95654c962a0cefc639352
-    defaultValue: {fileID: 0}
 --- !u!114 &114237821519119332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12749,18 +12719,12 @@ MonoBehaviour:
   m_Name: MoodChangeClip
   m_EditorClassIdentifier: 
   template:
-    Light: {fileID: 0}
-    Camera: {fileID: 0}
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
     LightColor: {r: 0.7169812, g: 0.713881, b: 0.7135992, a: 0}
     GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
     DistanceFogColor: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
     FogDensity: 0.5
-  Light:
-    exposedName: 173d32a0613d7ad42a34eb01f539c249
-    defaultValue: {fileID: 0}
-  Camera:
-    exposedName: b4bb2309fe9f424449c26c208740f002
-    defaultValue: {fileID: 0}
 --- !u!114 &114306846677789144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16456,18 +16420,12 @@ MonoBehaviour:
   m_Name: MoodChangeClip
   m_EditorClassIdentifier: 
   template:
-    Light: {fileID: 0}
-    Camera: {fileID: 0}
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
     LightColor: {r: 0.7735849, g: 0.08392668, b: 0.46086484, a: 0}
     GradientFog: {fileID: 2800000, guid: b8a606691f0c2c040bac78d578914108, type: 3}
     DistanceFogColor: {r: 0.9339623, g: 0.15419187, b: 0.15419187, a: 0}
     FogDensity: 0
-  Light:
-    exposedName: bca43e28b77696f46ad399117483191e
-    defaultValue: {fileID: 0}
-  Camera:
-    exposedName: 073ff4180b8fbc34ebe99e00feb06023
-    defaultValue: {fileID: 0}
 --- !u!114 &114448212545035990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16566,18 +16524,12 @@ MonoBehaviour:
   m_Name: MoodChangeClip
   m_EditorClassIdentifier: 
   template:
-    Light: {fileID: 0}
-    Camera: {fileID: 0}
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
     LightColor: {r: 1, g: 0, b: 0, a: 0}
     GradientFog: {fileID: 2800000, guid: a2e0905800eb9884ba79a97f19fda4f7, type: 3}
     DistanceFogColor: {r: 0.9245283, g: 0.47168532, b: 0.10902455, a: 0.5803922}
     FogDensity: 0.8
-  Light:
-    exposedName: c7bdbf97f7f28354eafd6c03024f4671
-    defaultValue: {fileID: 0}
-  Camera:
-    exposedName: b5facf55e7461424e9e136261d8629ed
-    defaultValue: {fileID: 0}
 --- !u!114 &114479438029521484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16829,49 +16781,13 @@ MonoBehaviour:
     m_BlendOutDuration: 5.483333333332666
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
