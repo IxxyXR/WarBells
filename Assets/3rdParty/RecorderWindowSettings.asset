@@ -45,7 +45,7 @@ MonoBehaviour:
     ownerRecorderSettingsAssetId: c7cd9a0c09a997c4d89538817f9e1c42
   m_RecorderTypeName: UnityEngine.Recorder.ImageRecorder, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
-  m_OutputFormat: 0
+  m_OutputFormat: 1
 --- !u!114 &114487733795725456
 MonoBehaviour:
   m_ObjectHideFlags: 0
