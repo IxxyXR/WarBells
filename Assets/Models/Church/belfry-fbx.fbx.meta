@@ -92,6 +92,7 @@ ModelImporter:
     100172: Untitled.128
     100174: Untitled.129
     100176: Untitled.130
+    100178: Belfry
     400000: //RootNode
     400002: Untitled.043
     400004: Untitled.044
@@ -181,6 +182,7 @@ ModelImporter:
     400172: Untitled.128
     400174: Untitled.129
     400176: Untitled.130
+    400178: Belfry
     2300000: Untitled.043
     2300002: Untitled.044
     2300004: Untitled.045
@@ -269,6 +271,7 @@ ModelImporter:
     2300170: Untitled.128
     2300172: Untitled.129
     2300174: Untitled.130
+    2300176: Belfry
     3300000: Untitled.043
     3300002: Untitled.044
     3300004: Untitled.045
@@ -357,6 +360,7 @@ ModelImporter:
     3300170: Untitled.128
     3300172: Untitled.129
     3300174: Untitled.130
+    3300176: Belfry
     4300000: Untitled.043
     4300002: Untitled.044
     4300004: Untitled.045
@@ -445,6 +449,7 @@ ModelImporter:
     4300170: Untitled.128
     4300172: Untitled.129
     4300174: Untitled.130
+    4300176: Belfry
   externalObjects:
   - first:
       type: UnityEngine:Material
