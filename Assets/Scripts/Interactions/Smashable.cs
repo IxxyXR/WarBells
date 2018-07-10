@@ -1,28 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Smashable : MonoBehaviour
+namespace Interactions
 {
-
-	public GameObject Fragments;
-
-	// Use this for initialization
-	void Start ()
+	public class Smashable : MonoBehaviour
 	{
-		Fragments.active = false;
-	}
+
+		public GameObject Fragments;
+
+		// Use this for initialization
+		void Start ()
+		{
+			Fragments.active = false;
+		}
 	
-	// Update is called once per frame
-	void Update () {
+		// Update is called once per frame
+		void Update () {
 		
-	}
+		}
 
-	public void Smash()
-	{
-		Fragments.active = true;
-		gameObject.active = false;
+		public void Smash()
+		{
+			Fragments.active = true;
+			gameObject.active = false;
 		
+		}
 	}
 }
