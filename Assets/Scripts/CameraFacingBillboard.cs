@@ -4,16 +4,15 @@ using System.Collections;
 [ExecuteInEditMode]
 public class CameraFacingBillboard : MonoBehaviour
 {
-	public Camera m_Camera;
+	private Camera camera;
 
 	void Start()
 	{
-		m_Camera = Camera.main;
+		camera = Camera.main;
 	}
 
-	void Update()
+	void Update ()
 	{
-		transform.LookAt(transform.position + m_Camera.transform.rotation * Vector3.forward,
-			m_Camera.transform.rotation * Vector3.up);
+		transform.LookAt(Camera.main.transform.position, Vector3.up);
 	}
 }
