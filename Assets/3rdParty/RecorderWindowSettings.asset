@@ -67,6 +67,6 @@ MonoBehaviour:
   m_FlipFinalOutput: 0
   m_RenderStereo: 0
   m_StereoSeparation: 0.065
-  m_MapSize: 1024
+  m_MapSize: 8192
   m_OutputWidth: 8192
   m_OutputHeight: 4096
