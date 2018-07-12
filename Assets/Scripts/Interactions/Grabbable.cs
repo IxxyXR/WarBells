@@ -6,8 +6,8 @@ namespace Interactions
 	public class Grabbable : MonoBehaviour
 	{
 		private Vector3 originalPosition;
+		private Quaternion originalRotation;
 		public Transform Target;
-		public Vector3 Offset;
 		[HideInInspector]
 		public bool IsGrabbing;
 		[HideInInspector]
@@ -16,6 +16,7 @@ namespace Interactions
 		void Start()
 		{
 			originalPosition = gameObject.transform.position;
+			originalRotation = gameObject.transform.rotation;
 		}
 	
 		public void Grab()
@@ -27,7 +28,7 @@ namespace Interactions
 			else
 			{
 				IsGrabbing = true;	
-				Tween(Target.position + Offset, FinishGrab);
+				Tween(Target.transform, FinishGrab);
 				foreach (var sibling in GetSiblings())
 				{	
 					if (sibling.IsGrabbed) {sibling.UnGrab();}
@@ -37,11 +38,19 @@ namespace Interactions
 
 		public void UnGrab()
 		{
-			Tween(originalPosition, FinishUnGrab);
+			Tween(originalPosition, originalRotation, FinishUnGrab);
 		}
 
-		private void Tween(Vector3 position, Action callback)
+		private void Tween(Transform transform, Action callback)
 		{
+			int id = LeanTween.move(gameObject, transform	, 1f).id;
+			LTDescr d = LeanTween.descr(id);
+			d?.setOnComplete(callback).setEase(LeanTweenType.easeInOutBack);
+		}
+		
+		private void Tween(Vector3 position, Quaternion rotation, Action callback)
+		{
+			LeanTween.rotate(gameObject, rotation.eulerAngles, .5f);
 			int id = LeanTween.move(gameObject, position, 1f).id;
 			LTDescr d = LeanTween.descr(id);
 			d?.setOnComplete(callback).setEase(LeanTweenType.easeInOutBack);
