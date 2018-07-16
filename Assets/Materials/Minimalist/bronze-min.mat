@@ -99,8 +99,8 @@ Material:
     - _GradientSpace: 0
     - _HFogEnable: 0
     - _LMPower: 0
-    - _LmapBlendingMode: 0
-    - _LmapEnable: 0
+    - _LmapBlendingMode: 1
+    - _LmapEnable: 1
     - _MainTexturePower: 0
     - _Metallic: 0
     - _Mode: 0
@@ -133,7 +133,7 @@ Material:
     - _ShowFog: 1
     - _ShowFront: 1
     - _ShowGlobalGradientSettings: 0
-    - _ShowLMap: 0
+    - _ShowLMap: 1
     - _ShowLeft: 1
     - _ShowRight: 1
     - _ShowTexture: 0
@@ -149,11 +149,11 @@ Material:
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color1_B: {r: 0.7696296, g: 0.7735849, b: 0.54369885, a: 1}
-    - _Color1_D: {r: 0.24528301, g: 0.16313635, b: 0.16313635, a: 1}
-    - _Color1_F: {r: 0.509434, g: 0.18503025, b: 0.18503025, a: 1}
+    - _Color1_D: {r: 0.25774297, g: 0.27480403, b: 0.3018868, a: 1}
+    - _Color1_F: {r: 0.14204344, g: 0.18407644, b: 0.2264151, a: 1}
     - _Color1_L: {r: 0.3771805, g: 0.39624766, b: 0.49056602, a: 1}
     - _Color1_R: {r: 0.2232556, g: 0.2387705, b: 0.2735849, a: 1}
-    - _Color1_T: {r: 0.2735849, g: 0.23357956, b: 0.23357956, a: 1}
+    - _Color1_T: {r: 0.7735849, g: 0.6969562, b: 0.6969562, a: 1}
     - _Color2_B: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_D: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_F: {r: 1, g: 1, b: 1, a: 1}

@@ -98,10 +98,10 @@ Material:
     - _GradientHeight_R: 1
     - _GradientHeight_T: 1
     - _GradientSpace: 0
-    - _HFogEnable: 1
+    - _HFogEnable: 0
     - _LMPower: 0
-    - _LmapBlendingMode: 0
-    - _LmapEnable: 0
+    - _LmapBlendingMode: 1
+    - _LmapEnable: 1
     - _MainTexturePower: 0
     - _Metallic: 0
     - _Mode: 0
@@ -131,10 +131,10 @@ Material:
     - _ShowBottom: 1
     - _ShowColorCorrection: 1
     - _ShowCustomShading: 1
-    - _ShowFog: 0
+    - _ShowFog: 1
     - _ShowFront: 1
     - _ShowGlobalGradientSettings: 0
-    - _ShowLMap: 0
+    - _ShowLMap: 1
     - _ShowLeft: 1
     - _ShowRight: 1
     - _ShowTexture: 0
@@ -150,11 +150,11 @@ Material:
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color1_B: {r: 0.638019, g: 0.8113208, b: 0.48602706, a: 1}
-    - _Color1_D: {r: 0.83536386, g: 0.9528302, b: 0.39101997, a: 1}
-    - _Color1_F: {r: 0.3529412, g: 0.47450984, b: 0.28627452, a: 1}
-    - _Color1_L: {r: 0.38077548, g: 0.6132076, b: 0.25164652, a: 1}
-    - _Color1_R: {r: 0.2997861, g: 0.4716981, b: 0.21137415, a: 1}
-    - _Color1_T: {r: 0.68165815, g: 0.9339623, b: 0.3304112, a: 1}
+    - _Color1_D: {r: 0.66944414, g: 0.7169812, b: 0.49038807, a: 1}
+    - _Color1_F: {r: 0.514481, g: 0.6415094, b: 0.44482023, a: 1}
+    - _Color1_L: {r: 0.55865276, g: 0.7169812, b: 0.47009614, a: 1}
+    - _Color1_R: {r: 0.4797081, g: 0.6226415, b: 0.40824136, a: 1}
+    - _Color1_T: {r: 0.7707086, g: 0.8962264, b: 0.5960751, a: 1}
     - _Color2_B: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_D: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_F: {r: 1, g: 1, b: 1, a: 1}
