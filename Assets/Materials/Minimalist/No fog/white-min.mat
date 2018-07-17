@@ -4,16 +4,18 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Minimalist Free Test
+  m_Name: white-min
   m_Shader: {fileID: 4800000, guid: 534b44f15d8e80847a1e825dedc7c581, type: 3}
-  m_ShaderKeywords: BACKSOLID FRONTSOLID TOPSOLID _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE
-    _GRADSETTINGS_B_USE_GLOBAL _GRADSETTINGS_D_USE_GLOBAL _GRADSETTINGS_F_USE_GLOBAL
-    _GRADSETTINGS_L_USE_GLOBAL _GRADSETTINGS_R_USE_GLOBAL _GRADSETTINGS_T_USE_GLOBAL
-    _LMAPBLENDINGMODE_ADD _SHADING_B_SOLID_COLOR _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR
-    _SHADING_L_SOLID_COLOR _SHADING_R_SOLID_COLOR _SHADING_T_SOLID_COLOR _SHOWBACK_ON
-    _SHOWBOTTOM_ON _SHOWFRONT_ON _SHOWLEFT_ON _SHOWRIGHT_ON _SHOWTOP_ON
+  m_ShaderKeywords: BACKSOLID BOTTOMSOLID FRONTSOLID LEFTSOLID RIGHTSOLID TOPSOLID
+    _AOENABLE_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL _GRADSETTINGS_D_USE_GLOBAL
+    _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL _GRADSETTINGS_R_USE_GLOBAL
+    _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_AO _LMAPENABLE_ON _SHADING_B_SOLID_COLOR
+    _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR _SHADING_R_SOLID_COLOR
+    _SHADING_T_SOLID_COLOR _SHOWAO_ON _SHOWBACK_ON _SHOWBOTTOM_ON _SHOWCOLORCORRECTION_ON
+    _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON _SHOWLEFT_ON _SHOWLMAP_ON _SHOWRIGHT_ON
+    _SHOWTEXTURE_ON _SHOWTOP_ON _UNITYFOGENABLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -68,7 +70,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AOEnable: 0
+    - _AOEnable: 1
     - _AOPower: 0
     - _AOuv: 0
     - _AmbientPower: 0
@@ -79,6 +81,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DontMix: 0
     - _DstBlend: 0
+    - _Exponent: 1
     - _FogHeight: 10
     - _FogYStartPos: 0
     - _GlossMapScale: 1
@@ -99,9 +102,10 @@ Material:
     - _GradientHeight_T: 1
     - _GradientSpace: 0
     - _HFogEnable: 0
+    - _Intensity: 1
     - _LMPower: 0
-    - _LmapBlendingMode: 0
-    - _LmapEnable: 0
+    - _LmapBlendingMode: 2
+    - _LmapEnable: 1
     - _MainTexturePower: 0
     - _Metallic: 0
     - _Mode: 0
@@ -120,21 +124,21 @@ Material:
     - _Rotation_T: 0
     - _Saturation: 1
     - _Shading_B: 1
-    - _Shading_D: 0
+    - _Shading_D: 1
     - _Shading_F: 1
-    - _Shading_L: 0
-    - _Shading_R: 0
+    - _Shading_L: 1
+    - _Shading_R: 1
     - _Shading_T: 1
-    - _ShowAO: 0
+    - _ShowAO: 1
     - _ShowAmbientSettings: 0
     - _ShowBack: 1
     - _ShowBottom: 1
-    - _ShowColorCorrection: 0
+    - _ShowColorCorrection: 1
     - _ShowCustomShading: 1
-    - _ShowFog: 0
+    - _ShowFog: 1
     - _ShowFront: 1
     - _ShowGlobalGradientSettings: 0
-    - _ShowLMap: 0
+    - _ShowLMap: 1
     - _ShowLeft: 1
     - _ShowRight: 1
     - _ShowTexture: 1
@@ -149,12 +153,14 @@ Material:
     - _AOColor: {r: 1, g: 1, b: 1, a: 1}
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1_B: {r: 0.2588235, g: 0.63256323, b: 1, a: 1}
-    - _Color1_D: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1_F: {r: 0.023584902, g: 0.02543586, b: 1, a: 1}
-    - _Color1_L: {r: 0.13725492, g: 0.99215686, b: 0.15450867, a: 1}
-    - _Color1_R: {r: 0.38039213, g: 0.880574, b: 0.972549, a: 1}
-    - _Color1_T: {r: 1, g: 0.627451, b: 0.6886423, a: 1}
+    - _Color1: {r: 1, g: 0, b: 1, a: 0}
+    - _Color1_B: {r: 0.8, g: 0.87369835, b: 0.8862745, a: 1}
+    - _Color1_D: {r: 0.7983268, g: 0.83692944, b: 0.8679245, a: 1}
+    - _Color1_F: {r: 0.7781684, g: 0.8207547, b: 0.81940705, a: 1}
+    - _Color1_L: {r: 0.77265036, g: 0.9039826, b: 0.9150943, a: 1}
+    - _Color1_R: {r: 0.70848167, g: 0.80841494, b: 0.8207547, a: 1}
+    - _Color1_T: {r: 0.9622642, g: 0.9577252, b: 0.9577252, a: 1}
+    - _Color2: {r: 1, g: 1, b: 0, a: 0}
     - _Color2_B: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_D: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_F: {r: 1, g: 1, b: 1, a: 1}
@@ -178,5 +184,6 @@ Material:
     - _GradientYStartPos_R: {r: 0, g: 0, b: 0, a: 0}
     - _LMColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShadowColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+    - _ShadowColor: {r: 0.09999997, g: 0.09999997, b: 0.09999997, a: 1}
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UpVector: {r: 0, g: 1, b: 0, a: 0}
