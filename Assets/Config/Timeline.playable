@@ -20,10 +20,10 @@ MonoBehaviour:
   - {fileID: 114428586579948356}
   - {fileID: 114567360732799310}
   - {fileID: 114553798121333344}
-  m_FixedDuration: 300.85
+  m_FixedDuration: 559.2833333333319
   m_EditorSettings:
     m_Framerate: 60
-  m_DurationMode: 0
+  m_DurationMode: 1
   m_Version: 0
 --- !u!74 &74066433352173390
 AnimationClip:
@@ -7777,6 +7777,7 @@ MonoBehaviour:
   - {fileID: 114997813244408150}
   - {fileID: 114767727972748462}
   - {fileID: 114686264618960114}
+  - {fileID: 114191895423480764}
   m_Clips: []
   m_Version: 1
 --- !u!114 &114078151059323398
@@ -12586,6 +12587,158 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 14
     text: the church interior is rendered but desaturated
+--- !u!114 &114191895423480764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1467732076, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: Animation Track
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 114074265893770506}
+  m_Children: []
+  m_Clips:
+  - m_Start: 0
+    m_ClipIn: 0
+    m_Asset: {fileID: 114649719336848544}
+    m_Duration: 149.98333333333332
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114191895423480764}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 1
+    m_PreExtrapolationMode: 1
+    m_PostExtrapolationTime: 0.01666666666667993
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ClockworkAllOFF
+    m_Version: 1
+  - m_Start: 150
+    m_ClipIn: 0
+    m_Asset: {fileID: 114804766734805696}
+    m_Duration: 9
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114191895423480764}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 2
+    m_PreExtrapolationMode: 1
+    m_PostExtrapolationTime: Infinity
+    m_PreExtrapolationTime: 0
+    m_DisplayName: ClockworkLoopSoundsAnimation
+    m_Version: 1
+  m_Version: 1
+  m_OpenClipPreExtrapolation: 0
+  m_OpenClipPostExtrapolation: 0
+  m_OpenClipOffsetPosition: {x: 0, y: 0, z: 0}
+  m_OpenClipOffsetEulerAngles: {x: 0, y: 0, z: 0}
+  m_OpenClipTimeOffset: 0
+  m_MatchTargetFields: 63
+  m_Position: {x: 0, y: 0, z: 0}
+  m_EulerAngles: {x: 0, y: 0, z: 0}
+  m_ApplyOffsets: 0
+  m_AvatarMask: {fileID: 0}
+  m_ApplyAvatarMask: 1
+  m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_Rotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!114 &114193885699087224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13689,6 +13842,23 @@ MonoBehaviour:
     fontSize: 16
     text: News of the war arrived in 1914
 --- !u!114 &114319384186452062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446a62da9c942e54581adf2b9753e874, type: 3}
+  m_Name: TimelineEventClip
+  m_EditorClassIdentifier: 
+  template:
+    HandlerKey: RipplePulse.SinglePulse
+    IsMethodWithParam: 0
+    InvokeEventsInEditMode: 0
+    TargetObject: {fileID: 0}
+    ArgValue: 
+--- !u!114 &114320172688855536
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -18675,25 +18845,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -20486,6 +20638,25 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 16
     text: Industrial production meant more powerful technology
+--- !u!114 &114649719336848544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2024714994, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: AnimationPlayableAsset of ClockworkAllOFF
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 7400000, guid: 6da603b7db6c1493f8a19b80d9e653bd, type: 2}
+  m_Position: {x: 0, y: 0, z: 0}
+  m_EulerAngles: {x: 0, y: 0, z: 0}
+  m_UseTrackMatchFields: 0
+  m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
+  m_Version: 1
+  m_Rotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!114 &114653478274093176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20715,7 +20886,7 @@ MonoBehaviour:
   m_Name: Animation Track
   m_EditorClassIdentifier: 
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114074265893770506}
@@ -20757,7 +20928,7 @@ MonoBehaviour:
   - m_Start: 20
     m_ClipIn: 0
     m_Asset: {fileID: 114775807538979278}
-    m_Duration: 1
+    m_Duration: 237
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114686264618960114}
     m_EaseInDuration: 0
@@ -20967,79 +21138,10 @@ MonoBehaviour:
   m_Parent: {fileID: 114260268057327858}
   m_Children: []
   m_Clips:
-  - m_Start: 151.5
-    m_ClipIn: 0
-    m_Asset: {fileID: 114246489178491266}
-    m_Duration: 0.5
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: 114703638504477960}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: 0
-    m_BlendOutDuration: 0
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: TimelineEventClip
-    m_Version: 1
-  - m_Start: 156.43333333333334
+  - m_Start: 158
     m_ClipIn: 0
     m_Asset: {fileID: 114112097373455582}
-    m_Duration: 0.5
+    m_Duration: 0.48333333333332007
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114703638504477960}
     m_EaseInDuration: 0
@@ -21105,7 +21207,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TimelineEventClip
     m_Version: 1
-  - m_Start: 161.4
+  - m_Start: 162
     m_ClipIn: 0
     m_Asset: {fileID: 114177268182904482}
     m_Duration: 0.5
@@ -21174,7 +21276,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TimelineEventClip
     m_Version: 1
-  - m_Start: 166.4
+  - m_Start: 166
     m_ClipIn: 0
     m_Asset: {fileID: 114113816652414280}
     m_Duration: 0.5
@@ -24417,6 +24519,144 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TimelineEventClip
     m_Version: 1
+  - m_Start: 150
+    m_ClipIn: 0
+    m_Asset: {fileID: 114246489178491266}
+    m_Duration: 0.48333333333332007
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114703638504477960}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TimelineEventClip
+    m_Version: 1
+  - m_Start: 154
+    m_ClipIn: 0
+    m_Asset: {fileID: 114320172688855536}
+    m_Duration: 0.5
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114703638504477960}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: TimelineEventClip
+    m_Version: 1
   m_Version: 1
 --- !u!114 &114703666321278894
 MonoBehaviour:
@@ -26375,6 +26615,25 @@ MonoBehaviour:
     InvokeEventsInEditMode: 0
     TargetObject: {fileID: 0}
     ArgValue: 
+--- !u!114 &114804766734805696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2024714994, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: AnimationPlayableAsset of ClockworkLoopSoundsAnimation
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 7400000, guid: 998091134780440a8b2bc30a968eae50, type: 2}
+  m_Position: {x: 0, y: 0, z: 0}
+  m_EulerAngles: {x: 0, y: 0, z: 0}
+  m_UseTrackMatchFields: 0
+  m_MatchTargetFields: 63
+  m_RemoveStartOffset: 1
+  m_Version: 1
+  m_Rotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!114 &114805636253459696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -27721,7 +27980,7 @@ MonoBehaviour:
   - m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 114282768240081700}
-    m_Duration: 10.25
+    m_Duration: 6.7
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114838746403603774}
     m_EaseInDuration: 0
@@ -28126,10 +28385,10 @@ MonoBehaviour:
   m_Parent: {fileID: 114428586579948356}
   m_Children: []
   m_Clips:
-  - m_Start: 10.25
+  - m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 114798318743808840}
-    m_Duration: 9.75
+    m_Duration: 22.333333333333325
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114861900602334160}
     m_EaseInDuration: 0
@@ -29073,6 +29332,17 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 14
     text: 'You are in the clock tower - it''s darker here. '
+--- !u!114 &114978271325856398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49908d488ca8446cabfa3d7baa73665f, type: 3}
+  m_Name: LoopClip
+  m_EditorClassIdentifier: 
 --- !u!114 &114981475717648450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -29154,7 +29424,7 @@ MonoBehaviour:
   m_Name: Loop Track
   m_EditorClassIdentifier: 
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_AnimClip: {fileID: 0}
   m_Parent: {fileID: 114567360732799310}
