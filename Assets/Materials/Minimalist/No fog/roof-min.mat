@@ -6,14 +6,16 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: flat-grass-min
+  m_Name: oak-min
   m_Shader: {fileID: 4800000, guid: 534b44f15d8e80847a1e825dedc7c581, type: 3}
   m_ShaderKeywords: BACKSOLID BOTTOMSOLID FRONTSOLID LEFTSOLID RIGHTSOLID TOPSOLID
-    UNITY_FOG _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL _GRADSETTINGS_D_USE_GLOBAL
-    _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL _GRADSETTINGS_R_USE_GLOBAL
-    _GRADSETTINGS_T_USE_GLOBAL _HFOGENABLE_ON _LMAPBLENDINGMODE_ADD _SHADING_B_VERTEX_COLOR
-    _SHADING_D_VERTEX_COLOR _SHADING_F_VERTEXCOLOR _SHADING_L_VERTEX_COLOR _SHADING_R_VERTEX_COLOR
-    _SHADING_T_VERTEX_COLOR _UNITYFOGENABLE_ON
+    UNITY_FOG _AOENABLE_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL
+    _GRADSETTINGS_D_USE_GLOBAL _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL
+    _GRADSETTINGS_R_USE_GLOBAL _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_AO _LMAPENABLE_ON
+    _SHADING_B_SOLID_COLOR _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR
+    _SHADING_R_SOLID_COLOR _SHADING_T_SOLID_COLOR _SHOWAO_ON _SHOWBACK_ON _SHOWBOTTOM_ON
+    _SHOWCOLORCORRECTION_ON _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON _SHOWLEFT_ON
+    _SHOWLMAP_ON _SHOWRIGHT_ON _SHOWTEXTURE_ON _SHOWTOP_ON _UNITYFOGENABLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -68,7 +70,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AOEnable: 0
+    - _AOEnable: 1
     - _AOPower: 0
     - _AOuv: 0
     - _AmbientPower: 0
@@ -79,6 +81,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DontMix: 0
     - _DstBlend: 0
+    - _Exponent: 1
     - _FogHeight: 10
     - _FogYStartPos: 0
     - _GlossMapScale: 1
@@ -99,8 +102,9 @@ Material:
     - _GradientHeight_T: 1
     - _GradientSpace: 0
     - _HFogEnable: 0
+    - _Intensity: 1
     - _LMPower: 0
-    - _LmapBlendingMode: 1
+    - _LmapBlendingMode: 2
     - _LmapEnable: 1
     - _MainTexturePower: 0
     - _Metallic: 0
@@ -137,7 +141,7 @@ Material:
     - _ShowLMap: 1
     - _ShowLeft: 1
     - _ShowRight: 1
-    - _ShowTexture: 0
+    - _ShowTexture: 1
     - _ShowTop: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -149,19 +153,21 @@ Material:
     - _AOColor: {r: 1, g: 1, b: 1, a: 1}
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1_B: {r: 0.638019, g: 0.8113208, b: 0.48602706, a: 1}
-    - _Color1_D: {r: 0.66944414, g: 0.7169812, b: 0.49038807, a: 1}
-    - _Color1_F: {r: 0.514481, g: 0.6415094, b: 0.44482023, a: 1}
-    - _Color1_L: {r: 0.55865276, g: 0.7169812, b: 0.47009614, a: 1}
-    - _Color1_R: {r: 0.4797081, g: 0.6226415, b: 0.40824136, a: 1}
-    - _Color1_T: {r: 0.7707086, g: 0.8962264, b: 0.5960751, a: 1}
+    - _Color1: {r: 1, g: 0, b: 1, a: 0}
+    - _Color1_B: {r: 0.18164827, g: 0.23114195, b: 0.24528301, a: 1}
+    - _Color1_D: {r: 0.31132078, g: 0.29737008, b: 0.2834194, a: 1}
+    - _Color1_F: {r: 0.20754719, g: 0.20017895, b: 0.19482024, a: 1}
+    - _Color1_L: {r: 0.4811321, g: 0.43347278, b: 0.43347278, a: 1}
+    - _Color1_R: {r: 0.3301887, g: 0.32131097, b: 0.24141155, a: 1}
+    - _Color1_T: {r: 0.6603774, g: 0.6367035, b: 0.6011926, a: 1}
+    - _Color2: {r: 1, g: 1, b: 0, a: 0}
     - _Color2_B: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_D: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_F: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_L: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_R: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_T: {r: 1, g: 1, b: 1, a: 1}
-    - _Color_Fog: {r: 0.9150943, g: 0.64315593, b: 0.64315593, a: 1}
+    - _Color_Fog: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GizmoPosition_B: {r: 0, g: 0, b: 10, a: 10}
     - _GizmoPosition_D: {r: 0, g: 0, b: 10, a: 10}
@@ -180,3 +186,4 @@ Material:
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0.09999997, g: 0.09999997, b: 0.09999997, a: 1}
     - _TintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UpVector: {r: 0, g: 1, b: 0, a: 0}
