@@ -13,6 +13,9 @@ public class CameraFacingBillboard : MonoBehaviour
 
 	void Update ()
 	{
-		transform.LookAt(Camera.main.transform.position, Vector3.up);
+		transform.LookAt(
+			transform.position + camera.transform.rotation * Vector3.forward,
+			camera.transform.rotation * Vector3.up
+		);
 	}
 }

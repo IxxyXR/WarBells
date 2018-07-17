@@ -63,7 +63,7 @@ GameObject:
   m_Layer: 0
   m_Name: Fir_Tree
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -73,8 +73,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1715167298575552}
-  m_LocalRotation: {x: 0.70214874, y: -0.10036976, z: -0.088835, w: 0.6993007}
-  m_LocalPosition: {x: -22.17, y: -0.1, z: 5.0999985}
+  m_LocalRotation: {x: 0.70214874, y: -0.10036974, z: -0.08883499, w: 0.6993007}
+  m_LocalPosition: {x: -19.87, y: -0.15, z: 2.9300003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4303212773539836}
@@ -88,7 +88,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1518487117268262}
-  m_LocalRotation: {x: -0.15551972, y: 0.7459258, z: 0.18423094, w: 0.62086016}
+  m_LocalRotation: {x: 0.0013327001, y: 0.49035856, z: -0.007689356, w: 0.8714858}
   m_LocalPosition: {x: 0.010001737, y: 3.1100006, z: 0.009999997}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_Children: []
@@ -101,7 +101,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1449588989702806}
-  m_LocalRotation: {x: -0.15551974, y: 0.7459258, z: 0.184231, w: 0.62086016}
+  m_LocalRotation: {x: 0.0013327001, y: 0.49035856, z: -0.007689356, w: 0.8714858}
   m_LocalPosition: {x: 0.01, y: 3.11, z: 0.01}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_Children: []
@@ -291,20 +291,20 @@ LODGroup:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1715167298575552}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.000039458275, y: 2.6062686, z: -0.00022947788}
-  m_Size: 6.2139077
+  m_LocalReferencePoint: {x: 0.00002169609, y: 3.0730033, z: 0.010027409}
+  m_Size: 6.1458416
   m_FadeMode: 1
   m_AnimateCrossFading: 0
   m_LODs:
-  - screenRelativeHeight: 0.6
+  - screenRelativeHeight: 0.15237062
     fadeTransitionWidth: 0.5
     renderers:
     - renderer: {fileID: 23296089762202924}
-  - screenRelativeHeight: 0.3
+  - screenRelativeHeight: 0.060885757
     fadeTransitionWidth: 0.5
     renderers:
     - renderer: {fileID: 23018771917264600}
-  - screenRelativeHeight: 0.1
+  - screenRelativeHeight: 0.01477932
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23799588060162686}
