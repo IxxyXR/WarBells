@@ -15,13 +15,13 @@ namespace UnityStandardAssets.ImageEffects
         public float blendAmount = 0.5f;
         public float fogIntensity = 1f;
         
-        private Shader fogShader = null;
+        public Shader fogShader = null;
         private Material fogMaterial = null;
 
         public override bool CheckResources ()
         {
             CheckSupport (true);
-            fogShader = Shader.Find("Custom/FirewatchBlendFog");
+            //fogShader = Shader.Find("Custom/FirewatchBlendFog");
             fogMaterial = CheckShaderAndCreateMaterial (fogShader, fogMaterial);
             if (!isSupported)
                 ReportAutoDisable ();
