@@ -12874,15 +12874,15 @@ MonoBehaviour:
   m_Parent: {fileID: 114141684695130540}
   m_Children: []
   m_Clips:
-  - m_Start: 137.33333333333334
+  - m_Start: 128.88333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114753960511769654}
-    m_Duration: 57.03333333333333
+    m_Duration: 65.48333333333335
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114214626222617064}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
+    m_BlendInDuration: 15.083333333333343
     m_BlendOutDuration: 22.133333333333354
     m_MixInCurve:
       serializedVersion: 2
@@ -13030,6 +13030,72 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: MoodChangeClip
+    m_Version: 1
+  - m_Start: 0.18333333333333712
+    m_ClipIn: 0
+    m_Asset: {fileID: 114224599633377154}
+    m_Duration: 57.03333333333333
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114214626222617064}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: MoodChangeClip
+    m_Version: 1
+  - m_Start: 86.93333333333334
+    m_ClipIn: 0
+    m_Asset: {fileID: 114282269781455908}
+    m_Duration: 57.03333333333333
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114214626222617064}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: 15.083333333333343
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
@@ -13125,6 +13191,24 @@ MonoBehaviour:
     InvokeEventsInEditMode: 0
     TargetObject: {fileID: 0}
     ArgValue: 
+--- !u!114 &114224599633377154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4c578c8ca44468cb88688e3d13d23e, type: 3}
+  m_Name: MoodChangeClip
+  m_EditorClassIdentifier: 
+  template:
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
+    LightColor: {r: 0.73700607, g: 0.9245283, b: 0.90801376, a: 0}
+    GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
+    DistanceFogColor: {r: 0.9716981, g: 0.93044674, b: 0.93044674, a: 0}
+    FogDensity: 0.9
 --- !u!114 &114225716180231906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13467,6 +13551,24 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 1, a: 1}
     fontSize: 14
     text: the clock marks the hour - you hear the big bell ring
+--- !u!114 &114282269781455908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4c578c8ca44468cb88688e3d13d23e, type: 3}
+  m_Name: MoodChangeClip
+  m_EditorClassIdentifier: 
+  template:
+    ControlledCamera: {fileID: 0}
+    ControlledLight: {fileID: 0}
+    LightColor: {r: 0.9212798, g: 0.9716981, b: 0.9674966, a: 0}
+    GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
+    DistanceFogColor: {r: 0.9716981, g: 0.93044674, b: 0.93044674, a: 0}
+    FogDensity: 0.1
 --- !u!114 &114282768240081700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18845,7 +18947,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -25819,10 +25939,10 @@ MonoBehaviour:
   template:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
-    LightColor: {r: 0.9056604, g: 0.18369527, b: 0.18369527, a: 0}
-    GradientFog: {fileID: 2800000, guid: a2e0905800eb9884ba79a97f19fda4f7, type: 3}
-    DistanceFogColor: {r: 0.8018868, g: 0.28368637, b: 0.28368637, a: 0}
-    FogDensity: 0.025
+    LightColor: {r: 0.8490566, g: 0.108134575, b: 0.108134575, a: 0}
+    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
+    DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
+    FogDensity: 0.9
 --- !u!114 &114756976538559990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -26519,10 +26639,10 @@ MonoBehaviour:
   template:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
-    LightColor: {r: 0.7264151, g: 0.69508773, b: 0.5516643, a: 0}
-    GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
-    DistanceFogColor: {r: 0.5188679, g: 0.5066305, b: 0.5066305, a: 0}
-    FogDensity: 0.025
+    LightColor: {r: 0.62372375, g: 0.5097454, b: 0.745283, a: 0}
+    GradientFog: {fileID: 2800000, guid: 169848adc22dd004d8735e91b42cc59d, type: 3}
+    DistanceFogColor: {r: 0.62352943, g: 0.50980395, b: 0.74509805, a: 1}
+    FogDensity: 0.9
 --- !u!114 &114786998906631948
 MonoBehaviour:
   m_ObjectHideFlags: 1

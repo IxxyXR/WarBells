@@ -9,11 +9,12 @@ Material:
   m_Name: water
   m_Shader: {fileID: 4800000, guid: 534b44f15d8e80847a1e825dedc7c581, type: 3}
   m_ShaderKeywords: BACKSOLID BOTTOMSOLID FRONTSOLID LEFTSOLID RIGHTSOLID TOPSOLID
-    _ALPHAPREMULTIPLY_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL
-    _GRADSETTINGS_D_USE_GLOBAL _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL
-    _GRADSETTINGS_R_USE_GLOBAL _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_ADD _SHADING_B_VERTEX_COLOR
-    _SHADING_D_VERTEX_COLOR _SHADING_F_VERTEXCOLOR _SHADING_L_VERTEX_COLOR _SHADING_R_VERTEX_COLOR
-    _SHADING_T_VERTEX_COLOR
+    _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL _GRADSETTINGS_D_USE_GLOBAL
+    _GRADSETTINGS_F_USE_GLOBAL _GRADSETTINGS_L_USE_GLOBAL _GRADSETTINGS_R_USE_GLOBAL
+    _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_ADD _SHADING_B_SOLID_COLOR _SHADING_D_SOLID_COLOR
+    _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR _SHADING_R_SOLID_COLOR _SHADING_T_SOLID_COLOR
+    _SHOWBACK_ON _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON _SHOWLEFT_ON _SHOWRIGHT_ON
+    _SHOWTEXTURE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -82,7 +83,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DontMix: 0
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _FogHeight: 10
     - _FogYStartPos: 0
     - _GlossMapScale: 1
@@ -108,7 +109,7 @@ Material:
     - _LmapEnable: 0
     - _MainTexturePower: 0
     - _Metallic: 0
-    - _Mode: 3
+    - _Mode: 0
     - _OcclusionStrength: 1
     - _OtherSettings: 0
     - _Parallax: 0.02
@@ -149,7 +150,7 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _UnityFogEnable: 0
-    - _ZWrite: 0
+    - _ZWrite: 1
     - _isInnerAlphaBlendOrColor: 0
     m_Colors:
     - _AOColor: {r: 1, g: 1, b: 1, a: 1}
@@ -157,7 +158,7 @@ Material:
     - _BaseColor: {r: 0.53999996, g: 0.95, b: 0.98999995, a: 0.5}
     - _BumpDirection: {r: 1, g: 1, b: -1, a: 1}
     - _BumpTiling: {r: 1, g: 1, b: -2, a: 3}
-    - _Color: {r: 0.33490568, g: 0.8465167, b: 1, a: 0.38431373}
+    - _Color: {r: 0.26713246, g: 0.5640428, b: 0.6509434, a: 1}
     - _Color1_B: {r: 0.3721075, g: 0.6415305, b: 0.6981132, a: 1}
     - _Color1_D: {r: 0.503916, g: 0.6551677, b: 0.7169812, a: 1}
     - _Color1_F: {r: 0.375, g: 0.49852937, b: 0.5, a: 1}
