@@ -131,7 +131,7 @@ PlayerSettings:
       depthFormat: 0
       enableTransitionView: 0
     daydream:
-      depthFormat: 0
+      depthFormat: 1
       useSustainedPerformanceMode: 0
       enableVideoLayer: 0
       useProtectedVideoMemory: 0

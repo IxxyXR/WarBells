@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: mustard-min
+  m_Name: moss-min
   m_Shader: {fileID: 4800000, guid: 534b44f15d8e80847a1e825dedc7c581, type: 3}
   m_ShaderKeywords: BACKSOLID BOTTOMSOLID FRONTSOLID LEFTSOLID RIGHTSOLID TOPSOLID
     _AOENABLE_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL _GRADSETTINGS_D_USE_GLOBAL
@@ -154,12 +154,12 @@ Material:
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color1: {r: 1, g: 0, b: 1, a: 0}
-    - _Color1_B: {r: 0.7372549, g: 0.6020332, b: 0.31764704, a: 1}
-    - _Color1_D: {r: 0.754717, g: 0.5602005, b: 0.15307939, a: 1}
-    - _Color1_F: {r: 0.8301887, g: 0.7098856, b: 0.4268423, a: 1}
-    - _Color1_L: {r: 0.8018868, g: 0.68320334, b: 0.46524566, a: 1}
-    - _Color1_R: {r: 0.9339623, g: 0.8236013, b: 0.54187435, a: 1}
-    - _Color1_T: {r: 1, g: 0.98085463, b: 0.6745283, a: 1}
+    - _Color1_B: {r: 0.4392157, g: 0.6784314, b: 0.496581, a: 1}
+    - _Color1_D: {r: 0.6901961, g: 0.7647059, b: 0.7000634, a: 1}
+    - _Color1_F: {r: 0.4117647, g: 0.7372549, b: 0.5355339, a: 1}
+    - _Color1_L: {r: 0.38039216, g: 0.67058825, b: 0.4453951, a: 1}
+    - _Color1_R: {r: 0.4509804, g: 0.85882354, b: 0.47313067, a: 1}
+    - _Color1_T: {r: 0.66522783, g: 0.9339623, b: 0.6853372, a: 1}
     - _Color2: {r: 1, g: 1, b: 0, a: 0}
     - _Color2_B: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_D: {r: 1, g: 1, b: 1, a: 1}
