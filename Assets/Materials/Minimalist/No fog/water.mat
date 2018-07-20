@@ -134,7 +134,7 @@ Material:
     - _ShowAO: 0
     - _ShowAmbientSettings: 0
     - _ShowBack: 1
-    - _ShowBottom: 0
+    - _ShowBottom: 1
     - _ShowColorCorrection: 0
     - _ShowCustomShading: 1
     - _ShowFog: 1
@@ -144,7 +144,7 @@ Material:
     - _ShowLeft: 1
     - _ShowRight: 1
     - _ShowTexture: 1
-    - _ShowTop: 0
+    - _ShowTop: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
