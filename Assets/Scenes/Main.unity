@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
+  m_FogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: 0
-  m_LinearFogEnd: 2.5
+  m_LinearFogEnd: 2.4
   m_AmbientSkyColor: {r: 0.31132078, g: 0.30397832, b: 0.30397832, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -29774,7 +29774,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.16981131, g: 0.15979278, b: 0.15939835, a: 0}
+  m_Color: {r: 0.8490566, g: 0.108134575, b: 0.108134575, a: 0}
   m_Intensity: 3.75
   m_Range: 4.84
   m_SpotAngle: 30
@@ -31122,8 +31122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTex: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
   fogAmount: 1
-  colorRamp1: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-  colorRamp2: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
+  colorRamp1: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
+  colorRamp2: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
   blendAmount: 1
   fogIntensity: 0.9
   fogShader: {fileID: 4800000, guid: 74fa7e1a18c9449f9b6e4385ae9a28f7, type: 3}
@@ -46722,7 +46722,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
-  m_Intensity: 4
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -58674,7 +58674,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2063822965}
   m_LocalRotation: {x: 0.5000001, y: -0.4999999, z: 0.4999999, w: 0.5000001}
-  m_LocalPosition: {x: 0, y: -0.777, z: -0}
+  m_LocalPosition: {x: 0, y: -0.9, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1354554875}
