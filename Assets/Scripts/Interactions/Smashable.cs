@@ -4,25 +4,31 @@ namespace Interactions
 {
 	public class Smashable : MonoBehaviour
 	{
-
-		public GameObject Fragments;
-
-		// Use this for initialization
-		void Start ()
-		{
-			Fragments.active = false;
-		}
-	
-		// Update is called once per frame
-		void Update () {
-		
-		}
+		public Transform ShatteredPrefab;
+		public Transform clapper;
+		private Transform shattered;
 
 		public void Smash()
 		{
-			Fragments.active = true;
-			gameObject.active = false;
-		
+			gameObject.GetComponent<MeshRenderer>().enabled = false;
+			clapper.gameObject.SetActive(false);
+			shattered = Instantiate(ShatteredPrefab);
+			shattered.transform.parent = gameObject.transform.parent;
+			shattered.localPosition = new Vector3(0,0,0);
+			shattered.localScale = gameObject.transform.localScale;
+			Invoke(nameof(FallDown), 2);
+		}
+
+		public void FallDown()
+		{
+			var pieces = shattered.gameObject.GetComponentsInChildren<Rigidbody>();
+			foreach (var piece in pieces)
+			{
+				piece.useGravity = true;
+				piece.drag = 10;
+			}
 		}
 	}
 }
+
+
