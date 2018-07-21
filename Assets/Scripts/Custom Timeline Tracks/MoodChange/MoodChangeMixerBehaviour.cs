@@ -62,7 +62,6 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
                 }
                 lastInput = input;
             }
-            
         }
         
         if (lastInput != null)
@@ -76,15 +75,18 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
             {
                 //Debug.LogError("Please tag at least one light as FX Light");
             }
-
-            var firewatchFog = lastInput?.ControlledCamera?.GetComponent<FirewatchBlendFog>();
-            if (firewatchFog != null)
+            
+            if (lastInput.ControlledCamera!=null)
             {
-                firewatchFog.colorRamp1 = fogRamp1;
-                firewatchFog.colorRamp2 = fogRamp2;
-                firewatchFog.blendAmount = blend;
-                firewatchFog.fogIntensity = Mathf.Lerp(fogDensity1, fogDensity2, blend);
-            }            
+                var firewatchFog = lastInput.ControlledCamera?.GetComponent<FirewatchBlendFog>();
+                if (firewatchFog != null)
+                {
+                    firewatchFog.colorRamp1 = fogRamp1;
+                    firewatchFog.colorRamp2 = fogRamp2;
+                    firewatchFog.blendAmount = blend;
+                    firewatchFog.fogIntensity = Mathf.Lerp(fogDensity1, fogDensity2, blend);
+                }
+            }
         }
         
     }
