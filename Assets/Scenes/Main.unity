@@ -26407,11 +26407,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 774247877}
@@ -28025,12 +28025,12 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: InitialModule.startSize.minScalar
-      value: 0.05
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: InitialModule.startSize.scalar
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
@@ -28086,7 +28086,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3be2449ad6c53475e9b8fa3f59303d6f, type: 2}
+      objectReference: {fileID: 2100000, guid: fe6b365ff425f4e5cbcef15f5d9885f9, type: 2}
     - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: m_Materials.Array.data[1]
@@ -28105,12 +28105,12 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: lengthInSec
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: simulationSpeed
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
@@ -28155,13 +28155,13 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: InitialModule.maxNumParticles
-      value: 1000
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 8047fe64bb2ad034db828801e87a3a02, type: 3}
+      objectReference: {fileID: 4300000, guid: 7f3f9dd74e3766a4dbf5bdbbc9ee54ff, type: 3}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: ShapeModule.m_Scale.y
@@ -28180,6 +28180,41 @@ Prefab:
     - target: {fileID: 1355453674400374, guid: e8a8be6295d61264a9e2da350ae9d95f, type: 2}
       propertyPath: m_Name
       value: Particle Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: m_EnableGPUInstancing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: NoiseModule.frequency
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e8a8be6295d61264a9e2da350ae9d95f, type: 2}
@@ -45041,11 +45076,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1488328620}
