@@ -11,6 +11,7 @@ namespace Interactions
 		public void Smash()
 		{
 			gameObject.GetComponent<MeshRenderer>().enabled = false;
+			gameObject.GetComponent<AudioSource>().Play();
 			clapper.gameObject.SetActive(false);
 			shattered = Instantiate(ShatteredPrefab);
 			shattered.transform.parent = gameObject.transform.parent;
