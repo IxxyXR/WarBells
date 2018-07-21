@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
+  m_FogColor: {r: 1, g: 0.72569275, b: 0.051886797, a: 0}
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: 0
@@ -26407,11 +26407,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 774247877}
@@ -28177,6 +28177,10 @@ Prefab:
       propertyPath: ShapeModule.m_Scale.x
       value: 5.403018
       objectReference: {fileID: 0}
+    - target: {fileID: 1355453674400374, guid: e8a8be6295d61264a9e2da350ae9d95f, type: 2}
+      propertyPath: m_Name
+      value: Particle Fire
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e8a8be6295d61264a9e2da350ae9d95f, type: 2}
   m_IsPrefabParent: 0
@@ -29783,7 +29787,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.8490566, g: 0.108134575, b: 0.108134575, a: 0}
+  m_Color: {r: 0.9433962, g: 0.31091133, b: 0.11124954, a: 0}
   m_Intensity: 3.75
   m_Range: 4.84
   m_SpotAngle: 30
@@ -45037,11 +45041,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1488328620}
