@@ -10,16 +10,18 @@ public class LoopSeekBehaviour : PlayableBehaviour
     public LoopSeekClip clip;
     public PlayableDirector director { get; set; }
 
-    // ŠJŽnŽž‚Éˆê“xOnBehaviourPause‚ªŒÄ‚Î‚ê‚é‚±‚Æ‚Ì‰ñ”ð—p
+    // ï¿½Jï¿½nï¿½ï¿½ï¿½Éˆï¿½xOnBehaviourPauseï¿½ï¿½ï¿½Ä‚Î‚ï¿½é‚±ï¿½Æ‚Ì‰ï¿½ï¿½p
     bool init = false;
 
     public override void OnBehaviourPause(Playable playable, FrameData info)
     {
-        //Debug.Log("Pause!");
-
+        
         if (init)
         {
-            SingletonLoopSeek.Instance.SetTime(clip.label_next, true);
+            if (clip.jump)
+            {
+                SingletonLoopSeek.Instance.SetTime(clip.label_next, true);                
+            }
         }
         else
         {

@@ -9,6 +9,7 @@ public class LoopSeekClip : PlayableAsset, ITimelineClipAsset
 {
     public int label = 0;
     public int label_next = 0;
+	public bool jump;
 
     public ClipCaps clipCaps
     {

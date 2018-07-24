@@ -54,20 +54,22 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
         }
     }
 
-    public void Goto(int label)
+    public void ScheduleResume(float clipResumeAfter)
     {
-        SetTime(label, true);
+        Invoke(nameof(Resume), clipResumeAfter);
     }
 
     // TimelineのLoopSeekBehaviourからの呼び出しの場合trueを指定する。
     // それ以外の場合は
     public void SetTime(int label, bool fromTimeline = false)
     {
+        Debug.Log($"SetTime label={label} fromTimeline={fromTimeline} canSetTime={canSetTime}");
         if (fromTimeline)
         {
             if (canSetTime)
             {
                 ErrorCheck(label);
+                Debug.Log($"Actually settings time to {dicLabelTime[label]}");
                 playableDirector.time = dicLabelTime[label];
             }
         }
@@ -98,4 +100,5 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
     {
         StartCoroutine("SetTimeCoroutine", testLabel);
     }
+
 }

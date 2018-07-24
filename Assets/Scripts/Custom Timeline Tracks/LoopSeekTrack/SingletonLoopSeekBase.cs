@@ -12,7 +12,7 @@ public abstract class SingletonLoopSeekBase<T> : MonoBehaviour where T : Singlet
 			{
 				Type type = typeof(T);
 
-				GameObject[] objs = GameObject.FindGameObjectsWithTag("TagSingleton");
+				GameObject[] objs = GameObject.FindGameObjectsWithTag("MainTimeline");
 
 				for (int j = 0; j < objs.Length; j++)
 				{

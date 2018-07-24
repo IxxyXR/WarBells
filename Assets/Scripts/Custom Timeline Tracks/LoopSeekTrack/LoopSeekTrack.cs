@@ -26,17 +26,36 @@ public class LoopSeekTrack : TrackAsset
                 var clip = (LoopSeekClip) c.asset;
                 string clipName = c.displayName;
 
-                if (clip.label == clip.label_next)
+                if (clip.jump)
                 {
-                    clipName = "●(" + clip.label.ToString() + ',' + clip.label_next.ToString() + ")";
+                    if (clip.label == clip.label_next)
+                    {
+                        clipName = "⟲ ";
+                    }
+                    else if (clip.label_next > clip.label)
+                    {
+                        clipName = "↷ ";
+                    }
+                    else if (clip.label_next < clip.label)
+                    {
+                        clipName = "↶ ";
+                    }
+                    
+                    clipName += clip.label.ToString() + " > " + clip.label_next.ToString();
                 }
                 else
                 {
-                    clipName = "↩︎(" + clip.label.ToString() + ',' + clip.label_next.ToString() + ")";
+                    clipName = clip.label.ToString();
                 }
 
+                
+                
+
                 // c.startをSingletonに追加する
-                SingletonLoopSeek.Instance.AddLabelTime(clip.label, c.start);
+                if (SingletonLoopSeek.Instance != null)
+                {
+                    SingletonLoopSeek.Instance.AddLabelTime(clip.label, c.start);                        
+                }
 
                 c.displayName = clipName;
             }

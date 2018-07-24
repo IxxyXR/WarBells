@@ -16,6 +16,10 @@ public class PauseBehaviour : PlayableBehaviour
         if (!paused)
         {
             SingletonLoopSeek.Instance.Pause();
+            if (clip.ResumeAfter > 0)
+            {
+                SingletonLoopSeek.Instance.ScheduleResume(clip.ResumeAfter);
+            }
             paused = true;
         }
     }
@@ -23,7 +27,10 @@ public class PauseBehaviour : PlayableBehaviour
     public override void OnPlayableCreate(Playable playable)
     {
         base.OnPlayableCreate(playable);
-        SingletonLoopSeek.Instance.Resume();
-        paused = false;
+        if (SingletonLoopSeek.Instance != null)
+        {
+            SingletonLoopSeek.Instance.Resume();            
+            paused = false;
+        }
     }
 }
