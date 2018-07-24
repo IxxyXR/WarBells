@@ -6,20 +6,24 @@ using UnityEngine;
 public class EnableSmashing : MonoBehaviour {
 
 	void Start () {
-		for (int i = 0; i < gameObject.transform.childCount; i++)
-		{	
-			var g = gameObject.transform.GetChild(i).gameObject;
-			g.GetComponent<Selectable>().enabled = false;
-			g.GetComponent<Smashable>().enabled = false;
+		foreach (var sel in gameObject.GetComponentsInChildren<Selectable>())
+		{
+			sel.enabled = false;
+		}
+		foreach (var sel in gameObject.GetComponentsInChildren<Smashable>())
+		{
+			sel.enabled = false;
 		}
 	}
 	
 	public void DoEnableSmashing () {
-		for (int i = 0; i < gameObject.transform.childCount; i++)
-		{	
-			var g = gameObject.transform.GetChild(i).gameObject;
-			g.GetComponent<Selectable>().enabled = true;
-			g.GetComponent<Smashable>().enabled = true;
+		foreach (var sel in gameObject.GetComponentsInChildren<Selectable>())
+		{
+			sel.enabled = true;
+		}
+		foreach (var sel in gameObject.GetComponentsInChildren<Smashable>())
+		{
+			sel.enabled = true;
 		}
 	}
 }
