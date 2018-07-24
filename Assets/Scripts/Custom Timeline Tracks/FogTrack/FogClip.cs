@@ -16,7 +16,6 @@ public class FogClip : PlayableAsset, ITimelineClipAsset
     public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
     {
         var playable = ScriptPlayable<FogBehaviour>.Create (graph, template);
-        FogBehaviour clone = playable.GetBehaviour ();
         return playable;
     }
 }

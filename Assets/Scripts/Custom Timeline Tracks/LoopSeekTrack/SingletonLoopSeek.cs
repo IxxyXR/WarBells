@@ -92,13 +92,4 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
         canSetTime = true;
     }
 
-    //[Inspect(0), Title(FontStyle.Bold, "Test"), Spacing(Before = 3)]
-    int testLabel;
-
-    //[Inspect(1)]
-    void Test()
-    {
-        StartCoroutine("SetTimeCoroutine", testLabel);
-    }
-
 }
