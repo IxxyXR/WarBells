@@ -17,6 +17,11 @@ namespace Interactions
 			timeline = GameObject.FindGameObjectWithTag("MainTimeline").GetComponent<SingletonLoopSeek>();
 		}
 
+		public void SmashAfter(float delay)
+		{
+			Invoke(nameof(Smash), delay);
+		}
+
 		public void Smash()
 		{
 			if (SmashingEnabled && !Smashed)

@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
+  m_FogColor: {r: 0.57144177, g: 0.560501, b: 0.5845885, a: 0.9947658}
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: 0
-  m_LinearFogEnd: 2.4
+  m_LinearFogEnd: 3.4
   m_AmbientSkyColor: {r: 0.31132078, g: 0.30397832, b: 0.30397832, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -31410,6 +31410,17 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 755227489}
+--- !u!134 &759711092
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Default (Instance) (Instance) (Instance)
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
 --- !u!1001 &760705826
 Prefab:
   m_ObjectHideFlags: 0
@@ -35110,7 +35121,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.16981131, g: 0.15979278, b: 0.15939835, a: 0}
+  m_Color: {r: 0.4657934, g: 0.52619, b: 0.31069756, a: 0}
   m_Intensity: 3.75
   m_Range: 4.84
   m_SpotAngle: 30
@@ -36458,9 +36469,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTex: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
   fogAmount: 1
-  colorRamp1: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-  colorRamp2: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-  blendAmount: 1
+  colorRamp1: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
+  colorRamp2: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
+  blendAmount: 0.9947658
   fogIntensity: 0.9
   fogShader: {fileID: 4800000, guid: 74fa7e1a18c9449f9b6e4385ae9a28f7, type: 3}
 --- !u!4 &1060433874 stripped
@@ -39012,6 +39023,11 @@ Prefab:
       propertyPath: laserColorEnd.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 20968331732286730, guid: c36d3252d857f264c8a4cfa1be542fe4,
+        type: 2}
+      propertyPath: near clip plane
+      value: 0.02
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114904538478024058, guid: c36d3252d857f264c8a4cfa1be542fe4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c36d3252d857f264c8a4cfa1be542fe4, type: 2}
@@ -40682,7 +40698,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh233038
+  m_Name: pb_Mesh111784
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -55775,53 +55791,18 @@ Transform:
   m_PrefabParentObject: {fileID: 4271350291029366, guid: 79d2747c226b7ca4c8a8f5b1a79231e4,
     type: 2}
   m_PrefabInternal: {fileID: 1690990335}
---- !u!4 &1690990337 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4493342446081714, guid: 79d2747c226b7ca4c8a8f5b1a79231e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1690990335}
 --- !u!1 &1690990338 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1943817282510910, guid: 79d2747c226b7ca4c8a8f5b1a79231e4,
     type: 2}
   m_PrefabInternal: {fileID: 1690990335}
---- !u!114 &1690990339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1690990338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1690990341}
-          m_MethodName: Smash
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
 --- !u!64 &1690990340
 MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1690990338}
-  m_Material: {fileID: 1769500527}
+  m_Material: {fileID: 759711092}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -55829,35 +55810,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300008, guid: b7448ed9c2786aa4495a9d2e074b11c9, type: 3}
---- !u!114 &1690990341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1690990338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a36b451b03167de48b5a9a5621103e78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SmashingEnabled: 0
-  ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
-    type: 2}
-  clapper: {fileID: 1690990337}
-  timeline: {fileID: 0}
---- !u!114 &1690990342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1690990338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f942ae6c8100f4514a60c18f17aabe9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highlightedColor: {r: 1, g: 0, b: 0.085289, a: 1}
-  touchedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!82 &1690990343
 AudioSource:
   m_ObjectHideFlags: 0
@@ -58057,17 +58009,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6366ee97f6b541449155028b9487355a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!134 &1769500527
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Default (Instance) (Instance)
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1001 &1773940216
 Prefab:
   m_ObjectHideFlags: 0

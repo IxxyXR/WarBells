@@ -28,11 +28,15 @@ public class EnableSmashing : MonoBehaviour
 		}
 	}
 	
-	public void AutoSmash () {
+	public void AutoSmash ()
+	{
+
+		float delay = 0;
 		
 		foreach (var sel in gameObject.GetComponentsInChildren<Smashable>())
 		{
-			sel.Smash();
+			sel.SmashAfter(delay);
+			delay += 0.5f;
 		}
 	}
 
