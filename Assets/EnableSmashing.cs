@@ -12,7 +12,7 @@ public class EnableSmashing : MonoBehaviour {
 		}
 		foreach (var sel in gameObject.GetComponentsInChildren<Smashable>())
 		{
-			sel.enabled = false;
+			sel.SmashingEnabled = false;
 		}
 	}
 	
@@ -23,7 +23,7 @@ public class EnableSmashing : MonoBehaviour {
 		}
 		foreach (var sel in gameObject.GetComponentsInChildren<Smashable>())
 		{
-			sel.enabled = true;
+			sel.SmashingEnabled = true;
 		}
 	}
 }

@@ -83,7 +83,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SpeedX: 0
-    - _SpeedY: 1
+    - _SpeedY: 2
     - _SpeedZ: 0
     - _SrcBlend: 1
     - _UVSec: 0

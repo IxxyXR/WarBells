@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 1, g: 0.9764151, b: 0.9764151, a: 1}
+  m_FogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: 0
@@ -6293,18 +6293,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 60424866}
---- !u!134 &65627223
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Default (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
-    (Instance) (Instance)
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1001 &67060477
 Prefab:
   m_ObjectHideFlags: 0
@@ -11946,6 +11934,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 114969369391743100, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
     value: {fileID: 696307416}
+  - key: {fileID: 114505803763551816, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - de6744b171d02f34297ce1a1fed0c017: {fileID: 1006869923}
@@ -25883,6 +25873,17 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 731879597}
+--- !u!134 &750622612
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Default (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
 --- !u!1001 &753737809
 Prefab:
   m_ObjectHideFlags: 0
@@ -27635,6 +27636,18 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 863088500}
+--- !u!134 &866380847
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Default (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
+    (Instance)
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
 --- !u!1001 &866879441
 Prefab:
   m_ObjectHideFlags: 0
@@ -28334,12 +28347,37 @@ Prefab:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 114647912304156764, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1971197146}
+    - target: {fileID: 64783184418043864, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2092878330}
+    - target: {fileID: 64783184418043864, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1221020164}
+    - target: {fileID: 33237107298515404, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1221020164}
+    - target: {fileID: 114392305175970302, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1971197146}
     - target: {fileID: 64437922292828254, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1882113817}
-    - target: {fileID: 114392305175970302, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+      objectReference: {fileID: 750622612}
+    - target: {fileID: 114874618707009554, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
         type: 2}
       propertyPath: Target
       value: 
@@ -28348,44 +28386,7 @@ Prefab:
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1145571910}
-    - target: {fileID: 114874618707009554, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
-        type: 2}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 1971197146}
-    - target: {fileID: 64783184418043864, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
-        type: 2}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 65627223}
-    - target: {fileID: 114647912304156764, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
-        type: 2}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 1971197146}
-    - target: {fileID: 64783184418043864, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 1221020164}
-    - target: {fileID: 4970794696726244, guid: 9985de2dfd8ee3d4d838aa7d6c64b552, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.26597396
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970794696726244, guid: 9985de2dfd8ee3d4d838aa7d6c64b552, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.26597401
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970794696726244, guid: 9985de2dfd8ee3d4d838aa7d6c64b552, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.26597401
-      objectReference: {fileID: 0}
-    - target: {fileID: 33237107298515404, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 1221020164}
+      objectReference: {fileID: 866380847}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9985de2dfd8ee3d4d838aa7d6c64b552, type: 2}
   m_IsPrefabParent: 0
@@ -29853,7 +29854,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9033909, g: 0.9528302, b: 0.9492988, a: 1}
+  m_Color: {r: 0.16981131, g: 0.15979278, b: 0.15939835, a: 0}
   m_Intensity: 3.75
   m_Range: 4.84
   m_SpotAngle: 30
@@ -31201,8 +31202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTex: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
   fogAmount: 1
-  colorRamp1: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
-  colorRamp2: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
+  colorRamp1: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
+  colorRamp2: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
   blendAmount: 1
   fogIntensity: 0.9
   fogShader: {fileID: 4800000, guid: 74fa7e1a18c9449f9b6e4385ae9a28f7, type: 3}
@@ -33205,17 +33206,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 1143189980}
---- !u!134 &1145571910
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Default (Instance) (Instance) (Instance) (Instance)
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1001 &1158831611
 Prefab:
   m_ObjectHideFlags: 0
@@ -34527,7 +34517,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh720024
+  m_Name: pb_Mesh33950
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -35222,6 +35212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36b451b03167de48b5a9a5621103e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SmashingEnabled: 0
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   clapper: {fileID: 1235618261}
@@ -35434,7 +35425,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh363246
+  m_Name: pb_Mesh36480
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -48337,6 +48328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36b451b03167de48b5a9a5621103e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SmashingEnabled: 0
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   clapper: {fileID: 1618309620}
@@ -50590,6 +50582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36b451b03167de48b5a9a5621103e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SmashingEnabled: 0
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   clapper: {fileID: 1690990337}
@@ -51207,6 +51200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36b451b03167de48b5a9a5621103e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SmashingEnabled: 0
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   clapper: {fileID: 1718444280}
@@ -55411,17 +55405,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!134 &1882113817
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Default (Instance) (Instance) (Instance) (Instance)
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1001 &1887894167
 Prefab:
   m_ObjectHideFlags: 0
@@ -57759,7 +57742,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1971197145}
   m_LocalRotation: {x: -0, y: -0, z: -1.4551915e-11, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0.8}
+  m_LocalPosition: {x: 0, y: -0, z: 1.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1060433874}
@@ -63924,6 +63907,18 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 2087108323}
+--- !u!134 &2092878330
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Default (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
+    (Instance) (Instance) (Instance) (Instance) (Instance)
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
 --- !u!1 &2093293953
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,13 +27,13 @@ Material:
     - _AmplitudeX: 0
     - _AmplitudeY: 0.3
     - _AmplitudeZ: 0
-    - _Angle: 1
+    - _Angle: 0.075
     - _FrequencyX: 0
     - _FrequencyY: 0.5
     - _FrequencyZ: 0
     - _HeadLimit: 2
     - _SpeedX: 0
-    - _SpeedY: 1
+    - _SpeedY: 2
     - _SpeedZ: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
