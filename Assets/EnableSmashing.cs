@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using Interactions;
 using UnityEngine;
 
-public class EnableSmashing : MonoBehaviour {
+public class EnableSmashing : MonoBehaviour
+{
 
 	void Start () {
 		foreach (var sel in gameObject.GetComponentsInChildren<Selectable>())
@@ -26,4 +27,14 @@ public class EnableSmashing : MonoBehaviour {
 			sel.SmashingEnabled = true;
 		}
 	}
+	
+	public void AutoSmash () {
+		
+		foreach (var sel in gameObject.GetComponentsInChildren<Smashable>())
+		{
+			sel.Smash();
+		}
+	}
+
+
 }

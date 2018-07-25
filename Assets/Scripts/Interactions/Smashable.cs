@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 namespace Interactions
 {
@@ -8,10 +9,17 @@ namespace Interactions
 		public Transform ShatteredPrefab;
 		public Transform clapper;
 		private Transform shattered;
+		public SingletonLoopSeek timeline;
+		private bool Smashed = false;
+
+		void Start()
+		{
+			timeline = GameObject.FindGameObjectWithTag("MainTimeline").GetComponent<SingletonLoopSeek>();
+		}
 
 		public void Smash()
 		{
-			if (SmashingEnabled)
+			if (SmashingEnabled && !Smashed)
 			{
 				gameObject.GetComponent<MeshRenderer>().enabled = false;
 				gameObject.GetComponent<AudioSource>().Play();
@@ -20,7 +28,8 @@ namespace Interactions
 				shattered.transform.parent = gameObject.transform.parent;
 				shattered.localPosition = new Vector3(0,0,0);
 				shattered.localScale = gameObject.transform.localScale;
-				Invoke(nameof(FallDown), 2);				
+				Invoke(nameof(FallDown), 2);
+				Smashed = true;
 			}
 		}
 
@@ -32,6 +41,12 @@ namespace Interactions
 				piece.useGravity = true;
 				piece.drag = 10;
 			}
+			Invoke(nameof(ResumeTimeline), 1);
+		}
+
+		public void ResumeTimeline()
+		{
+			timeline.Resume();
 		}
 	}
 }

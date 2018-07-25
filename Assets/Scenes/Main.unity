@@ -27343,6 +27343,18 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 837841701}
+--- !u!134 &839966833
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Default (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
+    (Instance) (Instance)
+  dynamicFriction: 0.6
+  staticFriction: 0.6
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
 --- !u!4 &840300069 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4913731724324740, guid: e8a8be6295d61264a9e2da350ae9d95f,
@@ -27636,18 +27648,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 863088500}
---- !u!134 &866380847
-PhysicMaterial:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Default (Instance) (Instance) (Instance) (Instance) (Instance) (Instance)
-    (Instance)
-  dynamicFriction: 0.6
-  staticFriction: 0.6
-  bounciness: 0
-  frictionCombine: 0
-  bounceCombine: 0
 --- !u!1001 &866879441
 Prefab:
   m_ObjectHideFlags: 0
@@ -28386,7 +28386,7 @@ Prefab:
         type: 2}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 866380847}
+      objectReference: {fileID: 839966833}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9985de2dfd8ee3d4d838aa7d6c64b552, type: 2}
   m_IsPrefabParent: 0
@@ -35216,6 +35216,7 @@ MonoBehaviour:
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   clapper: {fileID: 1235618261}
+  timeline: {fileID: 0}
 --- !u!114 &1235618266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48332,6 +48333,7 @@ MonoBehaviour:
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   clapper: {fileID: 1618309620}
+  timeline: {fileID: 0}
 --- !u!114 &1618309625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50586,6 +50588,7 @@ MonoBehaviour:
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   clapper: {fileID: 1690990337}
+  timeline: {fileID: 0}
 --- !u!114 &1690990342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51204,6 +51207,7 @@ MonoBehaviour:
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   clapper: {fileID: 1718444280}
+  timeline: {fileID: 0}
 --- !u!114 &1718444285
 MonoBehaviour:
   m_ObjectHideFlags: 0
