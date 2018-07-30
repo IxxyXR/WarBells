@@ -48,6 +48,7 @@ shader "Custom/DirectionalFirewatchFog" {
             
             float _UnityFogEnable;
             float _MulticolorFogEnable;
+            uniform float _MulticolorFogEnableGlobal = 0;
             
             uniform float _FWFogAmount;
             uniform float _FWFogDensity;
@@ -80,11 +81,14 @@ shader "Custom/DirectionalFirewatchFog" {
 				
                 float4 worldPos : TEXCOORD2;
                 float3 viewDir : TEXCOORD4;
+                
+                UNITY_VERTEX_OUTPUT_STEREO
 			};
 
 			vertexOutput vert(vertexInput v)
 			{
 				vertexOutput o;
+				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 				o.pos = UnityObjectToClipPos(v.vertex);
 				half3 normal = normalize(mul(unity_ObjectToWorld, half4(v.normal, 0))).xyz;
 
@@ -128,6 +132,7 @@ shader "Custom/DirectionalFirewatchFog" {
 			
 			fixed4 frag(vertexOutput i) : COLOR
 			{
+    			UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
 				fixed4 Result = fixed4(whiteColor,1);				
                 Result *= fixed4(i.customLighting, 1);
                 
@@ -136,7 +141,7 @@ shader "Custom/DirectionalFirewatchFog" {
 					UNITY_APPLY_FOG(i.fogCoord, Result);
                 }
                 
-                if (_MulticolorFogEnable)
+                if (_MulticolorFogEnable && _MulticolorFogEnableGlobal)
                 {
                     float camDist = distance(i.worldPos, _WorldSpaceCameraPos);	
                     
@@ -145,9 +150,9 @@ shader "Custom/DirectionalFirewatchFog" {
                     //float fogFactor = exp(-_FWFogDensity * camDist);
                     
                     // Seems to be close: 0.4 corresponds with about 0.5
-                    float fogFactor =  (_FWFogDensity/10) * (camDist/10);
+                    float fogFactor =  (_FWFogDensity/10) * (camDist/2);
                     fogFactor = exp2(-fogFactor);
-                    float2 rampPos = float2(saturate(camDist/_FWFogAmount), 0);
+                    float2 rampPos = float2(saturate(camDist/_FWFogAmount/2), 0);
                     fixed4 fogColor1 = tex2D(_FWColorRamp1, rampPos);
                     fixed4 fogColor2 = tex2D(_FWColorRamp2, rampPos);
                     fixed4 fogColor = lerp(fogColor1, fogColor2, _FWRampBlend);

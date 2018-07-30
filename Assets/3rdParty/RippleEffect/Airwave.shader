@@ -48,23 +48,25 @@ Shader "Custom/Airwave"
 				float4 pos : SV_POSITION;
 				fixed4 color : COLOR;
 				float2 uv_WaveNormal : TEXCOORD1;
+				UNITY_VERTEX_OUTPUT_STEREO
 
-#ifdef SOFTPARTICLES_ON
-				float4 projPos : TEXCOORD2;
-#endif
+//#ifdef SOFTPARTICLES_ON
+//				float4 projPos : TEXCOORD2;
+//#endif
 			};
 
 			v2f vert(appdata_full v)
 			{
 				v2f o;
+				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 				// use UnityObjectToClipPos from UnityCG.cginc to calculate 
 				// the clip-space of the vertex
 				o.pos = UnityObjectToClipPos(v.vertex);
 
-#ifdef SOFTPARTICLES_ON
-				o.projPos = ComputeScreenPos(o.pos);
-				COMPUTE_EYEDEPTH(o.projPos.z);
-#endif
+//#ifdef SOFTPARTICLES_ON
+//				o.projPos = ComputeScreenPos(o.pos);
+//				COMPUTE_EYEDEPTH(o.projPos.z);
+//#endif
 
 				// use ComputeGrabScreenPos function from UnityCG.cginc
 				// to get the correct texture coordinate
@@ -78,13 +80,13 @@ Shader "Custom/Airwave"
 
 			half4 frag(v2f i) : SV_Target
 			{
-
-#ifdef SOFTPARTICLES_ON
-				float sceneZ = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)));
-				float partZ = i.projPos.z;
-				float fade = saturate(_InvFade * (sceneZ - partZ));
-				i.color.a *= fade;
-#endif
+            UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
+//#ifdef SOFTPARTICLES_ON
+//				float sceneZ = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE_PROJ(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)));
+//				float partZ = i.projPos.z;
+//				float fade = saturate(_InvFade * (sceneZ - partZ));
+//				i.color.a *= fade;
+//#endif
 
 				half3 wave = UnpackNormal(tex2D(_WaveNormal, i.uv_WaveNormal.xy));
 

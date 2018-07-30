@@ -14,6 +14,7 @@ public class MoodChangeBehaviour : PlayableBehaviour
     public Texture2D GradientFog;
     public Color DistanceFogColor;
     public float FogDensity;
+    public Color SkyboxTint;
 
     public override void OnPlayableCreate(Playable playable)
     {

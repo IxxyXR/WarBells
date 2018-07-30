@@ -26,6 +26,9 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
         float fogDensity1 = 1f;
         float fogDensity2 = 1f;
 
+        Color skyboxTint1 = Color.black;
+        Color skyboxTint2 = Color.black;
+
         float blend = 1f;
                 
         for (int i = 0; i < inputCount; i++)
@@ -48,6 +51,9 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
                     lightColor2 = input.LightColor;
                     fogDensity1 = input.FogDensity;
                     fogDensity2 = input.FogDensity;
+                    skyboxTint1 = input.SkyboxTint;
+                    skyboxTint2 = input.SkyboxTint;
+
 
                 }
                 else  // Set the final value and the blend amount
@@ -57,6 +63,7 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
                     lightColor2 = input.LightColor;
                     fogDensity1 = input.FogDensity;
                     fogDensity2 = input.FogDensity;
+                    skyboxTint2 = input.SkyboxTint;
 
                     blend = inputWeight;
                 }
@@ -66,27 +73,42 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
         
         if (lastInput != null)
         {
+            // Unity fog color and skybox tint
             RenderSettings.fogColor = Color.Lerp(distanceFogColor1, distanceFogColor2, blend);
+            RenderSettings.skybox.SetColor("_Tint", Color.Lerp(skyboxTint1, skyboxTint2, blend));
+            
+            
+            // Tagged light color
+            var lightColor = Color.Lerp(lightColor1, lightColor2, blend);
             if (lastInput.ControlledLight != null)
             {
-                lastInput.ControlledLight.color = Color.Lerp(lightColor1, lightColor2, blend);                
-            }
-            else
-            {
-                //Debug.LogError("Please tag at least one light as FX Light");
+                lastInput.ControlledLight.color = lightColor;                
             }
             
+            // Fogs
+            var firewatchFogintensity = Mathf.Lerp(fogDensity1, fogDensity2, blend);
+
+            // PostFX fog
             if (lastInput.ControlledCamera!=null)
             {
-                var firewatchFog = lastInput.ControlledCamera?.GetComponent<FirewatchBlendFog>();
+                var firewatchFog = lastInput.ControlledCamera.GetComponent<FirewatchBlendFog>();
                 if (firewatchFog != null)
                 {
                     firewatchFog.colorRamp1 = fogRamp1;
                     firewatchFog.colorRamp2 = fogRamp2;
                     firewatchFog.blendAmount = blend;
-                    firewatchFog.fogIntensity = Mathf.Lerp(fogDensity1, fogDensity2, blend);
+                    firewatchFog.fogIntensity = firewatchFogintensity;
                 }
             }
+            
+            // Shader Global fog
+            Shader.SetGlobalFloat("_FWFogDensity", firewatchFogintensity);
+            Shader.SetGlobalTexture("_FWColorRamp1", fogRamp1);
+            Shader.SetGlobalTexture("_FWColorRamp2", fogRamp2);
+            Shader.SetGlobalFloat("_FWRampBlend", blend);
+            
+            
+
         }
         
     }
