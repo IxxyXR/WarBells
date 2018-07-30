@@ -5276,7 +5276,7 @@ MonoBehaviour:
   gainDb: 0
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!1001 &29585728
@@ -9373,8 +9373,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 216175014}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -1.45519135e-11, w: 1}
+  m_LocalPosition: {x: 0.63101196, y: 18.7, z: 2.4786377}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2095551093}
@@ -9388,7 +9388,7 @@ AudioSource:
   m_GameObject: {fileID: 216175014}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 248799cb4acba48f7b3ee842a80f788c,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 17df04e6ab587486b8c0571c83164bdd,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 9bf9a696248cd4e029247a92ec35f88e, type: 3}
   m_PlayOnAwake: 1
@@ -17066,6 +17066,8 @@ PlayableDirector:
     value: {fileID: 696307416}
   - key: {fileID: 114505803763551816, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 114502711911508218, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
+    value: {fileID: 2095551092}
   m_ExposedReferences:
     m_References:
     - de6744b171d02f34297ce1a1fed0c017: {fileID: 1006869923}
@@ -17565,7 +17567,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 348160529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 9.5, z: -20.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2095551093}
@@ -17587,10 +17589,10 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 5
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
-  occlusionEnabled: 1
+  occlusionEnabled: 0
   occlusionIntensity: 1
   quality: 2
 --- !u!82 &348160532
@@ -23126,7 +23128,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: -5.5
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 0
@@ -25229,7 +25231,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4b6827880026f461daa531430a70ad11, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.57
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -25329,7 +25331,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: -7.5
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 0
@@ -30354,7 +30356,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 674893899}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 6.8, z: 19.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2095551093}
@@ -30376,10 +30378,10 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 5
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
-  occlusionEnabled: 1
+  occlusionEnabled: 0
   occlusionIntensity: 1
   quality: 2
 --- !u!82 &674893902
@@ -32750,7 +32752,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 810408779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.54, y: 9.61, z: 2.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2095551093}
@@ -32772,7 +32774,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 5
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 1
@@ -35769,7 +35771,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 988729631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 23.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2095551093}
@@ -35791,10 +35793,10 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 5
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
-  occlusionEnabled: 1
+  occlusionEnabled: 0
   occlusionIntensity: 1
   quality: 2
 --- !u!82 &988729634
@@ -39603,7 +39605,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4057422702233782, guid: c36d3252d857f264c8a4cfa1be542fe4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.61096454
+      value: -5.4557
       objectReference: {fileID: 0}
     - target: {fileID: 4057422702233782, guid: c36d3252d857f264c8a4cfa1be542fe4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -49704,7 +49706,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2d5d8d26d54ea49ac8167b983bbb8c4e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -49804,10 +49806,10 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: -4
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!1001 &1427437868
@@ -50146,10 +50148,10 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: -7.5
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!1001 &1438189077
@@ -60368,7 +60370,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: -5.5
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 0
@@ -75167,6 +75169,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2095551093}
+  - component: {fileID: 2095551094}
   m_Layer: 0
   m_Name: TimelineSpatialSpotStems
   m_TagString: Untagged
@@ -75192,6 +75195,24 @@ Transform:
   m_Father: {fileID: 1333125370}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2095551094
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095551092}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f3ea6e33b6ce421cab4aab48c5f9c95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2096552442
 Prefab:
   m_ObjectHideFlags: 0
