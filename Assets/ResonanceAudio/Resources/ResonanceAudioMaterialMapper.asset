@@ -15,4 +15,4 @@ MonoBehaviour:
   reverbLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  includeNonStaticGameObjects: 1
+  includeNonStaticGameObjects: 0
