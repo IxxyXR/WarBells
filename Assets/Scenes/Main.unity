@@ -8538,6 +8538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 178138737}
   - component: {fileID: 178138736}
+  - component: {fileID: 178138738}
   m_Layer: 0
   m_Name: AudioSpotAtrium_Cutlery
   m_TagString: Untagged
@@ -8654,6 +8655,28 @@ Transform:
   m_Father: {fileID: 776121968}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &178138738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 178138735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bypassRoomEffects: 0
+  directivityAlpha: 0
+  directivitySharpness: 1
+  listenerDirectivityAlpha: 0
+  listenerDirectivitySharpness: 1
+  gainDb: 0
+  nearFieldEffectEnabled: 1
+  nearFieldEffectGain: 1
+  occlusionEnabled: 0
+  occlusionIntensity: 1
+  quality: 2
 --- !u!1001 &181670465
 Prefab:
   m_ObjectHideFlags: 0
@@ -9121,6 +9144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 212219155}
   - component: {fileID: 212219154}
+  - component: {fileID: 212219156}
   m_Layer: 0
   m_Name: AudioSpotAtrium_DeskPhoneRing
   m_TagString: Untagged
@@ -9140,7 +9164,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 0a85171c4b9fb4803a0fd1b4c85d7557, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.32003918
+  m_Volume: 0.268
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9237,6 +9261,28 @@ Transform:
   m_Father: {fileID: 776121968}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &212219156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212219153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bypassRoomEffects: 0
+  directivityAlpha: 0
+  directivitySharpness: 1
+  listenerDirectivityAlpha: 0
+  listenerDirectivitySharpness: 1
+  gainDb: 0
+  nearFieldEffectEnabled: 1
+  nearFieldEffectGain: 1
+  occlusionEnabled: 0
+  occlusionIntensity: 1
+  quality: 2
 --- !u!1001 &215442256
 Prefab:
   m_ObjectHideFlags: 0
@@ -23817,6 +23863,7 @@ GameObject:
   - component: {fileID: 414467541}
   - component: {fileID: 414467540}
   - component: {fileID: 414467542}
+  - component: {fileID: 414467543}
   m_Layer: 0
   m_Name: AudioSpotAtrium_MobileRing
   m_TagString: Untagged
@@ -23951,6 +23998,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &414467543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414467539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bypassRoomEffects: 0
+  directivityAlpha: 0
+  directivitySharpness: 1
+  listenerDirectivityAlpha: 0
+  listenerDirectivitySharpness: 1
+  gainDb: 0
+  nearFieldEffectEnabled: 1
+  nearFieldEffectGain: 1
+  occlusionEnabled: 0
+  occlusionIntensity: 1
+  quality: 2
 --- !u!134 &424100884
 PhysicMaterial:
   m_ObjectHideFlags: 0
@@ -56537,6 +56606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1687962720}
   - component: {fileID: 1687962719}
+  - component: {fileID: 1687962721}
   m_Layer: 0
   m_Name: AudioSpotAtrium_Fts
   m_TagString: Untagged
@@ -56653,6 +56723,28 @@ Transform:
   m_Father: {fileID: 776121968}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1687962721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1687962718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bypassRoomEffects: 0
+  directivityAlpha: 0
+  directivitySharpness: 1
+  listenerDirectivityAlpha: 0
+  listenerDirectivitySharpness: 1
+  gainDb: 0
+  nearFieldEffectEnabled: 1
+  nearFieldEffectGain: 1
+  occlusionEnabled: 0
+  occlusionIntensity: 1
+  quality: 2
 --- !u!1001 &1690990335
 Prefab:
   m_ObjectHideFlags: 0
