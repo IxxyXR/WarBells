@@ -59,6 +59,12 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
         Invoke(nameof(Resume), clipResumeAfter);
     }
 
+    public void ResumeAt(float time)
+    {
+        playableDirector.time = time;
+        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(originalSpeed);
+    }
+
     // TimelineのLoopSeekBehaviourからの呼び出しの場合trueを指定する。
     // それ以外の場合は
     public void SetTime(int label, bool fromTimeline = false)
