@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
+  m_FogColor: {r: 0.59706897, g: 0.17874594, b: 0.17984195, a: 0.043438647}
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: 0
@@ -17185,6 +17185,8 @@ PlayableDirector:
     value: {fileID: 1955194100}
   - key: {fileID: 114295766857941766, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
     value: {fileID: 1955194098}
+  - key: {fileID: 114605255318057642, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - de6744b171d02f34297ce1a1fed0c017: {fileID: 1006869923}
@@ -36297,7 +36299,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.4578172, g: 0.504866, b: 0.37078366, a: 0}
+  m_Color: {r: 0.8325693, g: 0.12597628, b: 0.11991628, a: 0}
   m_Intensity: 3.75
   m_Range: 4.84
   m_SpotAngle: 30
@@ -37668,9 +37670,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTex: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
   fogAmount: 1
-  colorRamp1: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
+  colorRamp1: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
   colorRamp2: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-  blendAmount: 0.038994435
+  blendAmount: 0.043438647
   fogIntensity: 0.9
   fogShader: {fileID: 4800000, guid: 74fa7e1a18c9449f9b6e4385ae9a28f7, type: 3}
 --- !u!4 &1060433874 stripped
