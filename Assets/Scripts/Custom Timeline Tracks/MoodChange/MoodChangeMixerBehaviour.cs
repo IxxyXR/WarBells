@@ -61,7 +61,6 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
                     fogRamp2 = input.GradientFog;
                     distanceFogColor2 = input.DistanceFogColor;
                     lightColor2 = input.LightColor;
-                    fogDensity1 = input.FogDensity;
                     fogDensity2 = input.FogDensity;
                     skyboxTint2 = input.SkyboxTint;
 
