@@ -11,8 +11,8 @@ shader "Custom/DirectionalFirewatchFog" {
         _Color1_T ("Top Color", Color) = (1, 1, 1, 1)
         _Color1_D ("Bottom Color", Color) = (1, 1, 1, 1)
         
-        [MaterialToggle] _UnityFogEnable ("Unity Fog", Float ) = 0
-        [MaterialToggle] _MulticolorFogEnable ("Multicolor Fog", Float ) = 0
+        [MaterialToggle] _UnityFogEnable ("Unity Fog", Float ) = 1
+        [MaterialToggle] _MulticolorFogEnable ("Multicolor Fog", Float ) = 1
         
         //_FWFogAmount("Multicolor Fog amount", float) = 250
         //_FWColorRamp("Multicolor Fog ramp", 2D) = "white" {}
@@ -48,9 +48,9 @@ shader "Custom/DirectionalFirewatchFog" {
             
             float _UnityFogEnable;
             float _MulticolorFogEnable;
-            uniform float _MulticolorFogEnableGlobal = 0;
+            //float _MulticolorFogEnableGlobal;
             
-            uniform float _FWFogAmount;
+            //float _FWFogAmount;
             uniform float _FWFogDensity;
             uniform sampler2D _FWColorRamp1;
             uniform sampler2D _FWColorRamp2;
@@ -132,6 +132,9 @@ shader "Custom/DirectionalFirewatchFog" {
 			
 			fixed4 frag(vertexOutput i) : COLOR
 			{
+			
+    			float _FWFogAmount = 250;  // TODO Make a global again
+    			
     			UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
 				fixed4 Result = fixed4(whiteColor,1);				
                 Result *= fixed4(i.customLighting, 1);
@@ -141,7 +144,7 @@ shader "Custom/DirectionalFirewatchFog" {
 					UNITY_APPLY_FOG(i.fogCoord, Result);
                 }
                 
-                if (_MulticolorFogEnable && _MulticolorFogEnableGlobal)
+                if (_MulticolorFogEnable)
                 {
                     float camDist = distance(i.worldPos, _WorldSpaceCameraPos) + 30; // 30 is an arbitrary offset for now...
                     
