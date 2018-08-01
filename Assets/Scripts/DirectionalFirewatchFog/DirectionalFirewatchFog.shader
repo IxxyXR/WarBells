@@ -134,6 +134,7 @@ shader "Custom/DirectionalFirewatchFog" {
 			{
 			
     			float _FWFogAmount = 250;  // TODO Make a global again
+    			float _MulticolorFogEnableGlobal = 1;  // TODO Make a global again
     			
     			UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
 				fixed4 Result = fixed4(whiteColor,1);				
@@ -144,7 +145,7 @@ shader "Custom/DirectionalFirewatchFog" {
 					UNITY_APPLY_FOG(i.fogCoord, Result);
                 }
                 
-                if (_MulticolorFogEnable)
+                if (_MulticolorFogEnable && _MulticolorFogEnableGlobal)
                 {
                     float camDist = distance(i.worldPos, _WorldSpaceCameraPos) + 30; // 30 is an arbitrary offset for now...
                     
