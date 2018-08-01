@@ -309,7 +309,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
     DistanceFogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.31448025, g: 0.3242998, b: 0.3490566, a: 0}
+    SkyboxTint: {r: 0.5, g: 0.5, b: 0.5, a: 0}
 --- !u!114 &114024761694062492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -448,7 +448,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
     DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.26415092, g: 0.1707013, b: 0.1707013, a: 0}
+    SkyboxTint: {r: 0.49056602, g: 0.38180846, b: 0.38180846, a: 0}
 --- !u!114 &114057871550516734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1025,7 +1025,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
     DistanceFogColor: {r: 0.38661444, g: 0.4528302, b: 0.4380986, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.14021893, g: 0.21698111, b: 0.20227276, a: 0}
+    SkyboxTint: {r: 0.19958168, g: 0.21698111, b: 0.21423383, a: 0}
 --- !u!114 &114079989683952188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5818,7 +5818,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
     DistanceFogColor: {r: 0.9339623, g: 0.057271298, b: 0.057271298, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.3301887, g: 0.20091671, b: 0.20091671, a: 0}
+    SkyboxTint: {r: 0.5377358, g: 0.43373975, b: 0.43373975, a: 0}
 --- !u!114 &114206392679039828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7467,7 +7467,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
     DistanceFogColor: {r: 1, g: 0.9764151, b: 0.9764151, a: 0.41960785}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.5573603, g: 0.6624648, b: 0.7075472, a: 0.7137255}
+    SkyboxTint: {r: 0.1502314, g: 0.15070607, b: 0.1509434, a: 0.7137255}
 --- !u!114 &114225716180231906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7605,7 +7605,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
     DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 0}
+    SkyboxTint: {r: 1, g: 1, b: 1, a: 0}
 --- !u!114 &114237821519119332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9009,7 +9009,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
     DistanceFogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0}
+    SkyboxTint: {r: 0.4600837, g: 0.46103984, b: 0.46226418, a: 0}
 --- !u!114 &114339196472733070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9416,7 +9416,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
     DistanceFogColor: {r: 0.4356263, g: 0.4716981, b: 0.24252403, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.31132078, g: 0.2569865, b: 0.2569865, a: 0}
+    SkyboxTint: {r: 0.3584906, g: 0.3567996, b: 0.3567996, a: 0}
 --- !u!114 &114398020056884014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10629,7 +10629,25 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -10668,7 +10686,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -13541,7 +13577,25 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -13734,7 +13788,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
     DistanceFogColor: {r: 0.56031644, g: 0.5660378, b: 0.5259879, a: 1}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 0}
+    SkyboxTint: {r: 0.5471698, g: 0.5187789, b: 0.5187789, a: 0}
 --- !u!114 &114567156162215976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13914,7 +13968,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
     DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0}
+    SkyboxTint: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0}
 --- !u!114 &114607877246981788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14987,7 +15041,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
     DistanceFogColor: {r: 0.3721965, g: 0.6415094, b: 0.52432746, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.378471, g: 0.50702417, b: 0.5943396, a: 0}
+    SkyboxTint: {r: 0.44708973, g: 0.4811321, b: 0.44747972, a: 0}
 --- !u!114 &114617624972063488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15353,7 +15407,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
     DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.3679245, g: 0.24123353, b: 0.24123353, a: 0}
+    SkyboxTint: {r: 0.6603774, g: 0.4516732, b: 0.4516732, a: 0}
 --- !u!114 &114677129939238510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15689,7 +15743,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
     DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.3490566, g: 0.26179245, b: 0.26179245, a: 0.7490196}
+    SkyboxTint: {r: 0.745283, g: 0.6925507, b: 0.6925507, a: 0.7490196}
 --- !u!114 &114703638504477960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18706,7 +18760,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
     DistanceFogColor: {r: 0.38661444, g: 0.4528302, b: 0.4380986, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.11302953, g: 0.18867922, b: 0.1793596, a: 0}
+    SkyboxTint: {r: 0.20941615, g: 0.24528301, b: 0.24150755, a: 0}
 --- !u!114 &114731407927654116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19925,7 +19979,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
     DistanceFogColor: {r: 0.17942329, g: 0.4399841, b: 0.6037736, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.2735849, g: 0.22067462, b: 0.22067462, a: 0}
+    SkyboxTint: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
 --- !u!114 &114778377235548394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20020,7 +20074,7 @@ MonoBehaviour:
     LightColor: {r: 0.9245283, g: 0.8573692, b: 0.58873266, a: 0}
     GradientFog: {fileID: 2800000, guid: 50311ba274d1e8d4ba310fcea5a1de5a, type: 3}
     DistanceFogColor: {r: 0.47592562, g: 0.8773585, b: 0.8596441, a: 1}
-    FogDensity: 0.9
+    FogDensity: 0.3
     SkyboxTint: {r: 0.5568628, g: 0.6627451, b: 0.7058824, a: 1}
 --- !u!114 &114789266543812198
 MonoBehaviour:
@@ -21279,7 +21333,7 @@ MonoBehaviour:
     GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
     DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
     FogDensity: 0.9
-    SkyboxTint: {r: 0.3301887, g: 0.2507565, b: 0.2507565, a: 0.5647059}
+    SkyboxTint: {r: 0.5660378, g: 0.4352083, b: 0.4352083, a: 0.5647059}
 --- !u!114 &114951256364388510
 MonoBehaviour:
   m_ObjectHideFlags: 1
