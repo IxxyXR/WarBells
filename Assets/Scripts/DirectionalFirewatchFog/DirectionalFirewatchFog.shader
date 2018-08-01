@@ -143,16 +143,17 @@ shader "Custom/DirectionalFirewatchFog" {
                 
                 if (_MulticolorFogEnable && _MulticolorFogEnableGlobal)
                 {
-                    float camDist = distance(i.worldPos, _WorldSpaceCameraPos);	
+                    float camDist = distance(i.worldPos, _WorldSpaceCameraPos) + 30; // 30 is an arbitrary offset for now...
                     
                     // By the book exp, Hopeless
                     //float fogFactor = camDist;
                     //float fogFactor = exp(-_FWFogDensity * camDist);
                     
                     // Seems to be close: 0.4 corresponds with about 0.5
-                    float fogFactor =  (_FWFogDensity/10) * (camDist/2);
-                    fogFactor = exp2(-fogFactor);
-                    float2 rampPos = float2(saturate(camDist/_FWFogAmount/2), 0);
+                    float fogFactor =  _FWFogDensity * camDist;
+                    fogFactor = exp2(-fogFactor/40); // 40 is another arbitrary constant to match the old fog
+
+                    float2 rampPos = float2(saturate(camDist/_FWFogAmount), 0);
                     fixed4 fogColor1 = tex2D(_FWColorRamp1, rampPos);
                     fixed4 fogColor2 = tex2D(_FWColorRamp2, rampPos);
                     fixed4 fogColor = lerp(fogColor1, fogColor2, _FWRampBlend);
