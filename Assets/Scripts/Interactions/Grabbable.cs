@@ -8,15 +8,19 @@ namespace Interactions
 		private Vector3 originalPosition;
 		private Quaternion originalRotation;
 		public Transform Target;
+		public AudioClip GrabbedSound;
 		[HideInInspector]
 		public bool IsGrabbing;
 		[HideInInspector]
 		public bool IsGrabbed;
 
+		private AudioSource _audioSource;
+
 		void Start()
 		{
 			originalPosition = gameObject.transform.position;
 			originalRotation = gameObject.transform.rotation;
+			_audioSource = gameObject.GetComponent<AudioSource>();
 		}
 	
 		public void Grab()
@@ -24,6 +28,7 @@ namespace Interactions
 			if (IsGrabbed)
 			{
 				UnGrab();
+				_audioSource.PlayOneShot(GrabbedSound);
 			}
 			else
 			{
@@ -32,7 +37,8 @@ namespace Interactions
 				foreach (var sibling in GetSiblings())
 				{	
 					if (sibling.IsGrabbed) {sibling.UnGrab();}
-				}			
+				}
+				_audioSource.PlayOneShot(GrabbedSound);
 			}
 		}
 

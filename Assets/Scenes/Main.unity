@@ -16949,72 +16949,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 316451715}
---- !u!1 &319515138
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 319515141}
-  - component: {fileID: 319515140}
-  - component: {fileID: 319515139}
-  m_Layer: 0
-  m_Name: Test Timeline
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &319515139
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 319515138}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!320 &319515140
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 319515138}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 7f69d17448115994bbe35246377f2d78, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 114952837204190258, guid: 7f69d17448115994bbe35246377f2d78, type: 2}
-    value: {fileID: 319515138}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &319515141
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 319515138}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -391.9422, y: 31.90633, z: 394.0674}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &334392466
 Prefab:
   m_ObjectHideFlags: 0
@@ -17292,7 +17226,7 @@ PlayableDirector:
     - d342675b1a858a9498fb64d9a63c1201: {fileID: 1006869923}
     - db8dc0160ab91d040b6ced5494036fde: {fileID: 700777939}
     - f6b026672ea9a6945a3dac2df11201e1: {fileID: 1060433877}
-    - fa649d062bfdd264c9962463fc8a3be0: {fileID: 319515138}
+    - fa649d062bfdd264c9962463fc8a3be0: {fileID: 0}
     - 64f022a6d1370a54d95f942409d1cf2e: {fileID: 1006869923}
 --- !u!4 &339280654
 Transform:
@@ -26647,7 +26581,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh251354
+  m_Name: pb_Mesh175742
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -30175,7 +30109,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh246406
+  m_Name: pb_Mesh170656
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -34679,6 +34613,61 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114074322898263020, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: touchedSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114913246724200110, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: touchedSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114848294607793728, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: touchedSound
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114392305175970302, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: GrabbedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 56c2a598d51e947e4aa19a510f6785b5, type: 3}
+    - target: {fileID: 114647912304156764, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: GrabbedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f1773f0a59b0475ea30afccf9fef6d9, type: 3}
+    - target: {fileID: 114874618707009554, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: GrabbedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c3bffd767ea2641a1b56e622ac5f5424, type: 3}
+    - target: {fileID: 114848294607793728, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: highlightedColor.g
+      value: 0.79607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 114848294607793728, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: highlightedColor.b
+      value: 0.7607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 114074322898263020, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: highlightedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ea6326764cca442fa9b196357f3d8b8a, type: 3}
+    - target: {fileID: 114913246724200110, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: highlightedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ea6326764cca442fa9b196357f3d8b8a, type: 3}
+    - target: {fileID: 114848294607793728, guid: 9985de2dfd8ee3d4d838aa7d6c64b552,
+        type: 2}
+      propertyPath: highlightedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ea6326764cca442fa9b196357f3d8b8a, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9985de2dfd8ee3d4d838aa7d6c64b552, type: 2}
   m_IsPrefabParent: 0
@@ -39917,6 +39906,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114144739885027300, guid: c36d3252d857f264c8a4cfa1be542fe4,
+        type: 2}
+      propertyPath: attachmentPrefabs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4057422702233782, guid: c36d3252d857f264c8a4cfa1be542fe4, type: 2}
       propertyPath: m_LocalPosition.x
       value: -382.30627
@@ -40121,6 +40115,12 @@ Prefab:
       propertyPath: near clip plane
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 114144739885027300, guid: c36d3252d857f264c8a4cfa1be542fe4,
+        type: 2}
+      propertyPath: attachmentPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 1000011375678268, guid: 6e5b693d0947f4a8b85a00d3965ba64c,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 114904538478024058, guid: c36d3252d857f264c8a4cfa1be542fe4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c36d3252d857f264c8a4cfa1be542fe4, type: 2}
@@ -40898,7 +40898,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh251178
+  m_Name: pb_Mesh174540
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -41610,7 +41610,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightedColor: {r: 1, g: 0, b: 0.085289, a: 1}
+  highlightedSound: {fileID: 0}
   touchedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  touchedSound: {fileID: 0}
 --- !u!82 &1235618267
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41807,7 +41809,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh21762
+  m_Name: pb_Mesh208562
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -54844,7 +54846,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightedColor: {r: 1, g: 0, b: 0.085289, a: 1}
+  highlightedSound: {fileID: 0}
   touchedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  touchedSound: {fileID: 0}
 --- !u!82 &1618309626
 AudioSource:
   m_ObjectHideFlags: 0
@@ -57694,7 +57698,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightedColor: {r: 1, g: 0, b: 0.085289, a: 1}
+  highlightedSound: {fileID: 0}
   touchedColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  touchedSound: {fileID: 0}
 --- !u!82 &1718444286
 AudioSource:
   m_ObjectHideFlags: 0
