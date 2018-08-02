@@ -42,7 +42,8 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
         if (playableDirector != null)
         {
             originalSpeed = playableDirector.playableGraph.GetRootPlayable(0).GetSpeed();
-            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+            //playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+            playableDirector.playableGraph.GetRootPlayable(0).Pause();
         }
     }
 
@@ -50,7 +51,8 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
     {
         if (playableDirector != null)
         {
-            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(originalSpeed);
+            //playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(originalSpeed);
+            playableDirector.playableGraph.GetRootPlayable(0).Play();
         }
     }
 
@@ -62,7 +64,8 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
     public void ResumeAt(float time)
     {
         playableDirector.time = time;
-        playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(originalSpeed);
+        //playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(originalSpeed);
+        playableDirector.playableGraph.GetRootPlayable(0).Play();
     }
 
     // TimelineのLoopSeekBehaviourからの呼び出しの場合trueを指定する。
