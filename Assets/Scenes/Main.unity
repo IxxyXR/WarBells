@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
+  m_FogColor: {r: 0.47592562, g: 0.8773585, b: 0.8596441, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: 0
@@ -12319,7 +12319,7 @@ PlayableDirector:
     value: {fileID: 1339200609}
   - key: {fileID: 114907223781251530, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 114398020056884014, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: 114072302655194906, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
     value: {fileID: 0}
@@ -31810,7 +31810,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.17452355, g: 0.16543873, b: 0.16285695, a: 0}
+  m_Color: {r: 0.9245283, g: 0.8573692, b: 0.58873266, a: 0}
   m_Intensity: 3.75
   m_Range: 4.84
   m_SpotAngle: 30
