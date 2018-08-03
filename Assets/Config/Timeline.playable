@@ -306,10 +306,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.16981131, g: 0.15979278, b: 0.15939835, a: 0}
-    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-    DistanceFogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    DistanceFogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114024761694062492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -459,10 +461,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.8490566, g: 0.108134575, b: 0.108134575, a: 0}
-    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
-    DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.49056602, g: 0.38180846, b: 0.38180846, a: 0}
+    DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114057245311852588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -507,10 +511,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.9433962, g: 0.31091133, b: 0.11124954, a: 0}
-    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
-    DistanceFogColor: {r: 1, g: 0.72569275, b: 0.051886797, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.9716981, g: 0.62506753, b: 0.36209506, a: 0}
+    DistanceFogColor: {r: 1, g: 0.72569275, b: 0.051886797, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114061204260165192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -982,10 +988,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.3771805, g: 0.49056602, b: 0.43805563, a: 0}
-    GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
-    DistanceFogColor: {r: 0.38661444, g: 0.4528302, b: 0.4380986, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.19958168, g: 0.21698111, b: 0.21423383, a: 0}
+    DistanceFogColor: {r: 0.38661444, g: 0.4528302, b: 0.4380986, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114079989683952188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2152,13 +2160,49 @@ MonoBehaviour:
     m_BlendOutDuration: 9.366666666666646
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -5673,10 +5717,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.46950352, g: 0.5188679, b: 0.37936097, a: 0}
-    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-    DistanceFogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0}
+    DistanceFogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114195853154211726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5724,10 +5770,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.9716981, g: 0.087086126, b: 0.087086126, a: 0}
-    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
-    DistanceFogColor: {r: 0.9339623, g: 0.057271298, b: 0.057271298, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.5377358, g: 0.43373975, b: 0.43373975, a: 0}
+    DistanceFogColor: {r: 0.9339623, g: 0.057271298, b: 0.057271298, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114206392679039828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5813,7 +5861,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -5873,13 +5939,49 @@ MonoBehaviour:
     m_BlendOutDuration: 2.566666666666663
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -5939,13 +6041,49 @@ MonoBehaviour:
     m_BlendOutDuration: 1.9666666666666686
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -5972,13 +6110,49 @@ MonoBehaviour:
     m_BlendOutDuration: 1.9666666666666686
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -6005,13 +6179,49 @@ MonoBehaviour:
     m_BlendOutDuration: 2.1500000000000057
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -6038,13 +6248,49 @@ MonoBehaviour:
     m_BlendOutDuration: 2.25
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -6071,13 +6317,49 @@ MonoBehaviour:
     m_BlendOutDuration: 2.666666666666657
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -6104,13 +6386,49 @@ MonoBehaviour:
     m_BlendOutDuration: 2.7166666666666686
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -6667,10 +6985,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 1, g: 0.94661194, b: 0.43867922, a: 1}
-    GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
-    DistanceFogColor: {r: 1, g: 1, b: 1, a: 1}
-    FogDensity: 0.21
     SkyboxTint: {r: 0.1502314, g: 0.15070607, b: 0.1509434, a: 0.7137255}
+    DistanceFogColor: {r: 1, g: 1, b: 1, a: 1}
+    DistanceFogStart: 10
+    DistanceFogEnd: 100
+    GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
+    FogDensity: 0.21
 --- !u!114 &114225716180231906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6716,10 +7036,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.9433962, g: 0.22625446, b: 0.12904951, a: 0}
-    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-    DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
-    FogDensity: 0.9
     SkyboxTint: {r: 1, g: 1, b: 1, a: 0}
+    DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114237821519119332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6750,10 +7072,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.9150943, g: 0.8778684, b: 0.38416696, a: 0}
-    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
-    DistanceFogColor: {r: 0.4356263, g: 0.4716981, b: 0.24252403, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.5568628, g: 0.7058824, b: 0.67051166, a: 0}
+    DistanceFogColor: {r: 0.4356263, g: 0.4716981, b: 0.24252403, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114245031191277242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8212,10 +8536,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.16981131, g: 0.15979278, b: 0.15939835, a: 0}
-    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-    DistanceFogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.4600837, g: 0.46103984, b: 0.46226418, a: 0}
+    DistanceFogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114339196472733070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8619,10 +8945,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.9150943, g: 0.8778684, b: 0.38416696, a: 0}
-    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
-    DistanceFogColor: {r: 0.4356263, g: 0.4716981, b: 0.24252403, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.3584906, g: 0.3567996, b: 0.3567996, a: 0}
+    DistanceFogColor: {r: 0.4356263, g: 0.4716981, b: 0.24252403, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114398020056884014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12464,13 +12792,49 @@ MonoBehaviour:
     m_BlendOutDuration: 3.9833333333333343
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -12497,13 +12861,49 @@ MonoBehaviour:
     m_BlendOutDuration: 3.816666666666677
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -12530,13 +12930,49 @@ MonoBehaviour:
     m_BlendOutDuration: 5.483333333332666
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -12822,10 +13258,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.9716981, g: 0.17835207, b: 0.09625311, a: 0}
-    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
-    DistanceFogColor: {r: 0.56031644, g: 0.5660378, b: 0.5259879, a: 1}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.5471698, g: 0.5187789, b: 0.5187789, a: 0}
+    DistanceFogColor: {r: 0.56031644, g: 0.5660378, b: 0.5259879, a: 1}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114567156162215976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12969,10 +13407,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.9433962, g: 0.22625446, b: 0.12904951, a: 0}
-    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-    DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.4056604, g: 0.376958, b: 0.376958, a: 0}
+    DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114601279062970344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13002,10 +13442,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.46551412, g: 0.5283019, b: 0.31149876, a: 0}
-    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
-    DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0}
+    DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114605255318057642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14367,10 +14809,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.5188679, g: 0.12482198, b: 0.15842977, a: 0}
-    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
-    DistanceFogColor: {r: 0.3721965, g: 0.6415094, b: 0.52432746, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.44708973, g: 0.4811321, b: 0.44747972, a: 0}
+    DistanceFogColor: {r: 0.3721965, g: 0.6415094, b: 0.52432746, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 37c97f59c57b1d7489a32bef18fe31d5, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114617624972063488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14433,10 +14877,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.46551412, g: 0.5283019, b: 0.31149876, a: 0}
-    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
-    DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.4056604, g: 0.39226595, b: 0.39226595, a: 0}
+    DistanceFogColor: {r: 0.57249016, g: 0.56007475, b: 0.5849056, a: 1}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 049f8c6872d1ee54491c7259e9c36f62, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114619737343705850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14955,10 +15401,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.8490566, g: 0.108134575, b: 0.108134575, a: 0}
-    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
-    DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.6603774, g: 0.4516732, b: 0.4516732, a: 0}
+    DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114677129939238510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15107,7 +15555,25 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -15287,10 +15753,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.8490566, g: 0.108134575, b: 0.108134575, a: 0}
-    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
-    DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.745283, g: 0.6925507, b: 0.6925507, a: 0.7490196}
+    DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114703638504477960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18304,10 +18772,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.3771805, g: 0.49056602, b: 0.43805563, a: 0}
-    GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
-    DistanceFogColor: {r: 0.38661444, g: 0.4528302, b: 0.4380986, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.20941615, g: 0.24528301, b: 0.24150755, a: 0}
+    DistanceFogColor: {r: 0.38661444, g: 0.4528302, b: 0.4380986, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114731407927654116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19537,10 +20007,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.6301175, g: 0.7323828, b: 0.754717, a: 0}
-    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
-    DistanceFogColor: {r: 0.17942329, g: 0.4399841, b: 0.6037736, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.4528302, g: 0.4250623, b: 0.4250623, a: 0}
+    DistanceFogColor: {r: 0.17942329, g: 0.4399841, b: 0.6037736, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114778377235548394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19633,10 +20105,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.9245283, g: 0.8573692, b: 0.58873266, a: 0}
-    GradientFog: {fileID: 2800000, guid: 50311ba274d1e8d4ba310fcea5a1de5a, type: 3}
-    DistanceFogColor: {r: 0.47592562, g: 0.8773585, b: 0.8596441, a: 1}
-    FogDensity: 0.3
     SkyboxTint: {r: 0.5568628, g: 0.6627451, b: 0.7058824, a: 1}
+    DistanceFogColor: {r: 0.47592562, g: 0.8773585, b: 0.8596441, a: 1}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 50311ba274d1e8d4ba310fcea5a1de5a, type: 3}
+    FogDensity: 0.3
 --- !u!114 &114789266543812198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -20910,10 +21384,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.8490566, g: 0.108134575, b: 0.108134575, a: 0}
-    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
-    DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
-    FogDensity: 0.9
     SkyboxTint: {r: 0.5660378, g: 0.4352083, b: 0.4352083, a: 0.5647059}
+    DistanceFogColor: {r: 0.6132076, g: 0.17644179, b: 0.17644179, a: 0}
+    DistanceFogStart: 0
+    DistanceFogEnd: 3.7
+    GradientFog: {fileID: 2800000, guid: 3a60bc4c17f77e84799c9688be6d8d22, type: 3}
+    FogDensity: 0.9
 --- !u!114 &114950822369358786
 MonoBehaviour:
   m_ObjectHideFlags: 1

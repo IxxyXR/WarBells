@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Atrium White
+  m_Name: atrium
   m_Shader: {fileID: 4800000, guid: a97e290cd0cec1a4cb176e474e69c1dc, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

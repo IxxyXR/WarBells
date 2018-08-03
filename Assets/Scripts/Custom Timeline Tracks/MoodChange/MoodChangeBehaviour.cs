@@ -9,12 +9,16 @@ public class MoodChangeBehaviour : PlayableBehaviour
 {
     public Camera ControlledCamera;
     public Light ControlledLight;
-    
+
     public Color LightColor;
-    public Texture2D GradientFog;
-    public Color DistanceFogColor;
-    public float FogDensity;
     public Color SkyboxTint;
+    
+    public Color DistanceFogColor;
+    public float DistanceFogStart = 0;
+    public float DistanceFogEnd = 3.7f;
+    
+    public Texture2D GradientFog;
+    public float FogDensity;
 
     public override void OnPlayableCreate(Playable playable)
     {

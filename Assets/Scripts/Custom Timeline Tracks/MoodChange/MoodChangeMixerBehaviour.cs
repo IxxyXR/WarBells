@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.Playables;
-using UnityStandardAssets.ImageEffects;
-// ReSharper disable CheckNamespace
 
 
 public class MoodChangeMixerBehaviour : PlayableBehaviour
@@ -13,22 +11,24 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
         int inputCount = playable.GetInputCount ();
 
         MoodChangeBehaviour lastInput = null;
-        
-        Texture2D fogRamp1 = null;
-        Texture2D fogRamp2 = null;
+                
+        Color lightColor1 = Color.black;
+        Color lightColor2 = Color.black;
+        Color skyboxTint1 = Color.black;
+        Color skyboxTint2 = Color.black;
         
         Color distanceFogColor1 = Color.black;
         Color distanceFogColor2 = Color.black;
+        float distanceFogStart1 = 0f;
+        float distanceFogStart2 = 0f;
+        float distanceFogEnd1 = 3.7f;
+        float distanceFogEnd2 = 3.7f;
         
-        Color lightColor1 = Color.black;
-        Color lightColor2 = Color.black;
-
+        Texture2D fogRamp1 = null;
+        Texture2D fogRamp2 = null;
         float fogDensity1 = 1f;
         float fogDensity2 = 1f;
-
-        Color skyboxTint1 = Color.black;
-        Color skyboxTint2 = Color.black;
-
+        
         float blend = 1f;
                 
         for (int i = 0; i < inputCount; i++)
@@ -43,26 +43,32 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
                 
                 if (fogRamp1 == null)  // Set start and end values to be the same
                 {
-                    fogRamp1 = input.GradientFog;
-                    fogRamp2 = input.GradientFog;
-                    distanceFogColor1 = input.DistanceFogColor;
-                    distanceFogColor2 = input.DistanceFogColor;
                     lightColor1 = input.LightColor;
                     lightColor2 = input.LightColor;
-                    fogDensity1 = input.FogDensity;
-                    fogDensity2 = input.FogDensity;
                     skyboxTint1 = input.SkyboxTint;
                     skyboxTint2 = input.SkyboxTint;
+                    fogRamp1 = input.GradientFog;
+                    fogRamp2 = input.GradientFog;
+                    fogDensity1 = input.FogDensity;
+                    fogDensity2 = input.FogDensity;
+                    distanceFogStart1 = input.DistanceFogStart;
+                    distanceFogStart2 = input.DistanceFogStart;
+                    distanceFogEnd1 = input.DistanceFogEnd;
+                    distanceFogEnd2 = input.DistanceFogEnd;
+                    distanceFogColor1 = input.DistanceFogColor;
+                    distanceFogColor2 = input.DistanceFogColor;
 
 
                 }
                 else  // Set the final value and the blend amount
                 {
-                    fogRamp2 = input.GradientFog;
-                    distanceFogColor2 = input.DistanceFogColor;
                     lightColor2 = input.LightColor;
-                    fogDensity2 = input.FogDensity;
                     skyboxTint2 = input.SkyboxTint;
+                    distanceFogColor2 = input.DistanceFogColor;
+                    distanceFogStart2 = input.DistanceFogStart;
+                    distanceFogEnd2 = input.DistanceFogEnd;
+                    fogRamp2 = input.GradientFog;
+                    fogDensity2 = input.FogDensity;
 
                     blend = inputWeight;
                 }
@@ -72,42 +78,25 @@ public class MoodChangeMixerBehaviour : PlayableBehaviour
         
         if (lastInput != null)
         {
-            // Unity fog color and skybox tint
-            RenderSettings.fogColor = Color.Lerp(distanceFogColor1, distanceFogColor2, blend);
+            // Skybox tint
             RenderSettings.skybox.SetColor("_Tint", Color.Lerp(skyboxTint1, skyboxTint2, blend));
-            
             
             // Tagged light color
             var lightColor = Color.Lerp(lightColor1, lightColor2, blend);
-            if (lastInput.ControlledLight != null)
-            {
-                lastInput.ControlledLight.color = lightColor;                
-            }
+            if (lastInput.ControlledLight != null) {lastInput.ControlledLight.color = lightColor;}
             
-            // Fogs
-            var firewatchFogintensity = Mathf.Lerp(fogDensity1, fogDensity2, blend);
+            // Unity fog
+            RenderSettings.fogColor = Color.Lerp(distanceFogColor1, distanceFogColor2, blend);
+            RenderSettings.fogStartDistance = Mathf.Lerp(distanceFogStart1, distanceFogStart2, blend);
+            RenderSettings.fogEndDistance = Mathf.Lerp(distanceFogEnd1, distanceFogEnd2, blend);
 
-            // PostFX fog
-            if (lastInput.ControlledCamera!=null)
-            {
-                var firewatchFog = lastInput.ControlledCamera.GetComponent<FirewatchBlendFog>();
-                if (firewatchFog != null)
-                {
-                    firewatchFog.colorRamp1 = fogRamp1;
-                    firewatchFog.colorRamp2 = fogRamp2;
-                    firewatchFog.blendAmount = blend;
-                    firewatchFog.fogIntensity = firewatchFogintensity;
-                }
-            }
-            
             // Shader Global fog
+            var firewatchFogintensity = Mathf.Lerp(fogDensity1, fogDensity2, blend);
             Shader.SetGlobalFloat("_FWFogDensity", firewatchFogintensity);
             Shader.SetGlobalTexture("_FWColorRamp1", fogRamp1);
             Shader.SetGlobalTexture("_FWColorRamp2", fogRamp2);
             Shader.SetGlobalFloat("_FWRampBlend", blend);
             
-            
-
         }
         
     }
