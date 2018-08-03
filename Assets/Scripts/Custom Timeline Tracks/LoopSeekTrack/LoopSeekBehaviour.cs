@@ -18,7 +18,7 @@ public class LoopSeekBehaviour : PlayableBehaviour
         
         if (init)
         {
-            if (clip.jump)
+            if ((bool)clip?.jump)
             {
                 SingletonLoopSeek.Instance.SetTime(clip.label_next, true);                
             }
