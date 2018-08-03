@@ -22,7 +22,7 @@ namespace Interactions
 
 		void Start () {
 		
-			_material = GetComponent<Renderer>().sharedMaterial;
+			_material = GetComponent<Renderer>().material;
 			_originalColor = _material.color;
 			_audioSource = GetComponent<AudioSource>();
 		
