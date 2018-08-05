@@ -35531,7 +35531,7 @@ Prefab:
     - target: {fileID: 114015730084474970, guid: c36d3252d857f264c8a4cfa1be542fe4,
         type: 2}
       propertyPath: antialiasingMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114015730084474970, guid: c36d3252d857f264c8a4cfa1be542fe4,
         type: 2}
