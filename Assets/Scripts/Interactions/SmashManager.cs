@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class SmashManager : MonoBehaviour
 {
-
 	public Smashable BigBell;
 	public Smashable MediumBell;
 	public Smashable SmallBell;
-	private const float SlowMotionSpeed = 0.5f;
+
+	void Start()
+	{
+		BigBell.Reset();
+		MediumBell.Reset();
+		SmallBell.Reset();
+	}
 	
 	public void Smash ()
 	{

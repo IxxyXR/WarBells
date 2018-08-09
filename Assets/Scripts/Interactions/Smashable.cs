@@ -50,6 +50,13 @@ namespace Interactions
 				piece.useGravity = true;
 			}
 		}
+
+		public void Reset()
+		{
+			Destroy(shattered);
+			Clapper.gameObject.SetActive(true);
+			UnsmashedBell.GetComponent<MeshRenderer>().enabled = true;
+		}
 	}
 }
 
