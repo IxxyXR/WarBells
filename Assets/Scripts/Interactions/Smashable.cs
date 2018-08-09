@@ -1,21 +1,15 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
+
 
 namespace Interactions
 {
 	public class Smashable : MonoBehaviour
 	{
-		public bool SmashingEnabled = false;
 		public Transform ShatteredPrefab;
-		public Transform clapper;
+		public Transform Clapper;
 		private Transform shattered;
-		public SingletonLoopSeek timeline;
-		private bool Smashed = false;
-
-		void Start()
-		{
-			timeline = GameObject.FindGameObjectWithTag("MainTimeline").GetComponent<SingletonLoopSeek>();
-		}
+		public AudioClip SmashingSound;
+		public GameObject UnsmashedBell;
 
 		public void SmashAfter(float delay)
 		{
@@ -24,17 +18,27 @@ namespace Interactions
 
 		public void Smash()
 		{
-			if (SmashingEnabled && !Smashed)
+			UnsmashedBell.GetComponent<MeshRenderer>().enabled = false;
+			gameObject.GetComponent<AudioSource>().PlayOneShot(SmashingSound);
+			Clapper.gameObject.SetActive(false);
+			shattered = Instantiate(ShatteredPrefab);
+			shattered.transform.parent = gameObject.transform;
+			shattered.localPosition = UnsmashedBell.transform.localPosition;
+			shattered.localRotation = UnsmashedBell.transform.localRotation;
+			shattered.Rotate(90,0,0);
+			shattered.localScale = UnsmashedBell.transform.localScale;
+			Explode();
+			Invoke(nameof(FallDown), 1.2f);
+		}
+
+		public void Explode()
+		{
+			var pieces = shattered.gameObject.GetComponentsInChildren<Rigidbody>();
+			foreach (var piece in pieces)
 			{
-				gameObject.GetComponent<MeshRenderer>().enabled = false;
-				gameObject.GetComponent<AudioSource>().Play();
-				clapper.gameObject.SetActive(false);
-				shattered = Instantiate(ShatteredPrefab);
-				shattered.transform.parent = gameObject.transform.parent;
-				shattered.localPosition = new Vector3(0,0,0);
-				shattered.localScale = gameObject.transform.localScale;
-				Invoke(nameof(FallDown), 2);
-				Smashed = true;
+				piece.drag = 5f;
+				piece.angularDrag = .03f;
+				piece.AddExplosionForce(2f, UnsmashedBell.transform.position, 10f, 1f, ForceMode.Impulse);
 			}
 		}
 
@@ -44,14 +48,7 @@ namespace Interactions
 			foreach (var piece in pieces)
 			{
 				piece.useGravity = true;
-				piece.drag = 10;
 			}
-			Invoke(nameof(ResumeTimeline), 1);
-		}
-
-		public void ResumeTimeline()
-		{
-			timeline.Resume();
 		}
 	}
 }
