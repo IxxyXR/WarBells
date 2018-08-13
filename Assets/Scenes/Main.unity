@@ -5146,7 +5146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &25995818
 Transform:
   m_ObjectHideFlags: 0
@@ -5173,7 +5173,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0fd66a93c57774434a7be58bf598445d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.9992506
+  m_Volume: 0.98637116
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8227,7 +8227,7 @@ MonoBehaviour:
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: 5
-  nearFieldEffectEnabled: 0
+  nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 1
   occlusionIntensity: 1
@@ -8303,7 +8303,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.31944445
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -8749,7 +8749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &163520694
 Transform:
   m_ObjectHideFlags: 0
@@ -8929,7 +8929,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: 2
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 0
@@ -9221,7 +9221,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f134245505a9942fc9ddd6da7c9322eb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25880238
+  m_Volume: 0.519
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9280,7 +9280,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.4861111
+      value: 0.7722222
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9312,7 +9312,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 178138735}
   m_LocalRotation: {x: -0, y: -0, z: 1.7347235e-18, w: 1}
-  m_LocalPosition: {x: -7.6, y: -16.34, z: -1.1}
+  m_LocalPosition: {x: -1.6, y: -16.34, z: -1.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 776121968}
@@ -9886,7 +9886,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.4861111
+      value: 0.7777778
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -13431,7 +13431,7 @@ MonoBehaviour:
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: 5
-  nearFieldEffectEnabled: 0
+  nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 1
   occlusionIntensity: 1
@@ -13507,7 +13507,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.41666666
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -18927,7 +18927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &390689332
 Transform:
   m_ObjectHideFlags: 0
@@ -19390,7 +19390,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 3674210304
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -19901,7 +19901,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.4861111
+      value: 0.85
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -19933,7 +19933,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 414467539}
   m_LocalRotation: {x: -0, y: -0, z: 1.7347235e-18, w: 1}
-  m_LocalPosition: {x: -9.4, y: -12.56, z: 3.3}
+  m_LocalPosition: {x: -1.9, y: -13.6, z: -8.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 776121968}
@@ -21320,7 +21320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &472480599
 Transform:
   m_ObjectHideFlags: 0
@@ -21347,7 +21347,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4b6827880026f461daa531430a70ad11, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.722
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -22013,7 +22013,7 @@ MonoBehaviour:
   gainDb: 0
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!82 &518555582
@@ -22028,7 +22028,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 25a3c7bfdf705454b8760a84456465fc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.69
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -22039,7 +22039,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -22047,23 +22047,50 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.061166383
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -10.0039835
+      outSlope: -10.0039835
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.2
+      value: 0.5
+      inSlope: -1.992559
+      outSlope: -1.992559
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.67133516
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.4
+      value: 0.25
+      inSlope: -0.62524897
+      outSlope: -0.62524897
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.8
+      value: 0.125
+      inSlope: -0.15631224
+      outSlope: -0.15631224
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.1
+      inSlope: -0.10003988
+      outSlope: -0.10003988
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -24807,7 +24834,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.78333336
+      value: 0.6388889
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -24886,7 +24913,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: -7
+  gainDb: -6
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 0
@@ -26920,7 +26947,7 @@ MonoBehaviour:
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: 5
-  nearFieldEffectEnabled: 0
+  nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 1
   occlusionIntensity: 1
@@ -26996,7 +27023,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.41666666
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -29940,8 +29967,8 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 5
-  nearFieldEffectEnabled: 0
+  gainDb: 7
+  nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 1
   occlusionIntensity: 1
@@ -30017,7 +30044,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.31388888
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -33242,7 +33269,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 988729631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.594982, y: 0, z: 33.23069}
+  m_LocalPosition: {x: 31.997925, y: 0, z: -39.55718}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2095551093}
@@ -33264,7 +33291,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 17
+  gainDb: 20
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
   occlusionEnabled: 0
@@ -33281,7 +33308,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 248799cb4acba48f7b3ee842a80f788c,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f3316ea986c264af4bcb615167229f97, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -33341,7 +33368,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.69722223
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -39492,7 +39519,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.78333336
+      value: 0.6388889
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -39571,7 +39598,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 0
+  gainDb: -1
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 0
@@ -46450,7 +46477,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.78333336
+      value: 0.6388889
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -46529,7 +46556,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: -7
+  gainDb: -6
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 0
@@ -47322,7 +47349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1417989310
 Transform:
   m_ObjectHideFlags: 0
@@ -47349,7 +47376,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2d5d8d26d54ea49ac8167b983bbb8c4e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.98637116
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -47892,7 +47919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1436835927
 Transform:
   m_ObjectHideFlags: 0
@@ -47919,7 +47946,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e99fd01b7d1254251a2cf07babb76226, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.624206
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -53996,7 +54023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1687962719
 AudioSource:
   m_ObjectHideFlags: 0
@@ -54068,7 +54095,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.4861111
+      value: 0.7083333
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -54100,7 +54127,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1687962718}
   m_LocalRotation: {x: -0, y: -0, z: 1.7347235e-18, w: 1}
-  m_LocalPosition: {x: -13.1, y: -12.19, z: 6.9}
+  m_LocalPosition: {x: -9.2, y: -6.6, z: 6.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 776121968}
@@ -56689,7 +56716,7 @@ MonoBehaviour:
   gainDb: 0
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!82 &1783528880
@@ -56704,7 +56731,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: d9ad11eb386ce439f97b60e5a5833b7e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -56715,7 +56742,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -56723,37 +56750,46 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.07155152
-      value: 0.996212
-      inSlope: -5.0019917
-      outSlope: -5.0019917
+      time: 0.061166383
+      value: 1
+      inSlope: -10.0039835
+      outSlope: -10.0039835
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.33229676
-      value: 0.4195404
-      inSlope: -0.9093699
-      outSlope: -0.9093699
+      time: 0.19353028
+      value: 0.48571777
+      inSlope: -1.712039
+      outSlope: -1.712039
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.74126595
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.4
+      value: 0.25
+      inSlope: -0.62524897
+      outSlope: -0.62524897
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.23986344
+      outWeight: 0
     - serializedVersion: 3
       time: 0.8
-      value: 0.25
-      inSlope: -0.31262448
-      outSlope: -0.31262448
+      value: 0.125
+      inSlope: -0.15631224
+      outSlope: -0.15631224
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.2
-      inSlope: -0.20007975
-      outSlope: -0.20007975
+      value: 0.1
+      inSlope: -0.10003988
+      outSlope: -0.10003988
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -58034,7 +58070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1826837752
 Transform:
   m_ObjectHideFlags: 0
@@ -59420,7 +59456,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.78333336
+      value: 0.6388889
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -59499,7 +59535,7 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: -7
+  gainDb: -6
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 0
@@ -61335,8 +61371,8 @@ MonoBehaviour:
   directivitySharpness: 1
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
-  gainDb: 5
-  nearFieldEffectEnabled: 0
+  gainDb: 7
+  nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
   occlusionEnabled: 1
   occlusionIntensity: 1
@@ -61412,7 +61448,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.2777778
       inSlope: 0
       outSlope: 0
       tangentMode: 0
