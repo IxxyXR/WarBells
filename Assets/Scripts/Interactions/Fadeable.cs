@@ -7,6 +7,8 @@ public class Fadeable : MonoBehaviour
 
 	public float Speed = 3;
 	private bool isVisible = true;
+	public AudioClip AppearSound;
+	public AudioClip VoiceOver;
 
 	void Start ()
 	{
@@ -38,12 +40,18 @@ public class Fadeable : MonoBehaviour
 			LeanTween.alpha(g, alpha, speed);
 		}
 	}
-
+	
 	public void FadeIn()
 	{
 		DoFade(1, Speed);
-		gameObject.GetComponent<AudioSource>().Play();
+		gameObject.GetComponent<AudioSource>().PlayOneShot(AppearSound);
+		Invoke(nameof(PlayVoiceOver), 3);
 		isVisible = true;
+	}
+	
+	public void PlayVoiceOver()
+	{
+		gameObject.GetComponent<AudioSource>().PlayOneShot(VoiceOver);
 	}
 	
 	public void FadeOut()

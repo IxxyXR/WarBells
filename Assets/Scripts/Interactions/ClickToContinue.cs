@@ -9,11 +9,14 @@ public class ClickToContinue : MonoBehaviour
 	public PlayableDirector Timeline;
 	public float ResumeAfterSeconds;
 
+	private double _originalTimelineSpeed;
+
 	void OnEnable ()
 	{
+		_originalTimelineSpeed = Timeline.playableGraph.GetRootPlayable(0).GetSpeed();
 		IconHighlighted.SetActive(false);
 		InvokeRepeating(nameof(ToggleIcon), .5f, .5f);
-		Timeline.Pause();
+		Timeline.playableGraph.GetRootPlayable(0).SetSpeed(0);
 		Invoke(nameof(Unpause), ResumeAfterSeconds);
 	}
 
@@ -32,6 +35,6 @@ public class ClickToContinue : MonoBehaviour
 
 	private void Unpause()
 	{
-		Timeline.Resume();
+		Timeline.playableGraph.GetRootPlayable(0).SetSpeed(_originalTimelineSpeed);
 	}
 }
