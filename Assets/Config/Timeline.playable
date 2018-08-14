@@ -13637,7 +13637,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: "\u21A9\uFE0E  Credits"
     m_Version: 1
-  - m_Start: 283.78333333333336
+  - m_Start: 282.3166666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114346623108751732}
     m_Duration: 1.4666666666666401
@@ -13706,7 +13706,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: "\u25CF Start Fall"
     m_Version: 1
-  - m_Start: 290.56666666666666
+  - m_Start: 297.15
     m_ClipIn: 0
     m_Asset: {fileID: 114894862891710232}
     m_Duration: 1.6333333333333258
@@ -14225,13 +14225,13 @@ MonoBehaviour:
   - m_Start: 87.86666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114301760577227698}
-    m_Duration: 202.7
+    m_Duration: 209.2833333333333
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114553798121333344}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: 38.09999999999934
-    m_BlendOutDuration: 6.883333333333326
+    m_BlendOutDuration: 14.833333333333258
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -14291,15 +14291,15 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Tower
     m_Version: 1
-  - m_Start: 283.68333333333334
+  - m_Start: 282.3166666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114385467830284554}
-    m_Duration: 178.23333333333335
+    m_Duration: 179.59999999999997
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114553798121333344}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 6.883333333333326
+    m_BlendInDuration: 14.833333333333258
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2

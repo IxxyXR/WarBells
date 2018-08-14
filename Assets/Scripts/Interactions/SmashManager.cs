@@ -18,8 +18,8 @@ public class SmashManager : MonoBehaviour
 	public void Smash ()
 	{
 		BigBell.Smash();
-		MediumBell.SmashAfter(1.2f);
-		SmallBell.SmashAfter(1.8f);
+		MediumBell.SmashAfter(2f);
+		SmallBell.SmashAfter(4f);
 	}
 
 
