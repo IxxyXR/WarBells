@@ -28,7 +28,7 @@ namespace Interactions
 			shattered.Rotate(90,0,0);
 			shattered.localScale = UnsmashedBell.transform.localScale;
 			Explode();
-			Invoke(nameof(FallDown), 1.2f);
+			Invoke(nameof(FallDown), 2f);
 		}
 
 		public void Explode()
@@ -36,9 +36,9 @@ namespace Interactions
 			var pieces = shattered.gameObject.GetComponentsInChildren<Rigidbody>();
 			foreach (var piece in pieces)
 			{
-				piece.drag = 5f;
-				piece.angularDrag = .03f;
-				piece.AddExplosionForce(2f, UnsmashedBell.transform.position, 10f, 1f, ForceMode.Impulse);
+				piece.drag = Random.RandomRange(2f, 7f);
+				piece.angularDrag = Random.RandomRange(.5f, 2f);
+				piece.AddExplosionForce(Random.RandomRange(2f, 7f), UnsmashedBell.transform.position, 10f, 1f, ForceMode.Impulse);
 			}
 		}
 
