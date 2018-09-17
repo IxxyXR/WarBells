@@ -387,7 +387,6 @@ PlayerSettings:
     m_Devices:
     - daydream
     - cardboard
-    - None
   m_BuildTargetEnableVuforiaSettings: []
   openGLRequireES31: 1
   openGLRequireES31AEP: 1
