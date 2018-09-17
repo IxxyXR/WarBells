@@ -6,6 +6,7 @@ public class RipplePulse : MonoBehaviour
 {
 	private ParticleSystem ps1, ps2;
 	private SimpleAnimation bellAnimator;
+	public Rigidbody jointRigidbody;
 	private AudioSource audioSource;
 
 	void Start()
@@ -19,11 +20,19 @@ public class RipplePulse : MonoBehaviour
 
 	public void SinglePulse()
 	{
+		jointRigidbody.isKinematic = true;
 		ps1.Emit(1);
 		ps2.Emit(1);
 		bellAnimator.Rewind();
 		bellAnimator.Play();
 		audioSource.Play();
+	}
+
+	public void PhysicsPulse()
+	{
+		jointRigidbody.isKinematic = false;
+		jointRigidbody.AddTorque(0,0,550);
+		
 	}
 }
  
