@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class PlaySoundOnCollision : MonoBehaviour{
 
     AudioSource myaudio;
+    public RipplePulse ripple;
 
     void Start() {
-
         myaudio = GetComponent<AudioSource>();
     }
 
@@ -15,7 +16,7 @@ public class PlaySoundOnCollision : MonoBehaviour{
 
         if (other.gameObject.tag == "playsound" ){
             myaudio.Play();
-            Debug.Log("How do you enjoy the sound?");
+            ripple.playRipples();
         }
     }
 }
