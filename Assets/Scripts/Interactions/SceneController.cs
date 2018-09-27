@@ -3,10 +3,10 @@ using UnityEngine.SceneManagement;
 
 namespace Interactions
 {
-	public class SceneCycler : MonoBehaviour
+	public class SceneController : MonoBehaviour
 	{
-	
-		void Update ()
+
+		void Update()
 		{
 			if (Input.GetKeyDown("space") || GvrControllerInput.AppButtonDown)
 			{
@@ -26,9 +26,9 @@ namespace Interactions
 					nextSceneIndex = (i + 1) % sceneCount;
 				}
 			}
+
 			SceneManager.LoadScene(nextSceneIndex);
 		}
-	
 
 	}
 }
