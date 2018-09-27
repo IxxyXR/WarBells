@@ -31072,9 +31072,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc1288aed07dd584eaa6fcad7692d085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BigBell: {fileID: 1272700297}
-  MediumBell: {fileID: 1367444879}
-  SmallBell: {fileID: 585806337}
+  BigBell: {fileID: 1500096642}
+  MediumBell: {fileID: 596189336}
+  SmallBell: {fileID: 83788748}
 --- !u!1001 &698088122
 Prefab:
   m_ObjectHideFlags: 0
