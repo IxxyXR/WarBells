@@ -7921,6 +7921,14 @@ Prefab:
       propertyPath: m_Radius
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 1322420797460190, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
+      propertyPath: m_Name
+      value: Bell Collide Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512905435563148, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
+      propertyPath: m_Name
+      value: Bell Collide Audio
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
   m_IsPrefabParent: 0
@@ -10434,12 +10442,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 13702b3acf3e846b9ae01f0d86a5a91f, type: 3}
+      objectReference: {fileID: 8300000, guid: 4b4b0dc02a3044894b34cce1a549dd9c, type: 3}
     - target: {fileID: 82941022955522122, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 13702b3acf3e846b9ae01f0d86a5a91f, type: 3}
+      objectReference: {fileID: 8300000, guid: 4b4b0dc02a3044894b34cce1a549dd9c, type: 3}
     - target: {fileID: 82298277697866776, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -10547,6 +10555,14 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322420797460190, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
+      propertyPath: m_Name
+      value: Bell Collide Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512905435563148, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
+      propertyPath: m_Name
+      value: Bell Collide Audio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
@@ -10657,7 +10673,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 248799cb4acba48f7b3ee842a80f788c,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 13702b3acf3e846b9ae01f0d86a5a91f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4b4b0dc02a3044894b34cce1a549dd9c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.304
   m_Pitch: 1
@@ -14985,8 +15001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
+  directivityAlpha: 0.548
+  directivitySharpness: 4.28
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: -1
@@ -15275,9 +15291,9 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 114915294585799170, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 114042770640126864, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1742551829}
-  - key: {fileID: 114843350218197250, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1426122978}
   m_ExposedReferences:
     m_References:
@@ -15779,8 +15795,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
+  directivityAlpha: 0.548
+  directivitySharpness: 4.28
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: -1
@@ -21840,11 +21856,11 @@ MonoBehaviour:
     lineCount: 0
     pageCount: 0
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 400237416}
@@ -27886,8 +27902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
+  directivityAlpha: 0.548
+  directivitySharpness: 4.28
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: -1
@@ -28493,6 +28509,14 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512905435563148, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
+      propertyPath: m_Name
+      value: Bell Collide Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322420797460190, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
+      propertyPath: m_Name
+      value: Bell Collide Audio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
@@ -30788,8 +30812,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
+  directivityAlpha: 0.548
+  directivitySharpness: 4.28
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: -1
@@ -32225,11 +32249,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 736067831}
@@ -35443,14 +35467,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
+  directivityAlpha: 0.548
+  directivitySharpness: 4.28
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: -1
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!1001 &878244250
@@ -37652,14 +37676,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
+  directivityAlpha: 0.548
+  directivitySharpness: 4.28
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: -1
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!1001 &964517848
@@ -46711,14 +46735,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
+  directivityAlpha: 0.548
+  directivitySharpness: 4.28
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: -1
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!1001 &1278007234
@@ -54565,7 +54589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1426122976
 Transform:
   m_ObjectHideFlags: 0
@@ -54610,7 +54634,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 13702b3acf3e846b9ae01f0d86a5a91f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.25880238
   m_Pitch: 1
@@ -57168,14 +57192,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
+  directivityAlpha: 0.548
+  directivitySharpness: 4.28
   listenerDirectivityAlpha: 0
   listenerDirectivitySharpness: 1
   gainDb: -1
   nearFieldEffectEnabled: 1
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!1001 &1495407136
@@ -57706,6 +57730,14 @@ Prefab:
         type: 2}
       propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
       value: 0.6388889
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512905435563148, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
+      propertyPath: m_Name
+      value: Bell Collide Audio
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322420797460190, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
+      propertyPath: m_Name
+      value: Bell Collide Audio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2beaa4e0551d4643b8985333bb0a72b, type: 2}
@@ -64729,7 +64761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1742551827
 Transform:
   m_ObjectHideFlags: 0
@@ -78318,11 +78350,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 2080617701}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2080617706}
