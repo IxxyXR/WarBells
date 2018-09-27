@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 1, g: 1, b: 1, a: 1}
+  m_FogColor: {r: 0.45752615, g: 0.69214594, b: 0.57788527, a: 0.5434295}
   m_FogMode: 1
   m_FogDensity: 0.025
-  m_LinearFogStart: 10
-  m_LinearFogEnd: 100
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 3.7
   m_AmbientSkyColor: {r: 0.31132078, g: 0.30397832, b: 0.30397832, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -7720,12 +7720,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 3bca24d03398b4d1d94c3130aeda4174, type: 3}
+      objectReference: {fileID: 8300000, guid: 6dd85bf7b372b4ef4b1a700975ed71e8, type: 3}
     - target: {fileID: 82298277697866776, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 3bca24d03398b4d1d94c3130aeda4174, type: 3}
+      objectReference: {fileID: 8300000, guid: 6dd85bf7b372b4ef4b1a700975ed71e8, type: 3}
     - target: {fileID: 82941022955522122, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -10283,12 +10283,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6ae21100c8ea947d8902d5efeb6dcdbb, type: 3}
+      objectReference: {fileID: 8300000, guid: 13702b3acf3e846b9ae01f0d86a5a91f, type: 3}
     - target: {fileID: 82941022955522122, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6ae21100c8ea947d8902d5efeb6dcdbb, type: 3}
+      objectReference: {fileID: 8300000, guid: 13702b3acf3e846b9ae01f0d86a5a91f, type: 3}
     - target: {fileID: 82298277697866776, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -28140,12 +28140,12 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 14801d4bf3ad84197bef3bfb6f08d0b1, type: 3}
+      objectReference: {fileID: 8300000, guid: 2fc3380e6e1b6412b8da40d1f3a95baa, type: 3}
     - target: {fileID: 82298277697866776, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 14801d4bf3ad84197bef3bfb6f08d0b1, type: 3}
+      objectReference: {fileID: 8300000, guid: 2fc3380e6e1b6412b8da40d1f3a95baa, type: 3}
     - target: {fileID: 82941022955522122, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: OutputAudioMixerGroup
@@ -31958,11 +31958,11 @@ MonoBehaviour:
     lineCount: 2
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 736067831}
@@ -56856,7 +56856,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 7b6a008b22825440caa8e01a34f3152b, type: 3}
+      objectReference: {fileID: 8300000, guid: 33a297c47738c40ba97230f7f3744941, type: 3}
     - target: {fileID: 82298277697866776, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: m_Volume
@@ -56902,7 +56902,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 7b6a008b22825440caa8e01a34f3152b, type: 3}
+      objectReference: {fileID: 8300000, guid: 33a297c47738c40ba97230f7f3744941, type: 3}
     - target: {fileID: 82941022955522122, guid: e2beaa4e0551d4643b8985333bb0a72b,
         type: 2}
       propertyPath: m_Volume
@@ -77305,11 +77305,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 2080617701}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2080617706}
