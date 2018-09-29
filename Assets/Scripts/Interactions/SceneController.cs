@@ -5,6 +5,10 @@ namespace Interactions
 {
 	public class SceneController : MonoBehaviour
 	{
+		void Start()
+		{
+			Camera.main.depthTextureMode = DepthTextureMode.Depth;
+		}
 
 		void Update()
 		{

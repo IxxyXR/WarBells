@@ -47,7 +47,6 @@ public class RipplePulse : MonoBehaviour
 	{
 		airwavePS.Emit(1);
 		visiblePS.Emit(1);
-		Debug.Log("EMIT");
 	}
 }
  
