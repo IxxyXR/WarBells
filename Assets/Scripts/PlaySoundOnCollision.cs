@@ -14,7 +14,9 @@ public class PlaySoundOnCollision : MonoBehaviour{
 
     void OnTriggerEnter(Collider other){
 
-        if (other.gameObject.tag == "playsound" ){
+        if (other.gameObject.tag == "playsound" )
+        {
+            myaudio.volume = 0.304f;
             myaudio.Play();
             ripple.playRipples();
         }

@@ -21,10 +21,16 @@ public class RipplePulse : MonoBehaviour
 
 	public void SinglePulse()
 	{
+		SinglePulse(0.304f);
+	}
+
+	public void SinglePulse(float volume)
+	{
 		jointRigidbody.isKinematic = true;
 		playRipples();
 		bellAnimator.Rewind();
 		bellAnimator.Play();
+		audioSource.volume = volume;
 		audioSource.Play();
 	}
 

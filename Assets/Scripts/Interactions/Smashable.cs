@@ -19,6 +19,7 @@ namespace Interactions
 		public void Smash()
 		{
 			UnsmashedBell.GetComponent<MeshRenderer>().enabled = false;
+			gameObject.GetComponent<AudioSource>().pitch += Random.value / 50f;
 			gameObject.GetComponent<AudioSource>().PlayOneShot(SmashingSound);
 			Clapper.gameObject.SetActive(false);
 			shattered = Instantiate(ShatteredPrefab);
