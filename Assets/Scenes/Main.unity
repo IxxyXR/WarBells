@@ -12281,6 +12281,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100178, guid: d384738d47f75e34daf006e89f1bf797, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d384738d47f75e34daf006e89f1bf797, type: 3}
   m_IsPrefabParent: 0
@@ -21851,8 +21855,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e1cd2e8d71781f4fae974111ee8925e, type: 2}
-  m_sharedMaterial: {fileID: 21911848538975776, guid: 4e1cd2e8d71781f4fae974111ee8925e,
+  m_fontAsset: {fileID: 11400000, guid: d04f0a31a50c203489eac948dc8f742a, type: 2}
+  m_sharedMaterial: {fileID: 21434583923283490, guid: d04f0a31a50c203489eac948dc8f742a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -21860,7 +21864,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 3674210304
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -21973,7 +21977,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 21911848538975776, guid: 4e1cd2e8d71781f4fae974111ee8925e, type: 2}
+  - {fileID: 21434583923283490, guid: d04f0a31a50c203489eac948dc8f742a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23141,8 +23145,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e1cd2e8d71781f4fae974111ee8925e, type: 2}
-  m_sharedMaterial: {fileID: 21911848538975776, guid: 4e1cd2e8d71781f4fae974111ee8925e,
+  m_fontAsset: {fileID: 11400000, guid: d04f0a31a50c203489eac948dc8f742a, type: 2}
+  m_sharedMaterial: {fileID: 21434583923283490, guid: d04f0a31a50c203489eac948dc8f742a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -23150,7 +23154,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 3674210304
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -23250,7 +23254,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 21911848538975776, guid: 4e1cd2e8d71781f4fae974111ee8925e, type: 2}
+  - {fileID: 21434583923283490, guid: d04f0a31a50c203489eac948dc8f742a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32267,8 +32271,8 @@ MonoBehaviour:
 
     In Eiserner Zeit'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e1cd2e8d71781f4fae974111ee8925e, type: 2}
-  m_sharedMaterial: {fileID: 21911848538975776, guid: 4e1cd2e8d71781f4fae974111ee8925e,
+  m_fontAsset: {fileID: 11400000, guid: d04f0a31a50c203489eac948dc8f742a, type: 2}
+  m_sharedMaterial: {fileID: 21434583923283490, guid: d04f0a31a50c203489eac948dc8f742a,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -32312,7 +32316,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 21
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -32389,7 +32393,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 21911848538975776, guid: 4e1cd2e8d71781f4fae974111ee8925e, type: 2}
+  - {fileID: 21434583923283490, guid: d04f0a31a50c203489eac948dc8f742a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -67840,7 +67844,7 @@ GameObject:
   - component: {fileID: 1876284439}
   - component: {fileID: 1876284438}
   m_Layer: 0
-  m_Name: TMP SubMesh [NewsCycle-Bold SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMesh [Adelle_Bold SDF Material + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77184,8 +77188,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Click to begin
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e1cd2e8d71781f4fae974111ee8925e, type: 2}
-  m_sharedMaterial: {fileID: 469295735}
+  m_fontAsset: {fileID: 11400000, guid: d04f0a31a50c203489eac948dc8f742a, type: 2}
+  m_sharedMaterial: {fileID: 21434583923283490, guid: d04f0a31a50c203489eac948dc8f742a,
+    type: 2}
   m_fontSharedMaterials:
   - {fileID: 469295735}
   m_fontMaterial: {fileID: 469295735}
@@ -77193,8 +77198,8 @@ MonoBehaviour:
   - {fileID: 469295735}
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282466625
-  m_fontColor: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
+    rgba: 4278979596
+  m_fontColor: {r: 0.047169805, g: 0.047169805, b: 0.047169805, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -77310,7 +77315,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 469295735}
+  - {fileID: 21434583923283490, guid: d04f0a31a50c203489eac948dc8f742a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

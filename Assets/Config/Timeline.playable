@@ -9823,7 +9823,7 @@ MonoBehaviour:
   m_Name: TextMeshSwitcherClip
   m_EditorClassIdentifier: 
   template:
-    color: {r: 1, g: 1, b: 1, a: 1}
+    color: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 1}
     fontSize: 6
     text: The First World War not only changed everyday life, it changed the auditory
       landscape of many villages as their bells were silenced.
@@ -11974,7 +11974,7 @@ MonoBehaviour:
   m_Name: TextMeshSwitcherClip
   m_EditorClassIdentifier: 
   template:
-    color: {r: 1, g: 1, b: 1, a: 1}
+    color: {r: 0.05660379, g: 0.055268794, b: 0.055268794, a: 1}
     fontSize: 6
     text: Throughout history bells have shaped the temporal and spacial architecture
       of those who lived within range of their sound.
@@ -14922,7 +14922,7 @@ MonoBehaviour:
   m_Name: TextMeshSwitcherClip
   m_EditorClassIdentifier: 
   template:
-    color: {r: 1, g: 1, b: 1, a: 1}
+    color: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 1}
     fontSize: 6
     text: "Warbells is a story told by one church bell of it\u2019s own journey to
       war."
@@ -22539,25 +22539,7 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
