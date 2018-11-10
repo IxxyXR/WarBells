@@ -1,9 +1,7 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
-using UnityEngine.Timeline;
-using UnityEngine.UI;
+
 
 public class TextMeshSwitcherMixerBehaviour : PlayableBehaviour
 {
@@ -60,7 +58,7 @@ public class TextMeshSwitcherMixerBehaviour : PlayableBehaviour
         var color = blendedColor + m_DefaultColor * (1f - totalWeight);
         color.a *= totalWeight;
         m_TrackBinding.color = color;
-        m_TrackBinding.fontSize = Mathf.RoundToInt (blendedFontSize + m_DefaultFontSize * (1f - totalWeight));
+        m_TrackBinding.fontSize = blendedFontSize + m_DefaultFontSize * (1f - totalWeight);
         if (currentInputs != 1 && 1f - totalWeight > greatestWeight)
         {
             m_TrackBinding.text = m_DefaultText;

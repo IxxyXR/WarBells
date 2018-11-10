@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 1, g: 1, b: 1, a: 1}
+  m_FogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.025
-  m_LinearFogStart: 10
-  m_LinearFogEnd: 100
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 3.7
   m_AmbientSkyColor: {r: 0.31132078, g: 0.30397832, b: 0.30397832, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -15367,6 +15367,10 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 114918737118913158, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
     value: {fileID: 457075336}
+  - key: {fileID: 114535441792769178, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
+    value: {fileID: 457075336}
+  - key: {fileID: 114235034492125304, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
+    value: {fileID: 400237413}
   m_ExposedReferences:
     m_References:
     - de6744b171d02f34297ce1a1fed0c017: {fileID: 1006869923}
@@ -21827,7 +21831,7 @@ RectTransform:
   - {fileID: 1317394857}
   - {fileID: 264428750}
   m_Father: {fileID: 1998706643}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21882,8 +21886,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 9
-  m_fontSizeBase: 9
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -21893,7 +21897,7 @@ MonoBehaviour:
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -38.3
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -23117,7 +23121,7 @@ RectTransform:
   - {fileID: 104363909}
   - {fileID: 2129775164}
   m_Father: {fileID: 1998706643}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -23172,8 +23176,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 6
-  m_fontSizeBase: 6
+  m_fontSize: 5.5
+  m_fontSizeBase: 5.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -23183,7 +23187,7 @@ MonoBehaviour:
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -38.3
+  m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -32246,7 +32250,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.88898, y: 0.33088}
-  m_SizeDelta: {x: 12, y: 5}
+  m_SizeDelta: {x: 19, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &736067828
 MonoBehaviour:
@@ -32267,9 +32271,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Die Glocken Herunter
-
-    In Eiserner Zeit'
+  m_text: "DIE GLOCKEN HERUNTER\r\nIN EISERNER ZEIT"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d04f0a31a50c203489eac948dc8f742a, type: 2}
   m_sharedMaterial: {fileID: 21434583923283490, guid: d04f0a31a50c203489eac948dc8f742a,
@@ -32279,8 +32281,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279966492
+  m_fontColor: {r: 0.11320752, g: 0.10733354, b: 0.10733354, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -32309,14 +32311,14 @@ MonoBehaviour:
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -38.3
+  m_lineSpacing: -20.9
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 22
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -32339,7 +32341,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 736067828}
-    characterCount: 37
+    characterCount: 38
     spriteCount: 0
     spaceCount: 5
     wordCount: 6
@@ -71221,8 +71223,8 @@ RectTransform:
   - {fileID: 736067827}
   - {fileID: 2080617702}
   - {fileID: 1715437410}
-  - {fileID: 400237412}
   - {fileID: 457075335}
+  - {fileID: 400237412}
   m_Father: {fileID: 1542446286}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -77228,7 +77230,7 @@ MonoBehaviour:
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 4.7
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

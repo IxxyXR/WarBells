@@ -8,6 +8,6 @@ using UnityEngine.UI;
 public class TextMeshSwitcherBehaviour : PlayableBehaviour
 {
     public Color color = Color.white;
-    public int fontSize = 14;
+    public float fontSize = 14;
     public string text;
 }
