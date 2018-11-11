@@ -13773,12 +13773,12 @@ MonoBehaviour:
     ControlledCamera: {fileID: 0}
     ControlledLight: {fileID: 0}
     LightColor: {r: 0.9245283, g: 0.8573692, b: 0.58873266, a: 0}
-    SkyboxTint: {r: 0.5568628, g: 0.6627451, b: 0.7058824, a: 1}
-    DistanceFogColor: {r: 0.59927905, g: 0.6320754, b: 0.6304834, a: 1}
-    DistanceFogStart: 50
-    DistanceFogEnd: 239.2
+    SkyboxTint: {r: 0.85564256, g: 0.8643692, b: 0.8679245, a: 1}
+    DistanceFogColor: {r: 0.90214485, g: 0.9150943, b: 0.9150943, a: 0.4392157}
+    DistanceFogStart: 0
+    DistanceFogEnd: 200
     GradientFog: {fileID: 2800000, guid: 429e5963d04a03047a803a26758e2447, type: 3}
-    FogDensity: 0.025
+    FogDensity: 0.003
 --- !u!114 &114524461503093040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14035,13 +14035,49 @@ MonoBehaviour:
     m_BlendOutDuration: 15.300000000000239
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -14125,7 +14161,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
