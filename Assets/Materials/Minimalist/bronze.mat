@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: bronze
   m_Shader: {fileID: 4800000, guid: a17b453a337d486ca89ddfdd1bf2a33f, type: 3}
-  m_ShaderKeywords: _MULTICOLORFOGENABLE_ON _UNITYFOGENABLE_ON
+  m_ShaderKeywords: _MULTICOLORFOGENABLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -71,7 +71,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UnityFogEnable: 1
+    - _UnityFogEnable: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.20016015, g: 0.24528295, b: 0.23415509, a: 1}

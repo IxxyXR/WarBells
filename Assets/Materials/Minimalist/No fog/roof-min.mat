@@ -15,7 +15,7 @@ Material:
     _SHADING_B_SOLID_COLOR _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR
     _SHADING_R_SOLID_COLOR _SHADING_T_SOLID_COLOR _SHOWAO_ON _SHOWBACK_ON _SHOWBOTTOM_ON
     _SHOWCOLORCORRECTION_ON _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON _SHOWLEFT_ON
-    _SHOWLMAP_ON _SHOWRIGHT_ON _SHOWTEXTURE_ON _SHOWTOP_ON _UNITYFOGENABLE_ON
+    _SHOWLMAP_ON _SHOWRIGHT_ON _SHOWTEXTURE_ON _SHOWTOP_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -148,7 +148,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UnityFogEnable: 1
+    - _UnityFogEnable: 0
     - _ZWrite: 1
     m_Colors:
     - _AOColor: {r: 1, g: 1, b: 1, a: 1}

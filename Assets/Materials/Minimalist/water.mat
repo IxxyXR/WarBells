@@ -14,7 +14,7 @@ Material:
     _GRADSETTINGS_T_USE_GLOBAL _LMAPBLENDINGMODE_ADD _MULTICOLORFOGENABLE_ON _SHADING_B_SOLID_COLOR
     _SHADING_D_SOLID_COLOR _SHADING_F_SOLIDCOLOR _SHADING_L_SOLID_COLOR _SHADING_R_SOLID_COLOR
     _SHADING_T_SOLID_COLOR _SHOWBACK_ON _SHOWCUSTOMSHADING_ON _SHOWFOG_ON _SHOWFRONT_ON
-    _SHOWLEFT_ON _SHOWRIGHT_ON _SHOWTEXTURE_ON _UNITYFOGENABLE_ON
+    _SHOWLEFT_ON _SHOWRIGHT_ON _SHOWTEXTURE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -150,7 +150,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UnityFogEnable: 1
+    - _UnityFogEnable: 0
     - _ZWrite: 1
     - _isInnerAlphaBlendOrColor: 0
     m_Colors:
