@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Playables;
 
 public class Fadeable : MonoBehaviour
 {
@@ -9,16 +8,19 @@ public class Fadeable : MonoBehaviour
 	private bool isVisible = true;
 	public AudioClip AppearSound;
 	public AudioClip VoiceOver;
+	private PlayableDirector _mainTimeline;
+	private bool voiceoverFinished;
 
 	void Start ()
 	{
 		DoFade(0, 0);
 		isVisible = false;
+		_mainTimeline = GameObject.FindGameObjectWithTag("MainTimeline").GetComponent<PlayableDirector>();
 	}
 
 	void Update()
 	{
-		if (GvrControllerInput.ClickButtonUp)
+		if (GvrControllerInput.ClickButtonUp && voiceoverFinished)
 		{
 			FadeOut();
 		}	
@@ -45,13 +47,21 @@ public class Fadeable : MonoBehaviour
 	{
 		DoFade(1, Speed);
 		gameObject.GetComponent<AudioSource>().PlayOneShot(AppearSound);
-		Invoke(nameof(PlayVoiceOver), 3);
+		Invoke(nameof(PlayVoiceOver), 3f);
+		_mainTimeline.playableGraph.GetRootPlayable(0).SetSpeed(0);
 		isVisible = true;
 	}
 	
 	public void PlayVoiceOver()
 	{
-		gameObject.GetComponent<AudioSource>().PlayOneShot(VoiceOver);
+		gameObject.GetComponent<AudioSource>().PlayOneShot(VoiceOver);		
+		Invoke(nameof(VoiceoverFinished), VoiceOver.length);
+	}
+
+	public void VoiceoverFinished()
+	{
+		voiceoverFinished = true;
+		_mainTimeline.playableGraph.GetRootPlayable(0).SetSpeed(1);
 	}
 	
 	public void FadeOut()
