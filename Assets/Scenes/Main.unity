@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 1, g: 0.72569275, b: 0.051886797, a: 0}
+  m_FogColor: {r: 1, g: 1, b: 1, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.025
-  m_LinearFogStart: 0
-  m_LinearFogEnd: 3.7
+  m_LinearFogStart: 10
+  m_LinearFogEnd: 100
   m_AmbientSkyColor: {r: 0.54147387, g: 0.83196247, b: 0.9811321, a: 1}
   m_AmbientEquatorColor: {r: 0.89444643, g: 0.93894625, b: 0.9433962, a: 1}
   m_AmbientGroundColor: {r: 0.066037714, g: 0.061365236, b: 0.052020274, a: 1}
@@ -5354,7 +5354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &25995818
 Transform:
   m_ObjectHideFlags: 0
@@ -10471,7 +10471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &163520694
 Transform:
   m_ObjectHideFlags: 0
@@ -11406,7 +11406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &178138736
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11419,7 +11419,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f134245505a9942fc9ddd6da7c9322eb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.519
+  m_Volume: 0.07432948
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11978,7 +11978,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: War Bells
+  m_Text: 
 --- !u!222 &190757321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12280,7 +12280,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 0a85171c4b9fb4803a0fd1b4c85d7557, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25880238
+  m_Volume: 0.13432947
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -15959,7 +15959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &342027246
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15972,7 +15972,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 09ddf7dbafe504bf3b6d2b9a88fe6616, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25880238
+  m_Volume: 0.65325797
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -16148,7 +16148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &348160530
 Transform:
   m_ObjectHideFlags: 0
@@ -21596,7 +21596,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &390689332
 Transform:
   m_ObjectHideFlags: 0
@@ -22123,7 +22123,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 3674210304
-  m_fontColor: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 1}
+  m_fontColor: {r: 0.05882353, g: 0.05882353, b: 0.05882353, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -22620,7 +22620,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 65a1bb2dfef8d44ad980cd3844e56dc3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25880238
+  m_Volume: 0.13769427
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -24340,7 +24340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &472480599
 Transform:
   m_ObjectHideFlags: 0
@@ -25313,7 +25313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &518555580
 Transform:
   m_ObjectHideFlags: 0
@@ -30994,7 +30994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &674893900
 Transform:
   m_ObjectHideFlags: 0
@@ -33781,6 +33781,7 @@ Transform:
   - {fileID: 937305843}
   - {fileID: 1742551827}
   - {fileID: 1426122976}
+  - {fileID: 1989266401}
   m_Father: {fileID: 1333125370}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34493,7 +34494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &810408780
 Transform:
   m_ObjectHideFlags: 0
@@ -37412,7 +37413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &937305843
 Transform:
   m_ObjectHideFlags: 0
@@ -37460,7 +37461,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f303b6a0062be4928a170506ec4cd5ab, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.58
+  m_Volume: 0.39332947
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -37753,7 +37754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &953089818
 Transform:
   m_ObjectHideFlags: 0
@@ -39303,7 +39304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &988729632
 Transform:
   m_ObjectHideFlags: 0
@@ -46210,7 +46211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 1}
+  m_Color: {r: 0.21462265, g: 0.8584906, b: 0.6944629, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -46230,7 +46231,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You can hear the sounds of the museum behind you, children and cafe, bookshop
+  m_Text: The sounds of the museum return mixed with the sound of the village
 --- !u!222 &1246479045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54576,7 +54577,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1417989310
 Transform:
   m_ObjectHideFlags: 0
@@ -55151,7 +55152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1427488192
 Transform:
   m_ObjectHideFlags: 0
@@ -55389,7 +55390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1436835927
 Transform:
   m_ObjectHideFlags: 0
@@ -57049,7 +57050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1491339816
 Transform:
   m_ObjectHideFlags: 0
@@ -60056,7 +60057,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1386775876200658, guid: 5b007fb7af00e43558ac186659917291, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b007fb7af00e43558ac186659917291, type: 2}
@@ -62908,7 +62909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1687962719
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62921,7 +62922,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 6bd928aa84a874d9fab690eb3f80099b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25880238
+  m_Volume: 0.13432947
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -65539,7 +65540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1767342399
 Transform:
   m_ObjectHideFlags: 0
@@ -65783,7 +65784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1783528878
 Transform:
   m_ObjectHideFlags: 0
@@ -67132,7 +67133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1826837752
 Transform:
   m_ObjectHideFlags: 0
@@ -67996,7 +67997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1849508381
 Transform:
   m_ObjectHideFlags: 0
@@ -71706,6 +71707,167 @@ Transform:
   m_PrefabParentObject: {fileID: 4079104313340734, guid: 2a841012910530c44858e30aeef5d08b,
     type: 2}
   m_PrefabInternal: {fileID: 1985473359}
+--- !u!1 &1989266400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1989266401}
+  - component: {fileID: 1989266402}
+  m_Layer: 0
+  m_Name: StereoHedlckdAtriumAtmosEND
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1989266401
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1989266400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.50003, y: -16.200003, z: 2.7000127}
+  m_LocalScale: {x: 0.99999964, y: 0.9999998, z: 0.9999962}
+  m_Children: []
+  m_Father: {fileID: 776121968}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1989266402
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1989266400}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243999166373426738, guid: 17df04e6ab587486b8c0571c83164bdd,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 0faa653a8ad0f489f83c9aa52c8df983, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.65325797
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 1
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 11.6
+  MaxDistance: 200.8
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.092249975
+      value: 1
+      inSlope: -17.317266
+      outSlope: -17.317266
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.11553785
+      value: 0.5
+      inSlope: -4.3293166
+      outSlope: -4.3293166
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.2310757
+      value: 0.25
+      inSlope: -1.0823292
+      outSlope: -1.0823292
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.4621514
+      value: 0.125
+      inSlope: -0.2705823
+      outSlope: -0.2705823
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.9243028
+      value: 0.0625
+      inSlope: -0.06764557
+      outSlope: -0.06764557
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.057768926
+      inSlope: -0.05779201
+      outSlope: -0.05779201
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1992156512
 Prefab:
   m_ObjectHideFlags: 0
@@ -78727,7 +78889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2111385377
 Transform:
   m_ObjectHideFlags: 0
@@ -78789,7 +78951,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9433962, g: 0.31091133, b: 0.11124954, a: 0}
+  m_Color: {r: 1, g: 0.94661194, b: 0.43867922, a: 1}
   m_Intensity: 1
   m_Range: 26.2
   m_SpotAngle: 30
