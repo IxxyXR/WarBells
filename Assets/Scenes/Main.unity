@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.16981131, g: 0.16981131, b: 0.16260234, a: 0.69411767}
+  m_FogColor: {r: 0.6477954, g: 0.6569874, b: 0.6566724, a: 0.93413234}
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: 0
-  m_LinearFogEnd: 50
+  m_LinearFogEnd: 30.873829
   m_AmbientSkyColor: {r: 0.54147387, g: 0.83196247, b: 0.9811321, a: 1}
   m_AmbientEquatorColor: {r: 0.89444643, g: 0.93894625, b: 0.9433962, a: 1}
   m_AmbientGroundColor: {r: 0.066037714, g: 0.061365236, b: 0.052020274, a: 1}
@@ -15493,6 +15493,8 @@ PlayableDirector:
     value: {fileID: 400237413}
   - key: {fileID: 114164005731797882, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
     value: {fileID: 1491339815}
+  - key: {fileID: 114115793383352322, guid: bf36f455c6720463ba55036d3d7f50c5, type: 2}
+    value: {fileID: 280617112}
   m_ExposedReferences:
     m_References:
     - de6744b171d02f34297ce1a1fed0c017: {fileID: 1006869923}
@@ -37748,7 +37750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   AppearSound: {fileID: 8300000, guid: f16359c72422340ae86faa99b35bdeac, type: 3}
-  VoiceOver: {fileID: 8300000, guid: c40a0bad6baf743f1973caf4aa576244, type: 3}
+  VoiceOver: {fileID: 8300000, guid: 1a7378406db1847b0983dfd397f677f1, type: 3}
 --- !u!114 &953089821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55098,7 +55100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   AppearSound: {fileID: 8300000, guid: f16359c72422340ae86faa99b35bdeac, type: 3}
-  VoiceOver: {fileID: 8300000, guid: 067b4b59ffd2648e2826db44756a496d, type: 3}
+  VoiceOver: {fileID: 8300000, guid: 0e55cee2fc1d045eaa84fb01d7c5bddd, type: 3}
 --- !u!1001 &1431421556
 Prefab:
   m_ObjectHideFlags: 0
@@ -67943,7 +67945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   AppearSound: {fileID: 8300000, guid: f16359c72422340ae86faa99b35bdeac, type: 3}
-  VoiceOver: {fileID: 8300000, guid: f29574c47f6fa4ac6b4568ae23bf919a, type: 3}
+  VoiceOver: {fileID: 8300000, guid: 6d1c3a9bce2784adba4570be283e22ea, type: 3}
 --- !u!1001 &1866570955
 Prefab:
   m_ObjectHideFlags: 0
@@ -78612,7 +78614,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
+  m_Color: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 0.043691397}
   m_Intensity: 1
   m_Range: 26.2
   m_SpotAngle: 30
