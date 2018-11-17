@@ -8073,7 +8073,7 @@ MonoBehaviour:
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   Clapper: {fileID: 631786775}
-  SmashingSound: {fileID: 8300000, guid: d6e4bf51e01544575994285dc596d7af, type: 3}
+  SmashingSound: {fileID: 8300000, guid: 478b618613d734808bc47d3d54dc4ea0, type: 3}
   UnsmashedBell: {fileID: 865748900}
 --- !u!95 &83788749
 Animator:
@@ -28923,7 +28923,7 @@ MonoBehaviour:
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   Clapper: {fileID: 1915082626}
-  SmashingSound: {fileID: 8300000, guid: d6e4bf51e01544575994285dc596d7af, type: 3}
+  SmashingSound: {fileID: 8300000, guid: c0d6f95a0b06e462ca08a36c68309b07, type: 3}
   UnsmashedBell: {fileID: 276468898}
 --- !u!95 &596189337
 Animator:
@@ -57906,7 +57906,7 @@ MonoBehaviour:
   ShatteredPrefab: {fileID: 4687080530134502, guid: 413de367169e68d4695d7eff5bcfec04,
     type: 2}
   Clapper: {fileID: 2114111414}
-  SmashingSound: {fileID: 8300000, guid: d6e4bf51e01544575994285dc596d7af, type: 3}
+  SmashingSound: {fileID: 8300000, guid: cd851b3f23738484aa217b47e4a19125, type: 3}
   UnsmashedBell: {fileID: 470544672}
 --- !u!114 &1500096643
 MonoBehaviour:
