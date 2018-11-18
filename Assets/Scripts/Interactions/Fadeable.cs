@@ -5,17 +5,19 @@ public class Fadeable : MonoBehaviour
 {
 
 	public float Speed = 3;
-	private bool isVisible = true;
+	private bool isVisible;
 	public AudioClip AppearSound;
 	public AudioClip VoiceOver;
 	private PlayableDirector _mainTimeline;
 	private bool voiceoverFinished;
+	private GvrControllerInputDevice _controller;
 
 	void Start ()
 	{
+		_mainTimeline = GameObject.FindGameObjectWithTag("MainTimeline").GetComponent<PlayableDirector>();
 		DoFade(0, 0);
 		isVisible = false;
-		_mainTimeline = GameObject.FindGameObjectWithTag("MainTimeline").GetComponent<PlayableDirector>();
+		FadeIn();
 	}
 
 	void Update()
@@ -25,15 +27,6 @@ public class Fadeable : MonoBehaviour
 			FadeOut();
 		}	
 	}
-
-	private void OnEnable()
-	{
-		if (!isVisible)
-		{
-			FadeIn();
-		}
-	}
-
 	public void DoFade(float alpha, float speed)
 	{
 		for (int i = 0; i < gameObject.transform.childCount; i++)
