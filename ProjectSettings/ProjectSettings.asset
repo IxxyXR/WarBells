@@ -7,13 +7,13 @@ PlayerSettings:
   productGUID: 76522c7b9ad4f524a9bec5c71738bef6
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
-  AndroidEnableSustainedPerformanceMode: 1
+  AndroidEnableSustainedPerformanceMode: 0
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Ixxy
-  productName: WarBells2
+  productName: War Bells DE
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -69,7 +69,7 @@ PlayerSettings:
   macRetinaSupport: 1
   runInBackground: 1
   captureSingleScreen: 0
-  muteOtherAudioSources: 0
+  muteOtherAudioSources: 1
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
   deferSystemGesturesMode: 0
@@ -129,7 +129,7 @@ PlayerSettings:
       depthFormat: 1
       enableTransitionView: 0
     daydream:
-      depthFormat: 2
+      depthFormat: 1
       useSustainedPerformanceMode: 0
       enableVideoLayer: 0
       useProtectedVideoMemory: 0
@@ -150,7 +150,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.ixxy.warbells2
+    Android: com.ixxy.warbellsde
     Standalone: com.ixxy.warbells
   buildNumber: {}
   AndroidBundleVersionCode: 1
@@ -386,7 +386,6 @@ PlayerSettings:
     m_Enabled: 1
     m_Devices:
     - daydream
-    - cardboard
   m_BuildTargetEnableVuforiaSettings: []
   openGLRequireES31: 1
   openGLRequireES31AEP: 1
