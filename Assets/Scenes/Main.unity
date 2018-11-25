@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.72196513, g: 0.9056604, b: 0.8737776, a: 0}
+  m_FogColor: {r: 0.24168076, g: 0.22948559, b: 0.254717, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: 0
-  m_LinearFogEnd: 400
+  m_LinearFogEnd: 3.7
   m_AmbientSkyColor: {r: 0.54147387, g: 0.83196247, b: 0.9811321, a: 1}
   m_AmbientEquatorColor: {r: 0.89444643, g: 0.93894625, b: 0.9433962, a: 1}
   m_AmbientGroundColor: {r: 0.066037714, g: 0.061365236, b: 0.052020274, a: 1}
@@ -23616,11 +23616,11 @@ MonoBehaviour:
     lineCount: 0
     pageCount: 0
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 457075337}
@@ -32877,11 +32877,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 736067831}
@@ -79269,7 +79269,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9622642, g: 0.9577252, b: 0.9577252, a: 0}
+  m_Color: {r: 0.16981131, g: 0.15979278, b: 0.15939835, a: 0}
   m_Intensity: 1
   m_Range: 26.2
   m_SpotAngle: 30
