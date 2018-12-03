@@ -23,7 +23,8 @@ public class TextMeshSwitcherMixerBehaviour : PlayableBehaviour
         {
             m_DefaultColor = m_TrackBinding.color;
             m_DefaultFontSize = m_TrackBinding.fontSize;
-            m_DefaultText = m_TrackBinding.text;
+            
+            m_DefaultText = m_TrackBinding.text;                
             m_FirstFrameHappened = true;
         }
 
@@ -47,7 +48,11 @@ public class TextMeshSwitcherMixerBehaviour : PlayableBehaviour
 
             if (inputWeight > greatestWeight)
             {
-                m_TrackBinding.text = input.text;
+                if (input.text.Length > 0)
+                {
+                    m_TrackBinding.text = input.text;
+                }
+
                 greatestWeight = inputWeight;
             }
 
