@@ -1565,7 +1565,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114962489898145142}
   m_Children: []
   m_Clips:
-  - m_Start: 38.1
+  - m_Start: 39.25
     m_ClipIn: 35.4
     m_Asset: {fileID: 114415079591112976}
     m_Duration: 4.885187500000004
@@ -2405,7 +2405,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: 1 Nina Intro
     m_Version: 1
-  - m_Start: 30
+  - m_Start: 30.116666666666667
     m_ClipIn: 27.4
     m_Asset: {fileID: 114142818702680014}
     m_Duration: 8
@@ -10180,7 +10180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     color: {r: 0, g: 0, b: 0, a: 0.85882354}
-    fontSize: 5
+    fontSize: 4
     text: 
 --- !u!114 &114273979027347956
 MonoBehaviour:
@@ -16245,7 +16245,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
