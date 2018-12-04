@@ -8,7 +8,7 @@ QualitySettings:
   m_QualitySettings:
   - serializedVersion: 2
     name: Warbells Default
-    pixelLightCount: 2
+    pixelLightCount: 1
     shadows: 1
     shadowResolution: 2
     shadowProjection: 1

@@ -7,7 +7,7 @@ PlayerSettings:
   productGUID: 76522c7b9ad4f524a9bec5c71738bef6
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
-  AndroidEnableSustainedPerformanceMode: 1
+  AndroidEnableSustainedPerformanceMode: 0
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
@@ -64,7 +64,7 @@ PlayerSettings:
   use32BitDisplayBuffer: 1
   preserveFramebufferAlpha: 0
   disableDepthAndStencilBuffers: 0
-  androidBlitType: 0
+  androidBlitType: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
   runInBackground: 1
@@ -129,8 +129,8 @@ PlayerSettings:
       depthFormat: 1
       enableTransitionView: 0
     daydream:
-      depthFormat: 1
-      useSustainedPerformanceMode: 1
+      depthFormat: 0
+      useSustainedPerformanceMode: 0
       enableVideoLayer: 0
       useProtectedVideoMemory: 0
       minimumSupportedHeadTracking: 0
