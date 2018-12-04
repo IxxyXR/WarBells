@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: bronze
-  m_Shader: {fileID: 4800000, guid: a17b453a337d486ca89ddfdd1bf2a33f, type: 3}
-  m_ShaderKeywords: _MULTICOLORFOGENABLE_ON
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _MULTICOLORFOGENABLE_ON _UNITYFOGENABLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4253614a3a209d04ba30b00c87acf819, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -51,6 +51,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -71,14 +75,14 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _UnityFogEnable: 0
+    - _UnityFogEnable: 1
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.20016015, g: 0.24528295, b: 0.23415509, a: 1}
-    - _Color1_B: {r: 0.3032663, g: 0.4433962, b: 0.41144884, a: 1}
-    - _Color1_D: {r: 0.20412071, g: 0.31132078, b: 0.27580348, a: 1}
-    - _Color1_F: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1_L: {r: 0.1718138, g: 0.3679245, b: 0.33813477, a: 1}
+    - _Color1_B: {r: 0.33997864, g: 0.3773585, b: 0.36905187, a: 1}
+    - _Color1_D: {r: 0.23362409, g: 0.2830189, b: 0.26655397, a: 1}
+    - _Color1_F: {r: 0.8490566, g: 0.8429152, b: 0.48460305, a: 1}
+    - _Color1_L: {r: 0.3155927, g: 0.33962262, b: 0.33577782, a: 1}
     - _Color1_R: {r: 0.370283, g: 0.41621417, b: 0.5, a: 1}
-    - _Color1_T: {r: 0.49056602, g: 0.48285273, b: 0.47899607, a: 1}
+    - _Color1_T: {r: 0.6509434, g: 0.6325205, b: 0.623309, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
