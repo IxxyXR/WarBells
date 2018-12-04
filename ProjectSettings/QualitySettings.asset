@@ -8,7 +8,7 @@ QualitySettings:
   m_QualitySettings:
   - serializedVersion: 2
     name: Warbells Default
-    pixelLightCount: 2
+    pixelLightCount: 1
     shadows: 1
     shadowResolution: 2
     shadowProjection: 1
@@ -34,6 +34,4 @@ QualitySettings:
     asyncUploadBufferSize: 4
     resolutionScalingFixedDPIFactor: 1
     excludedTargetPlatforms: []
-  m_PerPlatformDefaultQuality:
-    Android: 0
-    Standalone: 0
+  m_PerPlatformDefaultQuality: {}
