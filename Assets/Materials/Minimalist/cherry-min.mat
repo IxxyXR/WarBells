@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: oak-min
+  m_Name: cherry-min
   m_Shader: {fileID: 4800000, guid: a17b453a337d486ca89ddfdd1bf2a33f, type: 3}
   m_ShaderKeywords: BACKSOLID BOTTOMSOLID FRONTSOLID LEFTSOLID RIGHTSOLID TOPSOLID
     UNITY_FOG _AOENABLE_ON _AOUV_UV0 _GRADIENTSPACE_WORLD_SPACE _GRADSETTINGS_B_USE_GLOBAL
@@ -156,12 +156,12 @@ Material:
     - _AmbientColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color1: {r: 1, g: 0, b: 1, a: 0}
-    - _Color1_B: {r: 0.6226415, g: 0.604828, b: 0.5315949, a: 1}
-    - _Color1_D: {r: 0.4339623, g: 0.38893053, b: 0.3050018, a: 1}
-    - _Color1_F: {r: 0.31132078, g: 0.30391958, b: 0.21880564, a: 1}
-    - _Color1_L: {r: 0.5, g: 0.49579898, b: 0.4504717, a: 1}
-    - _Color1_R: {r: 0.4056604, g: 0.3988037, b: 0.3233802, a: 1}
-    - _Color1_T: {r: 0.6, g: 0.57254905, b: 0.47058827, a: 1}
+    - _Color1_B: {r: 0.26415092, g: 0.19579111, b: 0.17568529, a: 1}
+    - _Color1_D: {r: 0.23584908, g: 0.21234156, b: 0.2058117, a: 1}
+    - _Color1_F: {r: 0.5566038, g: 0.4701302, b: 0.44370773, a: 1}
+    - _Color1_L: {r: 0.49056602, g: 0.45637038, b: 0.4466002, a: 1}
+    - _Color1_R: {r: 0.5058824, g: 0.4156863, b: 0.38823533, a: 1}
+    - _Color1_T: {r: 0.5849056, g: 0.48783937, b: 0.46075112, a: 1}
     - _Color2: {r: 1, g: 1, b: 0, a: 0}
     - _Color2_B: {r: 1, g: 1, b: 1, a: 1}
     - _Color2_D: {r: 1, g: 1, b: 1, a: 1}
