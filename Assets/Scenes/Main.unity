@@ -14826,6 +14826,16 @@ Prefab:
       propertyPath: simulationSpeed
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e8a8be6295d61264a9e2da350ae9d95f, type: 2}
   m_IsPrefabParent: 0
