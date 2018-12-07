@@ -51,7 +51,7 @@ public class RipplePulse : MonoBehaviour
 
 	public void playRipples()
 	{
-		airwavePS.Emit(1);
+		//airwavePS.Emit(1);
 		visiblePS.Emit(1);
 	}
 }

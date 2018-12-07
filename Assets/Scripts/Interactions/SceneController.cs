@@ -7,7 +7,7 @@ namespace Interactions
 	{
 		void Start()
 		{
-			Camera.main.depthTextureMode = DepthTextureMode.Depth;
+			//Camera.main.depthTextureMode = DepthTextureMode.Depth;
 			QualitySettings.vSyncCount = 0;
 			
 		}
