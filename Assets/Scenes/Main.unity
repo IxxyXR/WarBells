@@ -15,11 +15,11 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.16981131, g: 0.16981131, b: 0.16260234, a: 0.69411767}
+  m_FogColor: {r: 1, g: 0.72569275, b: 0.051886797, a: 0}
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: 0
-  m_LinearFogEnd: 50
+  m_LinearFogEnd: 3.7
   m_AmbientSkyColor: {r: 0.42346027, g: 0.46779802, b: 0.49056602, a: 1}
   m_AmbientEquatorColor: {r: 0.89444643, g: 0.93894625, b: 0.9433962, a: 1}
   m_AmbientGroundColor: {r: 0.066037714, g: 0.061365236, b: 0.052020274, a: 1}
@@ -24998,11 +24998,11 @@ MonoBehaviour:
     lineCount: 0
     pageCount: 0
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 457075337}
@@ -29263,7 +29263,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1355453674400374, guid: e8a8be6295d61264a9e2da350ae9d95f, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4913731724324740, guid: e8a8be6295d61264a9e2da350ae9d95f, type: 2}
       propertyPath: m_LocalScale.x
@@ -29305,17 +29305,17 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.94509804
+      value: 0.99215686
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.15341574
+      value: 0.4040669
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.086274505
+      value: 0.13725492
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
@@ -29325,12 +29325,12 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: ColorModule.gradient.maxGradient.key0.g
-      value: 0.0588235
+      value: 0.23149745
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: ColorModule.gradient.maxGradient.key0.b
-      value: 0.18550347
+      value: 0.0588235
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
@@ -29380,7 +29380,7 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: simulationSpeed
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
@@ -29395,12 +29395,12 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: ColorModule.gradient.maxGradient.key0.a
-      value: 1
+      value: 0.6784314
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: ColorModule.gradient.maxGradient.key1.a
-      value: 0.9529412
+      value: 0.53333336
       objectReference: {fileID: 0}
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
@@ -29425,7 +29425,7 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: InitialModule.maxNumParticles
-      value: 400
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
@@ -29484,7 +29484,22 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: NoiseModule.frequency
-      value: 4
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.5803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: NoiseModule.quality
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
+        type: 2}
+      propertyPath: NoiseModule.damping
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e8a8be6295d61264a9e2da350ae9d95f, type: 2}
@@ -35861,11 +35876,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 736067831}
@@ -40262,7 +40277,7 @@ Prefab:
     - target: {fileID: 198376982123826242, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
       propertyPath: InitialModule.maxNumParticles
-      value: 300
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 199134007940379460, guid: e8a8be6295d61264a9e2da350ae9d95f,
         type: 2}
